@@ -8,12 +8,10 @@
        title: single word the spirit is referred to as
        uniques: [underscored_unique_names],
        aliases: any cute nicknames, emojis or lore relevant names that the spirit might be referred to as
+       aspects: array of JSON objects for aspects
        set: 'base', 'b&c', 'f&f', 'je', 'horizons', 'ni' or unannounced expansion
    }
  */
-
-const powerProgression = require("./powerProgression");
-
 var Green = {
   name: "A Spread of Rampant Green",
   emote: "<:SpiritSpreadRampantGreen:852365959149912095>",
@@ -27,6 +25,21 @@ var Green = {
     "overgrow_in_a_night",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Regrowth",
+      emote: "<:DestroyedPresence:1386717215302353037>",
+      panel: ["https://i.imgur.com/jQWp7vu.png"],
+    },
+    {
+      name: "Tangles",
+      emote: "<:TokenWilds:852366051832102993>",
+      panel: [
+        "https://i.imgur.com/mnlOFdh.png",
+        "https://i.imgur.com/ygTTqbq.png",
+      ],
+    },
+  ],
   set: "base",
 };
 
@@ -43,6 +56,18 @@ var BoDaN = {
     "dread_apparitions",
   ],
   aliases: ["bodan"],
+  aspects: [
+    {
+      name: "Enticing",
+      emote: "🧲",
+      panel: ["https://i.imgur.com/EdgkVJ6.png"],
+    },
+    {
+      name: "Violence",
+      emote: "⚔️",
+      panel: ["https://i.imgur.com/mm85SO0.png"],
+    },
+  ],
   set: "base",
 };
 
@@ -59,6 +84,7 @@ var Downpour = {
     "dark_skies_loose_a_stinging_rain",
   ],
   aliases: ["bird"],
+  aspects: [],
   set: "f&f",
 };
 
@@ -75,6 +101,7 @@ var Fractured = {
     "blur_the_arc_of_years",
   ],
   aliases: [],
+  aspects: [],
   set: "je",
 };
 
@@ -94,6 +121,13 @@ var Wildfire = {
     "asphyxiating_smoke",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Transforming",
+      emote: "🏳️‍⚧️",
+      panel: ["https://i.imgur.com/rbmRVHp.png"],
+    },
+  ],
   set: "f&f",
 };
 
@@ -112,6 +146,7 @@ var Finder = {
     "aid_from_the_spiritspeakers",
   ],
   aliases: ["bird"],
+  aspects: [],
   set: "f&f",
 };
 
@@ -130,6 +165,31 @@ var Lightning = {
   ],
   aliases: ["bird"],
   set: "base",
+  aspects: [
+    {
+      name: "Pandemonium",
+      emote: "🐼",
+      panel: ["https://i.imgur.com/1774mnW.jpg"],
+    },
+    {
+      name: "Wind",
+      emote: "<:EAir:852604219210727434>",
+      panel: ["https://i.imgur.com/VwchE5U.jpg"],
+    },
+    {
+      name: "Immense",
+      emote: "<:Major:1386718312876216451>",
+      panel: ["https://i.imgur.com/YhXRPZK.jpg"],
+    },
+    {
+      name: "Sparking",
+      emote: "✨",
+      panel: [
+        "https://i.imgur.com/4jyHApi.png",
+        "https://i.imgur.com/SGlXMGB.png",
+      ],
+    },
+  ],
 };
 
 var Keeper = {
@@ -144,7 +204,13 @@ var Keeper = {
     "sacrosanct_wilderness",
     "towering_wrath",
   ],
-  aliases: [],
+  aliases: [
+    {
+      name: "Spreading Hostility",
+      emote: "<:TokenBadlands:852366051454746665>",
+      panel: ["https://i.imgur.com/cBY9Hmb.png"],
+    },
+  ],
   set: "b&c",
 };
 
@@ -161,6 +227,7 @@ var Trickster = {
     "overenthusiastic_arson",
   ],
   aliases: [],
+  aspects: [],
   set: "je",
 };
 
@@ -177,6 +244,13 @@ var Lure = {
     "softly_beckon_ever_inward",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Lair",
+      emote: "<:IncarnaLair:1386717472102682784>",
+      panel: ["https://i.imgur.com/dzPtyxm.png"],
+    },
+  ],
   set: "je",
 };
 
@@ -210,6 +284,13 @@ var Ocean = {
     "tidal_boon",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Deeps",
+      emote: "<:TokenDeeps1:1136437567244468234>",
+      panel: ["https://i.imgur.com/V9qIQ1y.png", "https://imgur.com/tZ0U4rx"],
+    },
+  ],
   set: "base",
 };
 
@@ -226,6 +307,16 @@ var Serpent = {
     "absorb_essence",
   ],
   aliases: ["snake", "snek"],
+  aspects: [
+    {
+      name: "Locus",
+      emote: "<:IncarnaLocus:1386717477903532113>",
+      panel: [
+        "https://i.imgur.com/YugqMW5.png",
+        "https://i.imgur.com/RwIk5e4.png",
+      ],
+    },
+  ],
   set: "f&f",
 };
 
@@ -242,6 +333,18 @@ var Fangs = {
     "terrifying_chase",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Encircle",
+      emote: "⭕",
+      panel: ["https://i.imgur.com/zKbLDmZ.png"],
+    },
+    {
+      name: "Unconstrained",
+      emote: "🔓",
+      panel: ["https://i.imgur.com/xcWtW6D.png"],
+    },
+  ],
   set: "b&c",
 };
 
@@ -258,6 +361,14 @@ var Memory = {
     "boon_of_ancient_memories",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Intensify",
+      emote: "‼️",
+      panel: ["https://i.imgur.com/t4F2GnB.png"],
+    },
+    { name: "Mentor", emote: "🧑‍🏫", panel: ["https://i.imgur.com/KDKA8d7.png"] },
+  ],
   set: "je",
 };
 
@@ -274,6 +385,13 @@ var Mist = {
     "dissolving_vapors",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Stranded",
+      emote: "<:Isolate:1386718311030587435>",
+      panel: ["https://i.imgur.com/bgKkiKH.png"],
+    },
+  ],
   set: "je",
 };
 
@@ -290,6 +408,7 @@ var Starlight = {
     "peace_of_the_nighttime_sky",
   ],
   aliases: [],
+  aspects: [],
   set: "je",
 };
 
@@ -306,6 +425,7 @@ var Stone = {
     "plows_shatter_on_rocky_ground",
   ],
   aliases: [],
+  aspects: [],
   set: "je",
 };
 
@@ -322,6 +442,18 @@ var Thunderspeaker = {
     "manifestation_of_power_and_glory",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Tactician",
+      emote: "🗺️",
+      panel: ["https://i.imgur.com/RTDZICL.png"],
+    },
+    {
+      name: "Warrior",
+      emote: "<:IncarnaWarrior:1386717491287560365>",
+      panel: ["https://i.imgur.com/oG4ybBt.png"],
+    },
+  ],
   set: "base",
 };
 
@@ -339,6 +471,38 @@ var Shadows = {
     "crops_wither_and_fade",
   ],
   aliases: [],
+  aspects: [
+    {
+      name: "Madness",
+      spirit: "Shadows Flicker Like Flame",
+      emote: "<:TokenStrife:852366051848093756>",
+      panel: ["https://i.imgur.com/sjjNNLB.jpg"],
+    },
+    {
+      name: "Reach",
+      spirit: "Shadows Flicker Like Flame",
+      emote: "🫳",
+      panel: ["https://i.imgur.com/1oIYl5s.jpg"],
+    },
+    {
+      name: "Foreboding",
+      spirit: "Shadows Flicker Like Flame",
+      emote: "<:TokenFear:852589106918981663>",
+      panel: ["https://i.imgur.com/iUUnawK.jpg"],
+    },
+    {
+      name: "Amorphous",
+      spirit: "Shadows Flicker Like Flame",
+      emote: "<:SpiritBlobby:852589110203645954>",
+      panel: ["https://i.imgur.com/VIZa5cI.jpg"],
+    },
+    {
+      name: "Dark Fire",
+      spirit: "Shadows Flicker Like Flame",
+      emote: "<:EFire:852590485549744180>",
+      panel: ["https://imgur.com/0xBcref.png"],
+    },
+  ],
   set: "base",
 };
 
@@ -352,6 +516,19 @@ var River = {
   uniques: ["boon_of_vigor", "rivers_bounty", "wash_away", "flash_floods"],
   aliases: [],
   set: "base",
+  aspects: [
+    {
+      name: "Sunshine",
+      emote: "<:ESun:852590484353843200>",
+      panel: ["https://i.imgur.com/AGZB0Bn.jpg"],
+    },
+    { name: "Travel", emote: "🚕", panel: ["https://i.imgur.com/lgC4gQ6.jpg"] },
+    {
+      name: "Haven",
+      emote: "<:Defend:1386718325694005350>",
+      panel: ["https://i.imgur.com/UlkeNZC.png"],
+    },
+  ],
 };
 
 var Vengeance = {
@@ -366,7 +543,7 @@ var Vengeance = {
     "fetid_breath_spreads_infection",
     "strike_low_with_sudden_fevers",
   ],
-  aspect: [],
+  aspects: [],
   aliases: [],
   set: "je",
 };
@@ -385,6 +562,19 @@ var Earth = {
     "rituals_of_destruction",
   ],
   aliases: [],
+  aspects: [
+    { name: "Might", emote: "💪", panel: ["https://i.imgur.com/dBOc7YI.jpg"] },
+    {
+      name: "Resilience",
+      emote: "🛡️",
+      panel: ["https://i.imgur.com/jSgVfcH.jpg"],
+    },
+    {
+      name: "Nourishing",
+      emote: "<:TokenVitality:1136437572822892544>",
+      panel: ["https://i.imgur.com/zaflknz.png"],
+    },
+  ],
   set: "base",
 };
 
@@ -401,6 +591,7 @@ var Volcano = {
     "pyroclastic_bombardment",
   ],
   aliases: [],
+  aspects: [],
   set: "je",
 };
 
@@ -419,6 +610,7 @@ var Fathomless = {
     "open_shifting_waterways",
   ],
   aliases: ["otter", "🦦"],
+  aspects: [],
   set: "horizons",
 };
 
@@ -436,6 +628,7 @@ var Devouring = {
     "mark_territory_with_scars_and_teeth",
   ],
   aliases: ["chomp"],
+  aspects: [],
   set: "horizons",
 };
 
@@ -453,6 +646,7 @@ var Eyes = {
     "whispered_guidance_through_the_night",
   ],
   aliases: ["👀"],
+  aspects: [],
   set: "horizons",
 };
 
@@ -470,6 +664,7 @@ var Rising = {
     "sweltering_exhaustion",
   ],
   aliases: ["heat", "stone and sand"],
+  aspects: [],
   set: "horizons",
 };
 
@@ -487,6 +682,7 @@ var SunBright = {
     "tempest_of_leaves_and_branches",
   ],
   aliases: ["whirlwind", "kitty", "sunkitty"],
+  aspects: [],
   set: "horizons",
 };
 
@@ -504,6 +700,7 @@ var Breath = {
     "terror_of_the_hunted",
   ],
   aliases: ["boddys", "spine", "nal"],
+  aspects: [],
   set: "ni",
 };
 
@@ -522,6 +719,7 @@ var Dances = {
     "rumblings_portent_a_greater_quake",
   ],
   aliases: ["💃", "🕺"],
+  aspects: [],
   set: "ni",
 };
 
@@ -538,6 +736,7 @@ var Ember = {
     "terrifying_rampage",
   ],
   aliases: ["stomp", "eeb"],
+  aspects: [],
   set: "ni",
 };
 
@@ -554,6 +753,7 @@ var Hearth = {
     "surrounded_by_the_dahan",
   ],
   aliases: [],
+  aspects: [],
   set: "ni",
 };
 
@@ -570,6 +770,7 @@ var Relentless = {
     "wither_bodies_scar_stones",
   ],
   aliases: ["gaze", "🏳️‍🌈"],
+  aspects: [],
   set: "ni",
 };
 
@@ -586,6 +787,7 @@ var Towering = {
     "blooming_of_the_rocks_and_trees",
   ],
   aliases: ["the tree stands tall"],
+  aspects: [],
   set: "ni",
 };
 
@@ -602,6 +804,7 @@ var Voice = {
     "exhale_confusion_and_delirium",
   ],
   aliases: [],
+  aspects: [],
   set: "ni",
 };
 
@@ -625,6 +828,7 @@ var Wounded = {
     "waters taste of ruin",
   ],
   set: "ni",
+  aspects: [],
 };
 
 var spirits = [
