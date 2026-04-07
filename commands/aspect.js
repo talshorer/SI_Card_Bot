@@ -1,5 +1,10 @@
 const { getCardName } = require("./sendCardLink.js");
-// const { aspects, aspectsNames } = require("./aspectNames.js");
+const { spirits } = require("./spiritNames.js");
+const levenshtein = require("js-levenshtein");
+
+const allAspects = buildAspectList(spirits);
+const aspectByName = buildAspectByNameMap(allAspects); // exact name -> aspectObj
+const aspectByEmote = buildAspectByEmoteMap(allAspects); // emote -> aspectObj
 
 module.exports = {
   name: "aspect",
@@ -7,11 +12,12 @@ module.exports = {
   public: true,
   execute(msg, args) {
     if (!args || args.length === 0) {
-      msg.channel.send("Usage: aspect <aspect name|emoji> [card number]");
-      return;
+      return msg.channel.send(
+        "Usage: aspect <aspect name|emoji> [card number] (use -aspects for a list of a spirit's aspects)",
+      );
     }
 
-    // if last arg is a number, use it as card index
+    // extract optional trailing number
     let requestedIndex;
     const last = args[args.length - 1];
     if (!isNaN(last) && last !== "") {
@@ -19,80 +25,145 @@ module.exports = {
     }
 
     const query = args.join(" ").trim();
-    // detect emoji-style input (contains pictograph or starts with '<')
+    if (!query)
+      return msg.channel.send(
+        "Usage: aspect <aspect name|emoji> [card number] (use -aspects for a list of a spirit's aspects)",
+      );
+
+    // emoji query
     if (isEmojiQuery(query)) {
-      const aspectObj = findAspectByEmoji(query);
+      const aspectObj = aspectByEmote[query];
       if (!aspectObj) return msg.channel.send("Aspect could not be found");
-      sendAspectPanel(msg, aspectObj.panel, requestedIndex);
-      return;
+      return sendAspectPanel(msg, aspectObj.panel, requestedIndex);
     }
 
-    // name search: normalize to lowercase for comparison
     const normalized = query.toLowerCase();
-    // quick exact name check against aspectsNames
-    if (aspectsNames.some((n) => n.toLowerCase() === normalized)) {
-      const aspectObj = findAspectByName(normalized);
-      if (!aspectObj) return msg.channel.send("Aspect could not be found");
-      sendAspectPanel(msg, aspectObj.panel, requestedIndex);
-      return;
+
+    // exact name lookup
+    if (aspectByName[normalized]) {
+      return sendAspectPanel(
+        msg,
+        aspectByName[normalized].panel,
+        requestedIndex,
+      );
     }
 
-    // fallback: try closest spirit match and list its aspects (mirrors original behavior)
-    const spirit = getCardName(query, require("./aspectNames.js").spirits);
-    const spiritIndex = findSpiritIndex(spirit);
-    if (spiritIndex !== null) {
-      if (aspects[spiritIndex].length === 1) {
-        sendAspectPanel(msg, aspects[spiritIndex][0].panel, requestedIndex);
-      } else {
-        let out = `${spirit} has the following aspects:\n`;
-        out +=
-          aspects[spiritIndex].map((a) => `${a.name} (${a.emote})`).join(", ") +
-          "\n";
-        msg.channel.send(out);
-      }
-      return;
+    // fuzzy search across aspect names (find best single match)
+    const best = findClosestAspect(normalized, allAspects);
+    if (best) {
+      return sendAspectPanel(msg, best.panel, requestedIndex);
     }
 
-    msg.channel.send("Aspect could not be found");
+    return msg.channel.send("Aspect could not be found");
   },
 };
 
+function buildAspectList(spiritsArray) {
+  const list = [];
+  for (const sp of spiritsArray || []) {
+    if (!Array.isArray(sp.aspects)) continue;
+    for (const a of sp.aspects) {
+      // attach parent spirit title for context if needed
+      list.push(Object.assign({ spiritTitle: sp.title || sp.name }, a));
+    }
+  }
+  return list;
+}
+
+/**
+ * Generates a map of all aspects that is queryable by names
+ * @param {*} aspectList
+ * @returns
+ */
+function buildAspectByNameMap(aspectList) {
+  const map = {};
+  for (const a of aspectList) {
+    if (!a || !a.name) continue;
+    map[a.name.toLowerCase()] = a;
+  }
+  return map;
+}
+
+/**
+ * Generates a map of all aspects that is queryable by emojis
+ * @param {*} aspectList
+ * @returns
+ */
+function buildAspectByEmoteMap(aspectList) {
+  const map = {};
+  for (const a of aspectList) {
+    if (!a || !a.emote) continue;
+    map[a.emote] = a;
+  }
+  return map;
+}
+
+/**
+ * Returns whether a given string is a discord emoji
+ * @param {*} q
+ * @returns
+ */
 function isEmojiQuery(q) {
   return /\p{Extended_Pictographic}/u.test(q) || q.charAt(0) === "<";
 }
 
-function findAspectByEmoji(emote) {
-  for (let i = 0; i < aspects.length; i++) {
-    const match = aspects[i].find((a) => a.emote === emote);
-    if (match) return match;
-  }
-  return null;
-}
+/**
+ * Returns the closest aspect object via levenstein style search
+ * @param {*} search
+ * @param {*} aspectList
+ * @returns
+ */
+function findClosestAspect(search, aspectList) {
+  if (!search || !Array.isArray(aspectList) || aspectList.length === 0)
+    return null;
+  let best = null;
+  let bestScore = Infinity;
 
-function findAspectByName(lowerName) {
-  for (let i = 0; i < aspects.length; i++) {
-    for (let j = 0; j < aspects[i].length; j++) {
-      if (aspects[i][j].name.toLowerCase() === lowerName) return aspects[i][j];
+  for (const a of aspectList) {
+    if (!a.name) continue;
+    const name = a.name.toLowerCase();
+    // if name contains the search as substring prefer that (score 0)
+    if (name.indexOf(search) !== -1) {
+      return a;
+    }
+    // else compute levenshtein on same-length substrings as before
+    const lenDiff = name.length - search.length;
+    if (lenDiff >= 0) {
+      for (let i = 0; i <= lenDiff; i++) {
+        const sub = name.substring(i, i + search.length);
+        const dist = levenshtein(sub, search);
+        if (dist < bestScore) {
+          bestScore = dist;
+          best = a;
+        }
+      }
+    } else {
+      // search longer than name: compare whole name
+      const dist = levenshtein(name, search);
+      if (dist < bestScore) {
+        bestScore = dist;
+        best = a;
+      }
     }
   }
-  return null;
-}
 
-function findSpiritIndex(target) {
-  const { spirits } = require("./aspectNames.js");
-  for (let i = 0; i < spirits.length; i++) if (spirits[i] === target) return i;
-  return null;
+  // threshold: avoid returning very distant matches
+  const MAX_ACCEPTABLE_DISTANCE = Math.max(1, Math.floor(search.length / 2));
+  return best && bestScore <= MAX_ACCEPTABLE_DISTANCE ? best : null;
 }
 
 function sendAspectPanel(msg, panel, index) {
   if (!Array.isArray(panel)) {
-    msg.channel.send(panel);
-    return;
+    return msg.channel.send(panel);
   }
-  if (!index || isNaN(index) || index < 1 || index > panel.length) {
-    // default to first panel if index invalid
-    for (const p of [panel[0]]) msg.channel.send(p);
-    return;
+
+  // if a valid index was supplied, send only that panel
+  if (index && !isNaN(index) && index >= 1 && index <= panel.length) {
+    return msg.channel.send(panel[index - 1]);
   }
-  msg.channel.send(panel[index - 1]);
+
+  // otherwise send all panels in order
+  for (const p of panel) {
+    msg.channel.send(p);
+  }
 }

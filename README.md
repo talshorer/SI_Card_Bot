@@ -33,7 +33,8 @@ Discord App for Spirit island
 - -random board (all/thematic (defaults to regular))
 - -spirit (front/back) [keywords]
 - -adversary (name)
-- -aspect (spirit or aspect) [aspect keywords] [number of card (i.e. Locus part 1/2)]
+- -aspect (aspect name) [number of card (i.e. Locus part 1/2)]
+- -aspects (spirit name)
 - -healing [keyword]
 - -incarna [keyword] (front/back)
 - -scenario (front/back) [keywords]
