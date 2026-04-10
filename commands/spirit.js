@@ -1,4 +1,5 @@
-const spirits = require("./spiritNames.js").spirits;
+// const spirits = require("./spiritNames.js").spirits;
+const { spirits } = require("./spiritNames.js");
 const levenshtein = require("js-levenshtein");
 const globals = require("../globals.js");
 
@@ -45,6 +46,7 @@ module.exports = {
 
 /**
  * Returns a spirit object when given a string
+ * Tries to use exact substring match or failing that levenstein distance
  * @param {*} spiritName
  */
 function searchForSpirit(searchStringParam) {
@@ -58,13 +60,18 @@ function searchForSpirit(searchStringParam) {
   // Start with simple substring search
   for (let i = 0; i < spirits.length; i++) {
     const spirit = spirits[i];
-    if (spirit.name.toLowerCase().indexOf(searchString) >= 0) {
+    const nameLower = (spirit.name || "").toLowerCase();
+    if (nameLower.indexOf(searchString) >= 0) {
       foundSpirits.push(spirit);
-    } else {
-      for (alias of spirit.aliases) {
-        if (alias.indexOf(searchString) >= 0) {
-          foundSpirits.push(spirit);
-        }
+      continue;
+    }
+
+    const aliases = Array.isArray(spirit.aliases) ? spirit.aliases : [];
+    for (const rawAlias of aliases) {
+      const alias = String(rawAlias || "").toLowerCase();
+      if (alias.indexOf(searchString) >= 0) {
+        foundSpirits.push(spirit);
+        break;
       }
     }
   }

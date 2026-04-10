@@ -1,193 +1,169 @@
 const { getCardName } = require("./sendCardLink.js");
-const { aspectsNames, spirits, aspects } = require("./aspectNames.js");
-const { DiscordAPIError } = require("discord.js");
+const { spirits } = require("./spiritNames.js");
+const levenshtein = require("js-levenshtein");
+
+const allAspects = buildAspectList(spirits);
+const aspectByName = buildAspectByNameMap(allAspects); // exact name -> aspectObj
+const aspectByEmote = buildAspectByEmoteMap(allAspects); // emote -> aspectObj
 
 module.exports = {
   name: "aspect",
-  description:
-    "Lists all aspects for a given spirit or shows any cards for a given aspect.",
-  public: true, //has to be true to show as a command
+  description: "Shows cards for a given aspect (by name or emoji).",
+  public: true,
   execute(msg, args) {
-    // TODO: refactor this whole command to be a bit cleaner, the logic's tangled and could easily be
-    // extrapolated into separate function calls and add exception handling
-    console.log("aspect command");
-
-    var messages = "";
-
-    if (args.length == 0) {
-      messages = "Currently, the following spirits have aspects: \n";
-      for (var s = 0; s < spirits.length; s++) {
-        messages += spirits[s] + ": ";
-        messages = listAspect(messages, parseInt(s));
-      }
-    } else if (args.length == 1) {
-      // check if argument is a valid aspect
-      aspectQuery = args[0];
-      var found = false;
-
-      // if the param contains any emoji OR starts with <, assume it's an emoji
-      if (
-        /\p{Extended_Pictographic}/u.test(aspectQuery) ||
-        aspectQuery.charAt(0) == "<"
-      ) {
-        console.log(`emoji search ${aspectQuery}`);
-        for (var a = 0; a < aspects.length; a++) {
-          const spiritAspectsCollection = aspects[a];
-          const emojiMatch = spiritAspectsCollection.filter(
-            (aspect) => aspect.emote == aspectQuery,
-          );
-          if (emojiMatch.length != 0) {
-            var aspect = emojiMatch[0];
-            console.log(aspect);
-            messages = aspect.panel;
-            found = true;
-          }
-        }
-      } else {
-        // lowercase the string because emoji search is case sensitive, explicit name search shouldn't be
-        aspectQuery = aspectQuery.toLowerCase();
-        console.log("Doing aspect name search");
-        // otherwise, assume you're searching by aspect name
-        for (var a = 0; a < aspectsNames.length; a++) {
-          if (aspectsNames[a].localeCompare(aspectQuery) == 0) {
-            var aspect = findAspect(aspectQuery);
-            messages = aspect.panel;
-            found = true;
-          }
-        }
-      }
-
-      // if not a valid emoji or aspect, check for the closest spirit name and return their aspects
-      if (!found) {
-        console.log("Doing spirit name search");
-        var spirit = getCardName(args[0], spirits);
-        var s = findSpirit(spirit);
-        // if that spirit only has one aspect, send the panels
-        if (aspects[s].length == 1) {
-          messages = aspects[s][0].panel;
-        }
-        // otherwise, list them
-        else {
-          messages = spirit + " has the following aspects: \n";
-          messages = listAspect(messages, parseInt(s));
-        }
-      }
-    } else {
-      // if the last argument is a number, pop it and use it to query for a specific aspect card
-      if (!isNaN(args[args.length - 1])) {
-        var numAspectCard = parseInt(args.pop());
-      }
-
-      // then, concat the remaining arguments and search for an aspect with that name
-      aspectQuery = args.join(" ").toLowerCase();
-      // check if the FIRST argument is an aspect
-      aspect = findAspect(aspectQuery);
-      if (aspect) {
-        // if it is, check if it has >1 aspect card
-        if (aspect.panel.length == 1) {
-          // if it doesn't, return the first aspect card
-          messages = aspect.panel[0];
-        }
-        // if it does, return that chosen aspect card
-        else {
-          // sanitising input
-          if (
-            numAspectCard == NaN ||
-            numAspectCard > aspect.panel.length ||
-            numAspectCard < 1
-          ) {
-            messages = aspect.panel[0];
-          } else {
-            messages = aspect.panel[numAspectCard - 1];
-          }
-        }
-      }
-      // otherwise, messages saying that this aspect does not exist
-      else {
-        messages = "Aspect could not be found";
-      }
+    if (!args || args.length === 0) {
+      return msg.channel.send(
+        "Usage: aspect <aspect name|emoji> [card number] (use -aspects for a list of a spirit's aspects)",
+      );
     }
 
-    if (Array.isArray(messages)) {
-      for (const message_ind of messages) {
-        msg.channel.send(message_ind);
-      }
-    } else {
-      msg.channel.send(messages);
+    // extract optional trailing number
+    let requestedIndex;
+    const last = args[args.length - 1];
+    if (!isNaN(last) && last !== "") {
+      requestedIndex = parseInt(args.pop(), 10);
     }
+
+    const query = args.join(" ").trim();
+    if (!query)
+      return msg.channel.send(
+        "Usage: aspect <aspect name|emoji> [card number] (use -aspects for a list of a spirit's aspects)",
+      );
+
+    // emoji query
+    if (isEmojiQuery(query)) {
+      const aspectObj = aspectByEmote[query];
+      if (!aspectObj) return msg.channel.send("Aspect could not be found");
+      return sendAspectPanel(msg, aspectObj.panel, requestedIndex);
+    }
+
+    const normalized = query.toLowerCase();
+
+    // exact name lookup
+    if (aspectByName[normalized]) {
+      return sendAspectPanel(
+        msg,
+        aspectByName[normalized].panel,
+        requestedIndex,
+      );
+    }
+
+    // fuzzy search across aspect names (find best single match)
+    const best = findClosestAspect(normalized, allAspects);
+    if (best) {
+      return sendAspectPanel(msg, best.panel, requestedIndex);
+    }
+
+    return msg.channel.send("Aspect could not be found");
   },
 };
 
+function buildAspectList(spiritsArray) {
+  const list = [];
+  for (const sp of spiritsArray || []) {
+    if (!Array.isArray(sp.aspects)) continue;
+    for (const a of sp.aspects) {
+      // attach parent spirit title for context if needed
+      list.push(Object.assign({ spiritTitle: sp.title || sp.name }, a));
+    }
+  }
+  return list;
+}
+
 /**
- * Returns a string list of all aspects for a given spirit
- * @param {*} messages
- * @param {*} s -> spirit object to list aspects for
+ * Generates a map of all aspects that is queryable by names
+ * @param {*} aspectList
  * @returns
  */
-function listAspect(messages, s) {
-  console.log(aspects[s]);
-  for (var a = 0; a < aspects[parseInt(s)].length; a++) {
-    messages += `${aspects[s][a].name} (${aspects[s][a].emote})`;
-    if (a < aspects[s].length - 1) {
-      messages += ", ";
+function buildAspectByNameMap(aspectList) {
+  const map = {};
+  for (const a of aspectList) {
+    if (!a || !a.name) continue;
+    map[a.name.toLowerCase()] = a;
+  }
+  return map;
+}
+
+/**
+ * Generates a map of all aspects that is queryable by emojis
+ * @param {*} aspectList
+ * @returns
+ */
+function buildAspectByEmoteMap(aspectList) {
+  const map = {};
+  for (const a of aspectList) {
+    if (!a || !a.emote) continue;
+    map[a.emote] = a;
+  }
+  return map;
+}
+
+/**
+ * Returns whether a given string is a discord emoji
+ * @param {*} q
+ * @returns
+ */
+function isEmojiQuery(q) {
+  return /\p{Extended_Pictographic}/u.test(q) || q.charAt(0) === "<";
+}
+
+/**
+ * Returns the closest aspect object via levenstein style search
+ * @param {*} search
+ * @param {*} aspectList
+ * @returns
+ */
+function findClosestAspect(search, aspectList) {
+  if (!search || !Array.isArray(aspectList) || aspectList.length === 0)
+    return null;
+  let best = null;
+  let bestScore = Infinity;
+
+  for (const a of aspectList) {
+    if (!a.name) continue;
+    const name = a.name.toLowerCase();
+    // if name contains the search as substring prefer that (score 0)
+    if (name.indexOf(search) !== -1) {
+      return a;
+    }
+    // else compute levenshtein on same-length substrings as before
+    const lenDiff = name.length - search.length;
+    if (lenDiff >= 0) {
+      for (let i = 0; i <= lenDiff; i++) {
+        const sub = name.substring(i, i + search.length);
+        const dist = levenshtein(sub, search);
+        if (dist < bestScore) {
+          bestScore = dist;
+          best = a;
+        }
+      }
     } else {
-      messages += "\n";
-    }
-  }
-  return messages;
-}
-
-/**
- * Returns the index for a given spirit in the list of spirits with aspects, or null if there is no spirit
- * @param {*} target
- * @returns
- */
-function findSpirit(target) {
-  for (var s = 0; s < spirits.length; s++) {
-    if (target == spirits[s]) {
-      return s;
-    }
-  }
-  return null;
-}
-
-/**
- * Returns the aspect object for a given title or null if none are found
- * @param {*} target -> name of aspect to query for
- * @param {*} aspectList -> list of objects to iterate through
- * @returns
- */
-function findAspect(target, aspectList = aspects) {
-  console.log("FindAspect: " + target);
-
-  for (var a = 0; a < aspectList.length; a++) {
-    for (var b = 0; b < aspectList[a].length; b++) {
-      if (target == aspectList[a][b].name.toLowerCase()) {
-        return aspectList[a][b];
+      // search longer than name: compare whole name
+      const dist = levenshtein(name, search);
+      if (dist < bestScore) {
+        bestScore = dist;
+        best = a;
       }
     }
   }
-  console.log("failed find aspect");
 
-  return null;
+  // threshold: avoid returning very distant matches
+  const MAX_ACCEPTABLE_DISTANCE = Math.max(1, Math.floor(search.length / 2));
+  return best && bestScore <= MAX_ACCEPTABLE_DISTANCE ? best : null;
 }
 
-/**
- * Finds the closest spirit to the input string and returns the aspect closest to the aspect search string for that spirit
- * @param {*} aspect -> string of aspect to find
- * @param {*} spirit -> string of spirit to find
- * @returns
- */
-function searchSpiritAspect(aspect, spirit) {
-  var aspectList = [];
-  spirit = getCardName(spirit, spirits);
-  var s = findSpirit(spirit);
-
-  for (var a = 0; a < aspects[s].length; a++) {
-    aspectList.push(aspects[s][a].name);
+function sendAspectPanel(msg, panel, index) {
+  if (!Array.isArray(panel)) {
+    return msg.channel.send(panel);
   }
 
-  aspect = getCardName(aspect, aspectList);
+  // if a valid index was supplied, send only that panel
+  if (index && !isNaN(index) && index >= 1 && index <= panel.length) {
+    return msg.channel.send(panel[index - 1]);
+  }
 
-  return findAspect(aspect);
+  // otherwise send all panels in order
+  for (const p of panel) {
+    msg.channel.send(p);
+  }
 }
