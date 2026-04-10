@@ -54,39 +54,45 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Pull image on EC2 and restart container
+      - name: Deploy to EC2
         env:
           IMAGE_URI: ${{ needs.build-and-push.outputs.image_uri }}
           EC2_USER: ${{ secrets.EC2_SSH_USER || 'ubuntu' }}
         run: |
-          ssh -i ~/.ssh/id_rsa $EC2_USER@${{ secrets.EC2_HOST }} << EOF
-            set -e
-            # variables from runner
-            IMAGE_URI="${IMAGE_URI}"
-            # Ensure docker is running
-            sudo systemctl enable --now docker || true
+          echo "Deploying IMAGE_URI=${IMAGE_URI}"
 
-            # Optional: login to ECR on EC2 (use instance role or login with AWS CLI)
-            # If using instance IAM role with ECR permissions, you can get login token:
-            if command -v aws >/dev/null 2>&1; then
-              aws ecr get-login-password --region "${{ secrets.AWS_REGION }}" | sudo docker login --username AWS --password-stdin "$(aws sts get-caller-identity --query Account --output text).dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com"
-            fi
+          ssh -i ~/.ssh/id_rsa \
+            $EC2_USER@${{ secrets.EC2_HOST }} \
+            IMAGE_URI="${IMAGE_URI}" \
+            'bash -s' << 'EOF'
+          set -e
 
-            # Pull the new image
-            sudo docker pull "\${IMAGE\_URI}"
+          echo "EC2 received IMAGE_URI=$IMAGE_URI"
 
-            # Stop & remove old container (if exists)
-            if sudo docker ps -a --format '{{.Names}}' | grep -q '^si-card-bot$'; then
-              sudo docker stop si-card-bot || true
-              sudo docker rm si-card-bot || true
-            fi
+          # Ensure docker is running
+          sudo systemctl enable --now docker || true
 
-            # Run container with env from file (recommended)
-            # Ensure ~/.env on EC2 contains DISCORD_TOKEN=... and any other vars
-            sudo docker run -d --name si-card-bot --restart unless-stopped \
-              --env-file ~/.env \
-              "\${IMAGE\_URI}"
+          # Login to ECR using instance role
+          if command -v aws >/dev/null 2>&1; then
+            ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+            aws ecr get-login-password --region '${{ secrets.AWS_REGION }}' \
+              | sudo docker login --username AWS --password-stdin \
+                "${ACCOUNT_ID}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com"
+          fi
 
-            # Optional: show logs
-            sudo docker logs --tail 50 si-card-bot || true
+          # Pull the new image
+          sudo docker pull "$IMAGE_URI"
+
+          # Stop & remove old container (if exists)
+          if sudo docker ps -a --format '{{.Names}}' | grep -q '^si-card-bot$'; then
+            sudo docker stop si-card-bot || true
+            sudo docker rm si-card-bot || true
+          fi
+
+          # Run container with env file
+          sudo docker run -d --name si-card-bot --restart unless-stopped \
+            --env-file ~/.env \
+            "$IMAGE_URI"
+
+          sudo docker logs --tail 50 si-card-bot || true
           EOF
