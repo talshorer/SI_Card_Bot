@@ -34,7 +34,7 @@ jobs:
           REPO=${{ secrets.ECR_REPOSITORY }}
           ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
           IMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${REPO}:${IMAGE_TAG}"
-          echo "image_uri=$IMAGE_URI" >> $GITHUB_OUTPUT
+          echo "image_uri=$IMAGE_URI" >> "$GITHUB_OUTPUT"
           docker build -t "$IMAGE_URI" .
           docker push "$IMAGE_URI"
         env:
