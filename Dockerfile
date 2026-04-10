@@ -14,5 +14,5 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 ENV NODE_ENV=production
 # Discord bots don't need ports exposed; keep for health endpoints if you add one
-# EXPOSE 3000
+EXPOSE 3000
 CMD ["node", "index.js"]

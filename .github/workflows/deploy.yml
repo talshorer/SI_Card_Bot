@@ -1,37 +1,92 @@
-name: Auto Deploy to EC2
+name: Build & Deploy to EC2 (via ECR)
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+
+env:
+  IMAGE_TAG: ${{ github.sha }}
 
 jobs:
-  deploy:
+  build-and-push:
     runs-on: ubuntu-latest
-
+    outputs:
+      image_uri: ${{ steps.push.outputs.image_uri }}
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up SSH
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Login to ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build and push image to ECR
+        id: push
+        run: |
+          set -e
+          REPO=${{ secrets.ECR_REPOSITORY }}
+          ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+          IMAGE_URI="${ACCOUNT_ID}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${REPO}:${IMAGE_TAG}"
+          echo "IMAGE_URI=$IMAGE_URI" >> $GITHUB_OUTPUT
+          docker build -t "$IMAGE_URI" .
+          docker push "$IMAGE_URI"
+        env:
+          IMAGE_TAG: ${{ env.IMAGE_TAG }}
+
+  deploy-to-ec2:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (for SSH helper files, optional)
+        uses: actions/checkout@v4
+
+      - name: Setup SSH key
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Debug SSH Setup
+      - name: Pull image on EC2 and restart container
+        env:
+          IMAGE_URI: ${{ needs.build-and-push.outputs.image_uri }}
+          EC2_USER: ${{ secrets.EC2_SSH_USER || 'ubuntu' }}
         run: |
-          echo "Key length: $(echo "${{ secrets.EC2_SSH_KEY }}" | wc -c)"
-          echo "Host: ${{ secrets.EC2_HOST }}"
-          echo "User: ubuntu"
-          ls -la ~/.ssh
-          head -n 2 ~/.ssh/id_rsa
+          ssh -i ~/.ssh/id_rsa $EC2_USER@${{ secrets.EC2_HOST }} << 'EOF'
+            set -e
+            # variables from runner
+            IMAGE_URI="${IMAGE_URI}"
+            # Ensure docker is running
+            sudo systemctl enable --now docker || true
 
-      - name: Pull latest code and restart app
-        run: |
-          ssh -v -i ~/.ssh/id_rsa ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
-            cd ~/SI_Card_Bot
-            git pull origin main
-            pm2 restart index.js
+            # Optional: login to ECR on EC2 (use instance role or login with AWS CLI)
+            # If using instance IAM role with ECR permissions, you can get login token:
+            if command -v aws >/dev/null 2>&1; then
+              aws ecr get-login-password --region "${{ secrets.AWS_REGION }}" | sudo docker login --username AWS --password-stdin "$(aws sts get-caller-identity --query Account --output text).dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com"
+            fi
+
+            # Pull the new image
+            sudo docker pull "${IMAGE_URI}"
+
+            # Stop & remove old container (if exists)
+            if sudo docker ps -a --format '{{.Names}}' | grep -q '^si-card-bot$'; then
+              sudo docker stop si-card-bot || true
+              sudo docker rm si-card-bot || true
+            fi
+
+            # Run container with env from file (recommended)
+            # Ensure ~/.env on EC2 contains DISCORD_TOKEN=... and any other vars
+            sudo docker run -d --name si-card-bot --restart unless-stopped \
+              --env-file ~/.env \
+              "${IMAGE_URI}"
+
+            # Optional: show logs
+            sudo docker logs --tail 50 si-card-bot || true
           EOF

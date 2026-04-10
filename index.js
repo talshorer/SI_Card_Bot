@@ -1,15 +1,10 @@
-/*
-    Author: Carlo I Gonzalez "SpeedyOlrac"
-    Desciption: THis bot is made to help spirit island card and spirit panel look ups.
-        Now has random Spirit and adversary fuctions.
-        Creates link to the Spirit ISland FAQ page.
-        Expand Search to other commands
-    Version 2.8.2 role bot  
-*/
+/* Loads all associated commands and exposes health endpoint
+ */
 
 require("dotenv").config();
 const fs = require("fs");
 const Discord = require("discord.js");
+const express = require("express");
 
 const {
   Client,
@@ -30,6 +25,27 @@ const bot = new Client({
 });
 
 const PREFIX = "-";
+let ready = false; // readiness flag
+
+// --- health server ---
+const app = express();
+const HEALTH_PORT = parseInt(process.env.HEALTH_PORT || "3000", 10);
+
+app.get("/healthz", (req, res) => {
+  // basic liveness: process up
+  res.status(200).send("ok");
+});
+
+app.get("/ready", (req, res) => {
+  // readiness: bot connected and ready to serve
+  if (ready) return res.status(200).send("ready");
+  return res.status(503).send("not ready");
+});
+
+app.listen(HEALTH_PORT, () => {
+  console.log(`Health endpoints listening on port ${HEALTH_PORT}`);
+});
+// --- end health server ---
 
 bot.commands = new Collection();
 
@@ -39,18 +55,17 @@ const commandFiles = fs
 
 for (const file of commandFiles) {
   const command = require(`./commands/${file}`);
-  //if(command.public){
   bot.commands.set(command.name, command);
-  //}
 }
 
 bot.once("ready", async () => {
   console.log("This bot is online");
+  ready = true;
 
   // Set bot's presence
   bot.user.setPresence({
     activities: [{ name: `for -help`, type: ActivityType.Watching }],
-    status: "for -help",
+    status: "online",
   });
 
   console.log(bot.commands.get("spirit").name);
@@ -58,16 +73,9 @@ bot.once("ready", async () => {
 
 bot.on("messageCreate", async (msg) => {
   if (!msg.content.startsWith(PREFIX)) return;
-
   let args = msg.content.slice(PREFIX.length).trim().split(" ");
   let command = args.shift().toLowerCase();
   console.log(command);
-
-  // if (!isNaN(parseInt(command))) {
-  //     args = [command]
-  //     command = "choose"
-  // }
-  //
 
   if (!bot.commands.has(command)) return console.log("command not in list");
 
@@ -78,4 +86,12 @@ bot.on("messageCreate", async (msg) => {
   }
 });
 
-bot.login();
+// use DISCORD_TOKEN from env
+if (!process.env.DISCORD_TOKEN) {
+  console.error("Missing DISCORD_TOKEN in environment");
+  process.exit(1);
+}
+bot.login(process.env.DISCORD_TOKEN).catch((err) => {
+  console.error("Failed to login:", err);
+  process.exit(1);
+});
