@@ -1,0 +1,1000 @@
+[
+  {
+    "id": "the-kingdom-of-brandenburg-prussia",
+    "name": "The Kingdom of Brandenburg-Prussia",
+    "title": "prussia",
+    "emote": "<:FlagBrandenburgPrussiaBP:1487249033104855253>",
+    "aliases": ["<:FlagBrandenburgPrussiaBP:1487249033104855253>", "bp"],
+    "flagImage": "images/flags/Brand-Prussia_Flag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-brandenburg-prussia/panel.jpg",
+    "escalation": {
+      "name": "Land Rush",
+      "effect": "On each board with :InvaderTown:/:InvaderCity:, add 1 :InvaderTown: to a land without :InvaderTown:."
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 1,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 2,
+        "fearCards": [0, 0, 0],
+        "rules": [
+          {
+            "name": "Fast Start",
+            "phases": ["setup"],
+            "effect": "During Setup, on each board add 1 :InvaderTown: to land #3."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 4,
+        "fearCards": [0, 0, 0],
+        "rules": [
+          {
+            "name": "Surge of Colonists",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, put 1 of the Stage III cards between Stage I and Stage II.",
+            "exceptions": [
+              {
+                "with": {
+                  "any": true
+                },
+                "note": "The early Stage III Card this creates still gets hit by a Stage III Escalation (from the Supporting Adversary) — Escalations care about what a card is, not what stage of the game it's currently in."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 6,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Efficient",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, remove an additional Stage I card."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 7,
+        "fearCards": [1, 1, 0],
+        "rules": [
+          {
+            "name": "Aggressive Timetable",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, remove an additional Stage II card."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 9,
+        "fearCards": [1, 1, 0],
+        "rules": [
+          {
+            "name": "Ruthlessly Efficient",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, remove an additional Stage I card."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 10,
+        "fearCards": [1, 1, 1],
+        "rules": [
+          {
+            "name": "Terrifyingly Efficient",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, remove all Stage I cards.",
+            "exceptions": [
+              {
+                "with": {
+                  "any": true
+                },
+                "note": "This can trigger a Stage III Escalation from the Supporting Adversary during Setup — e.g. even HME's Escalation, since it cares about cards advancing, not specifically the Advance Invader Cards step."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-kingdom-of-england",
+    "name": "The Kingdom of England",
+    "title": "england",
+    "emote": "<:FlagEngland:852366012175482900>",
+    "aliases": ["<:FlagEngland:852366012175482900>", "🏴󠁧󠁢󠁥󠁮󠁧󠁿"],
+    "flagImage": "images/flags/England_WrinkledFlag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-england/panel.jpg",
+    "lossCondition": {
+      "name": "Proud & Mighty Capital",
+      "effect": "If 7 or more :InvaderTown:/:InvaderCity: are ever in a single land, the Invaders win."
+    },
+    "escalation": {
+      "name": "Building Boom",
+      "effect": "On each board with :InvaderTown:/:InvaderCity:, Build in the land with the most :InvaderTown:/:InvaderCity:."
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 1,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 3,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Indentured Servants Earn Land",
+            "phases": ["build"],
+            "effect": "Invader Build Cards affect matching lands without Invaders if they are adjacent to at least 2 :InvaderTown:/:InvaderCity:s."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 4,
+        "fearCards": [1, 1, 0],
+        "rules": [
+          {
+            "name": "Criminals and Malcontents",
+            "phases": ["setup"],
+            "effect": "During Setup, on each board add 1 :InvaderCity: to land #1 and 1 :InvaderTown: to land #2."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 6,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "High Immigration (I)",
+            "phases": ["build"],
+            "effect": "Put the \"High Immigration\" tile on the Invader board, to the left of \"Ravage\". The Invaders take this Build action each Invader phase before Ravaging. Cards slide left from Ravage to it, and from it to the discard pile. Remove the tile when a Stage II card slides onto it, putting that card in the discard."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 7,
+        "fearCards": [1, 2, 2],
+        "rules": [
+          {
+            "name": "High Immigration (full)",
+            "phases": ["build"],
+            "replaces": 3,
+            "effect": "Put the \"High Immigration\" tile on the Invader board, to the left of \"Ravage\". The Invaders take this Build action each Invader phase before Ravaging. Cards slide left from Ravage to it, and from it to the discard pile. The tile remains out the entire game."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 9,
+        "fearCards": [1, 2, 2],
+        "rules": [
+          {
+            "name": "Local Autonomy",
+            "phases": ["ongoing"],
+            "effect": ":InvaderTown:/:InvaderCity: have +1 Health."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 10,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "Independent Resolve",
+            "phases": ["setup"],
+            "effect": "During Setup, add an additional 1 :TokenFear: to the Fear Pool per player in the game."
+          },
+          {
+            "name": "Independent Resolve",
+            "phases": ["build"],
+            "effect": "During any Invader Phase where you resolve no Fear Cards, perform the Build from High Immigration twice. (This has no effect if no card is on the extra Build slot.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-kingdom-of-france",
+    "name": "The Kingdom of France",
+    "title": "france",
+    "emote": "<:FlagFrance:852366013243981885>",
+    "aliases": ["<:FlagFrance:852366013243981885>", "🇫🇷"],
+    "flagImage": "images/flags/France_(Plantation_Colony)_WrinkledFlag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-france/panel.jpg",
+    "lossCondition": {
+      "name": "Sprawling Plantations",
+      "effect": "Before Setup, return all but 7 :InvaderTown: per player to the box. Invaders win if you ever cannot place a :InvaderTown:."
+    },
+    "escalation": {
+      "name": "Demand for New Cash Crops",
+      "effect": "After Exploring, on each board, pick a land of the shown terrain. If it has :InvaderTown:/:InvaderCity:, add 1 :Blight:. Otherwise, add 1 :InvaderTown:. Randomly choose one of the land types shown on the card for Stage III escalations."
+    },
+    "doublesNotes": "Increase the pool of available :InvaderTown: by 1 per player for each level of the other Adversary being played.",
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 2,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 3,
+        "fearCards": [0, 0, 0],
+        "rules": [
+          {
+            "name": "Frontier Explorers",
+            "phases": ["explore"],
+            "effect": "Except during Setup: After Invaders successfully Explore into a land which had no :InvaderTown:/:InvaderCity:, add 1 :InvaderExplorer: there."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 5,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Slave Labor",
+            "phases": ["setup"],
+            "effect": "During Setup, put the \"Slave Rebellion\" event under the top 3 cards of the Event Deck."
+          },
+          {
+            "name": "Slave Labor",
+            "phases": ["build"],
+            "effect": "After Invaders Build in a land with 2 :InvaderExplorer: or more, replace all but 1 :InvaderExplorer: there with an equal number of :InvaderTown:."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 7,
+        "fearCards": [1, 1, 0],
+        "rules": [
+          {
+            "name": "Early Plantation",
+            "phases": ["setup"],
+            "effect": "During Setup, on each board add 1 :InvaderTown: to the highest-numbered land without :InvaderTown:. Add 1 :InvaderTown: to land #1.",
+            "exceptions": [
+              {
+                "with": {
+                  "any": true
+                },
+                "note": "For on-island Setup, place pieces for the Leading Adversary before the Supporting Adversary — on some boards, which lands already have :InvaderTown: when this resolves depends on that order."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 8,
+        "fearCards": [1, 1, 1],
+        "rules": [
+          {
+            "name": "Triangle Trade",
+            "phases": ["build"],
+            "effect": "Whenever Invaders Build a Coastal :InvaderCity:, add 1 :InvaderTown: to the adjacent land with the fewest :InvaderTown:."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 9,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "Slow-Healing Ecosystem",
+            "phases": ["ongoing"],
+            "effect": "When you remove :Blight: from the board, put it here instead of onto the Blight Card. As soon as you have 3 :Blight: per player here, move it all back to the Blight Card."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 10,
+        "fearCards": [1, 2, 2],
+        "rules": [
+          {
+            "name": "Persistent Explorers",
+            "phases": ["explore"],
+            "effect": "After resolving an Explore Card, on each board add 1 :InvaderExplorer: to a land without any. Fear Card effects never remove :InvaderExplorer:. If one would, you may instead Push that :InvaderExplorer:."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-habsburg-monarchy",
+    "name": "The Habsburg Monarchy",
+    "title": "habsburg_livestock",
+    "emote": "<:FlagHabsburgLivestockHLC:1487248949839528076>",
+    "aliases": [
+      "<:FlagHabsburgLivestockHLC:1487248949839528076>",
+      "🐮",
+      "monarchy",
+      "hlc",
+      "cowburg",
+      "livestock-colony",
+      "livestock",
+      "habsburger"
+    ],
+    "flagImage": "images/flags/Habsburg_Monarchy_(Livestock_Colony)_WrinkledFlag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-habsburg-monarchy/panel.jpg",
+    "lossCondition": {
+      "name": "Irreparable Damage",
+      "effect": "Track how many :Blight: come off the :Blight: Card during Ravages that do 8+ Damage to the land. If that number ever exceeds players, the Invaders win."
+    },
+    "escalation": {
+      "name": "Seek Prime Territory",
+      "effect": "After the Explore Step: On each board with 4 or fewer :Blight:, add 1 :InvaderTown: to a land without :InvaderTown:/:Blight:. On each board with 2 or fewer :Blight:, do so again."
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 2,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 3,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Migratory Herders",
+            "phases": ["build"],
+            "effect": "After the normal Build Step: In each land matching a Build Card, Gather 1 :InvaderTown: from a land not matching a Build Card. (In board/land order.)",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-england",
+                  "minLevel": 3
+                },
+                "note": "RAI, only check the Build Cards in the Build Space — not High Immigration."
+              },
+              {
+                "with": {
+                  "adversary": "habsburg-mining-expedition",
+                  "minLevel": 3
+                },
+                "note": "This and HME's Mining Boom (level 3+) happen in an order of player choice."
+              },
+              {
+                "with": {
+                  "adversary": "habsburg-mining-expedition",
+                  "minLevel": 4
+                },
+                "note": "Against HME 4's Salt Deposits card: which lands are gathered into is locked in before any gathering happens, but which lands can be gathered from is checked as you go."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 5,
+        "fearCards": [1, 2, -1],
+        "rules": [
+          {
+            "name": "More Rural Than Urban",
+            "phases": ["setup"],
+            "effect": "During Setup, on each board, add 1 :InvaderTown: to land #2 and 1 :InvaderTown: to the highest-numbered land without Setup symbols."
+          },
+          {
+            "name": "More Rural Than Urban",
+            "phases": ["build"],
+            "effect": "During Play, when Invaders would Build 1 :InvaderCity: in an Inland land, they instead Build 2 :InvaderTown:."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 6,
+        "fearCards": [1, 2, 0],
+        "rules": [
+          {
+            "name": "Fast Spread",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, Remove 1 additional Stage I Card."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 8,
+        "fearCards": [1, 2, 0],
+        "rules": [
+          {
+            "name": "Herds Thrive in Verdant Lands",
+            "phases": ["ongoing"],
+            "effect": ":InvaderTown: in lands without :Blight: are Durable: they have +2 Health, and \"Destroy :InvaderTown:\" effects instead deal 2 Damage (to those :InvaderTown: only) per :InvaderTown: they could Destroy. (\"Destroy all :InvaderTown:\" works normally.)"
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 9,
+        "fearCards": [1, 3, 0],
+        "rules": [
+          {
+            "name": "Wave of Immigration",
+            "phases": ["setup"],
+            "effect": "Before the initial Explore, put the Habsburg Reminder Card under the top 5 Invader Cards. When Revealed, on each board, add 1 :InvaderCity: to a Coastal land without :InvaderCity: and 1 :InvaderTown: to the 3 Inland lands with the fewest :Blight:.",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "habsburg-mining-expedition",
+                  "minLevel": 0
+                },
+                "note": "This happens before HME's Escalation (Mining Tunnels)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 10,
+        "fearCards": [2, 3, 0],
+        "rules": [
+          {
+            "name": "Far-Flung Herds",
+            "phases": ["ravage"],
+            "effect": "Ravages do +2 Damage (total) if any adjacent lands have :InvaderTown:. (This does not cause lands without Invaders to Ravage.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-tsardom-of-russia",
+    "name": "The Tsardom of Russia",
+    "title": "russia",
+    "emote": "<:FlagRussia:852366012639739945>",
+    "aliases": ["<:FlagRussia:852366012639739945>", "🇷🇺"],
+    "flagImage": "images/flags/Russia_WrinkledFlag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-tsardom-of-russia/panel.jpg",
+    "lossCondition": {
+      "name": "Hunters Swarm the Island",
+      "effect": "Put :TokenBeasts: Destroyed by Adversary rules on this panel. If there are ever more :TokenBeasts: on this panel than on the island, the Invaders win."
+    },
+    "escalation": {
+      "name": "Stalk the Predators",
+      "effect": "On each board: Add 2 :InvaderExplorer: (total) among lands with :TokenBeasts:s. If you can't, instead add 2 :InvaderExplorer: among lands with :TokenBeasts: on a different board."
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 1,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 3,
+        "fearCards": [0, 0, 1],
+        "rules": [
+          {
+            "name": "Hunters Bring Home Shell and Hide",
+            "phases": ["setup"],
+            "effect": "During Setup, on each board, add 1 :TokenBeasts: and 1 :InvaderExplorer: to the highest-numbered land without :InvaderTown:/:InvaderCity:.",
+            "exceptions": [
+              {
+                "with": {
+                  "any": true
+                },
+                "note": "For on-island Setup, place pieces for the Leading Adversary before the Supporting Adversary — on some boards, which lands already have :InvaderTown:/:InvaderCity: when this resolves depends on that order."
+              }
+            ]
+          },
+          {
+            "name": "Hunters Bring Home Shell and Hide",
+            "phases": ["ongoing"],
+            "effect": ":InvaderExplorer: do +1 Damage."
+          },
+          {
+            "name": "Hunters Bring Home Shell and Hide",
+            "phases": ["ravage"],
+            "effect": "When Ravage adds :Blight: to a land (including cascades), Destroy 1 :TokenBeasts: in that land."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 4,
+        "fearCards": [1, 0, 1],
+        "rules": [
+          {
+            "name": "A Sense for Impending Disaster",
+            "phases": ["ongoing"],
+            "effect": "The first time each Action would Destroy :InvaderExplorer:: If possible, 1 of those :InvaderExplorer: is instead Pushed; 1 :TokenFear: when you do so."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 6,
+        "fearCards": [1, 1, 0],
+        "rules": [
+          {
+            "name": "Competition Among Hunters",
+            "phases": ["ravage"],
+            "effect": "Ravage Cards also match lands with 3 or more :InvaderExplorer:. (If the land already matched the Ravage Card, it still Ravages just once.)"
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 7,
+        "fearCards": [1, 1, 1],
+        "rules": [
+          {
+            "name": "Accelerated Exploitation",
+            "phases": ["setup"],
+            "effect": "When making the Invader Deck, put 1 Stage III Card after each Stage II Card."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 9,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "Entrench in the Face of Fear",
+            "phases": ["setup"],
+            "effect": "Put an unused Stage II Invader Card under the top 3 Fear Cards, and an unused Stage III Card under the top 7 Fear Cards. When one is revealed, immediately place it in the Build space (face-up).",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-england",
+                  "minLevel": 1
+                },
+                "note": "The Fear Cards placed by this resolve separately and sequentially, so England 1 re-checks its condition for the second card."
+              },
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-scotland",
+                  "minLevel": 3
+                },
+                "note": "The Fear Cards placed by this resolve separately and sequentially, so Scotland 3 re-checks its condition for the second card."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 11,
+        "fearCards": [2, 2, 1],
+        "rules": [
+          {
+            "name": "Pressure for Fast Profit",
+            "phases": ["ravage"],
+            "effect": "After the Ravage Step of turn 2+, on each board where it added no :Blight:: In the land with the most :InvaderExplorer: (min. 1), add 1 :InvaderExplorer: and 1 :InvaderTown:."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-kingdom-of-scotland",
+    "name": "The Kingdom of Scotland",
+    "title": "scotland",
+    "emote": "<:FlagScotland:852366013621207040>",
+    "aliases": ["<:FlagScotland:852366013621207040>", "🏴󠁧󠁢󠁳󠁣󠁴󠁿"],
+    "flagImage": "images/flags/Scotland_WrinkledFlag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-scotland/panel.jpg",
+    "lossCondition": {
+      "name": "Trade Hub",
+      "effect": "If the number of Coastal lands with :InvaderCity: is ever greater than (2 x # of boards), the Invaders win."
+    },
+    "escalation": {
+      "name": "Ports Sprawl Outward",
+      "effect": "On the single board with the most Coastal :InvaderTown:/:InvaderCity:, add 1 :InvaderTown: to the N lands with the fewest :InvaderTown: (N = # of players.)"
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 1,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 3,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Trading Port",
+            "phases": ["explore"],
+            "effect": "After Setup, in Coastal lands, Explore Cards add 1 :InvaderTown: instead of 1 :InvaderExplorer: . \"Coastal Lands\" Invader cards do this for maximum 2 lands per board."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 4,
+        "fearCards": [1, 1, 0],
+        "rules": [
+          {
+            "name": "Seize Opportunity",
+            "phases": ["setup"],
+            "effect": "During Setup, add 1 :InvaderCity: to land #2. Place \"Coastal Lands\" as the 3rd Stage II card, and move the two Stage II Cards above it up by one.",
+            "exceptions": [
+              {
+                "with": {
+                  "any": true
+                },
+                "note": "If the other Adversary's Setup instructions would add :InvaderCity: to a Coastal land other than land #2, instead add the :InvaderCity: to an adjacent Inland land."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 6,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "Chart the Coastline",
+            "phases": ["build"],
+            "effect": "In Coastal lands, Build Cards affect lands without Invaders, so long as there is an adjacent :InvaderCity:."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 7,
+        "fearCards": [2, 2, 1],
+        "rules": [
+          {
+            "name": "Ambition of a Minor Nation",
+            "phases": ["setup"],
+            "effect": "During Setup, replace the bottom Stage I Card with the bottom Stage III Card."
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 8,
+        "fearCards": [2, 3, 1],
+        "rules": [
+          {
+            "name": "Runoff and Bilgewater",
+            "phases": ["ravage"],
+            "effect": "After a Ravage Action adds :Blight: to a Coastal Land, add 1 :Blight: to that board's Ocean (without cascading). Treat the Ocean as a Coastal Wetland for this rule and for :Blight: removal/movement.",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "habsburg-mining-expedition",
+                  "minLevel": 1
+                },
+                "note": "Contrary to what a lot of people think, this doesn't interact with HME 1."
+              },
+              {
+                "with": {
+                  "adversary": "the-habsburg-monarchy",
+                  "minLevel": 0
+                },
+                "note": "Contrary to what a lot of people think, this doesn't interact with HM-LC, regardless of level."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 10,
+        "fearCards": [3, 3, 1],
+        "rules": [
+          {
+            "name": "Exports Fuel Inward Growth",
+            "phases": ["ravage"],
+            "effect": "After the Ravage step, add 1 :InvaderTown: to each Inland land that matches a Ravage card and is within 1 Range of :InvaderTown:/:InvaderCity:."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-kingdom-of-sweden",
+    "name": "The Kingdom of Sweden",
+    "title": "sweden",
+    "emote": "<:FlagSweden:852366014434770963>",
+    "aliases": ["<:FlagSweden:852366014434770963>", "🇸🇪"],
+    "flagImage": "images/flags/Sweden_WrinkledFlag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-sweden/panel.jpg",
+    "escalation": {
+      "name": "Swayed by the Invaders",
+      "effect": "After Invaders Explore into each land this Phase, if that land has at least as many Invaders as :Dahan:, replace 1 :Dahan: with 1 :InvaderTown:. Randomly choose one of the land types shown on the card for Stage III escalations.",
+      "exceptions": [
+        {
+          "with": {
+            "adversary": "the-tsardom-of-russia",
+            "minLevel": 5
+          },
+          "note": "This only applies to the Explore Card it's on, so it doesn't do anything on a Russia 5 Fear Bomb."
+        },
+        {
+          "with": {
+            "adversary": "the-kingdom-of-france",
+            "minLevel": 6
+          },
+          "note": "This and France 6 (Persistent Explorers) trigger at the same time; the order is broken by player choice."
+        }
+      ]
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 1,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 2,
+        "fearCards": [0, 0, 0],
+        "rules": [
+          {
+            "name": "Heavy Mining",
+            "phases": ["ravage"],
+            "effect": "If the Invaders do at least 6 Damage to the land during Ravage, add an extra :Blight:. The additional :Blight: does not destroy Presence or cause cascades.",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "the-habsburg-monarchy",
+                  "minLevel": 0
+                },
+                "note": "Unlike Scotland 5, HM-LC (any level) does interact with this."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 3,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Population Pressure at Home",
+            "phases": ["setup"],
+            "effect": "During Setup, on each board add 1 :InvaderCity: to land #4. On boards where land #4 starts with :Blight:, put that :Blight: in land #5 instead."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 5,
+        "fearCards": [0, 1, 0],
+        "rules": [
+          {
+            "name": "Fine Steel for Tools and Guns",
+            "phases": ["ongoing"],
+            "effect": ":InvaderTown: deal 3 Damage. :InvaderCity: deal 5 Damage."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 6,
+        "fearCards": [0, 1, 1],
+        "rules": [
+          {
+            "name": "Royal Backing",
+            "phases": ["setup"],
+            "effect": "During Setup, after adding all other Invaders, Accelerate the Invader Deck. On each board, add 1 :InvaderTown: to the land of that terrain with the fewest Invaders.",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-brandenburg-prussia",
+                  "minLevel": 5
+                },
+                "note": "This specifically Accelerates the Invader Deck, so it'll skip over Prussia's early Stage III Card — this only kicks in once Prussia is at level 5; the card isn't pulled early before that."
+              },
+              {
+                "with": {
+                  "any": true
+                },
+                "note": "This specifically goes at the very end of Setup, regardless of whether Sweden is the Leading or Supporting Adversary."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 7,
+        "fearCards": [1, 1, 1],
+        "rules": [
+          {
+            "name": "Mining Rush",
+            "phases": ["ravage"],
+            "effect": "When Ravaging adds at least 1 :Blight: to a land, also add 1 :InvaderTown: to an adjacent land without :InvaderTown:/:InvaderCity:. Cascading :Blight: does not cause this effect."
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 8,
+        "fearCards": [1, 1, 2],
+        "rules": [
+          {
+            "name": "Prospecting Outpost",
+            "phases": ["setup"],
+            "effect": "During setup, on each board add 1 :InvaderTown: and 1 :Blight: to land #8. The :Blight: comes from the box, not the Blight Card."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "habsburg-mining-expedition",
+    "name": "Habsburg Mining Expedition",
+    "title": "habsburg_mining",
+    "emote": "<:FlagHabsburgMiningHME:1487249155834253553>",
+    "aliases": [
+      "<:FlagHabsburgMiningHME:1487249155834253553>",
+      ":pick:",
+      "hme",
+      "saltburg",
+      "mining-expedition",
+      "mining"
+    ],
+    "flagImage": "images/flags/Habsburg_Mining_Expedition_Flag.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/habsburg-mining-expedition/panel.jpg",
+    "lossCondition": {
+      "name": "Land Stripped Bare",
+      "effect": "At the end of the :SpeedFast: Phase, the Invaders win if any land has at least 8 total Invaders/:Blight: (combined)."
+    },
+    "escalation": {
+      "name": "Mining Tunnels",
+      "effect": "After Advancing Invader Cards: On each board, Explore in 2 lands whose terrains don't match a Ravage or Build Card (no source required)."
+    },
+    "levels": [
+      {
+        "level": 0,
+        "difficulty": 2,
+        "fearCards": [0, 0, 0],
+        "rules": []
+      },
+      {
+        "level": 1,
+        "difficulty": 3,
+        "fearCards": [0, 0, 0],
+        "rules": [
+          {
+            "name": "Avarice Rewarded",
+            "phases": ["ravage"],
+            "effect": "When :Blight: added by a Ravage Action would cascade, instead Upgrade 1 :InvaderExplorer:/:InvaderTown: (before :Dahan: counterattack.)"
+          },
+          {
+            "name": "Ceaseless Mining",
+            "phases": ["ravage"],
+            "effect": "Lands with 3 or more Invaders are Mining lands. In Mining lands, :TokenDisease: and modifiers to :TokenDisease: affect Ravage Actions as though they were Build Actions."
+          },
+          {
+            "name": "Ceaseless Mining",
+            "phases": ["build"],
+            "effect": "Lands with 3 or more Invaders are Mining lands. During the Build Step, Build Cards cause Ravage Actions (instead of Build Actions) in Mining lands.",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-england",
+                  "minLevel": 3
+                },
+                "note": "This doesn't interact with England 3 (High Immigration)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "difficulty": 5,
+        "fearCards": [0, 0, 1],
+        "rules": [
+          {
+            "name": "Miners Come From Far and Wide",
+            "phases": ["setup"],
+            "effect": "Setup: Add 1 :InvaderExplorer: in each land with no :Dahan:. Add 1 :TokenDisease: and 1 :InvaderCity: in the highest-numbered land with a :InvaderTown: Setup symbol."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "difficulty": 6,
+        "fearCards": [0, 1, 1],
+        "rules": [
+          {
+            "name": "Mining Boom (I)",
+            "phases": ["build"],
+            "effect": "After the Build Step, on each board: Choose a land with :InvaderExplorer:. Upgrade 1 :InvaderExplorer: there."
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "difficulty": 8,
+        "fearCards": [1, 1, 1],
+        "rules": [
+          {
+            "name": "Untapped Salt Deposits",
+            "phases": ["setup"],
+            "effect": "Setup: Remove the Stage II 'Coastal Lands' card before randomly choosing Stage II cards. Place the 'Salt Deposits' card in place of the 2nd Stage II card.",
+            "exceptions": [
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-scotland",
+                  "minLevel": 2
+                },
+                "note": "This doesn't stop Scotland 2 from specially placing the Coastal Lands ('C') card."
+              },
+              {
+                "with": {
+                  "adversary": "the-tsardom-of-russia",
+                  "minLevel": 5
+                },
+                "note": "This does stop the Coastal Lands ('C') card from being a Russia 5 Fear Bomb."
+              },
+              {
+                "with": {
+                  "adversary": "the-kingdom-of-scotland",
+                  "minLevel": 1
+                },
+                "note": "Player option (not yet in the official FAQ): you can choose to limit the Salt Deposits ('S') card the same way the Coastal Lands ('C') card is limited."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "difficulty": 9,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "Mining Boom (II)",
+            "phases": ["build"],
+            "replaces": 3,
+            "effect": "After the Build Step, on each board: Choose a land with :InvaderExplorer:. Build there, then Upgrade 1 :InvaderExplorer:. (Build normally in a Mining land.)"
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "difficulty": 10,
+        "fearCards": [1, 2, 1],
+        "rules": [
+          {
+            "name": "The Empire Ascendant",
+            "phases": ["setup", "explore"],
+            "effect": "Setup and During the Explore Step: On boards with 3 or fewer :Blight:: Add +1 :InvaderExplorer: in each land successfully explored. (Max. 2 lands per board per Explore Card.)"
+          }
+        ]
+      }
+    ]
+  }
+]

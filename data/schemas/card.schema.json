@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card.schema.json",
+  "title": "Card",
+  "description": "A power, fear, event or blight card. data/cards.json is an array of these. Images come from SICK, at https://sick.oberien.de/imgs/<powers|fears|events|blights>/<sickSlug>.webp, unless the card sets `image`. A unique power's spirit is recorded on that spirit's `uniques`, not here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "type", "sickSlug"],
+  "properties": {
+    "id": {
+      "$ref": "common.schema.json#/$defs/id"
+    },
+    "name": {
+      "description": "Printed card name.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "type": {
+      "enum": ["unique", "minor", "major", "fear", "event", "blight"]
+    },
+    "sickSlug": {
+      "description": "The card's lookup slug. For cards SICK has, also its image filename there; cards SICK doesn't have (e.g. Apocrypha uniques) use the same style and set `image`.",
+      "$ref": "common.schema.json#/$defs/sickSlug"
+    },
+    "image": {
+      "description": "Image url for a card SICK doesn't have. When set, it is used instead of the SICK image.",
+      "$ref": "common.schema.json#/$defs/url"
+    },
+    "cost": {
+      "description": "Power cards: Energy cost.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "speed": {
+      "description": "Power cards: when it's played.",
+      "enum": ["fast", "slow"]
+    },
+    "elements": {
+      "description": "Power cards: elements the card provides.",
+      "type": "array",
+      "items": {
+        "enum": [
+          "sun",
+          "moon",
+          "fire",
+          "air",
+          "water",
+          "earth",
+          "plant",
+          "animal"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "range": {
+      "description": "Power cards: range as printed, e.g. '2' or ':SacredSite: 1'. Absent when the card has none (it targets a spirit).",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "targetType": {
+      "description": "Power cards: whether it targets a land or a spirit.",
+      "enum": ["land", "spirit"]
+    },
+    "target": {
+      "description": "Power cards: target as printed, e.g. 'Any', 'Invaders', 'Another'.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "text": {
+      "description": "Power cards: rules text, one entry per paragraph. Icons are written as :Name: tokens (e.g. :InvaderTown:, :TokenFear:), as in adversary rules; a lone 'or' separates alternatives.",
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/text" },
+      "minItems": 1
+    },
+    "artist": {
+      "description": "Credited card artist.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "levels": {
+      "description": "Fear card effects for terror levels I, II and III.",
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/text"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "aliases": {
+      "description": "Other names the card is searched by, e.g. the titles of an event card's sub-events.",
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/sickSlug"
+      },
+      "uniqueItems": true
+    },
+    "stillHealthy": {
+      "description": "Blight cards: true for a 'Still-Healthy Island' card, false for 'Blighted Island'.",
+      "type": "boolean"
+    }
+  },
+  "dependentRequired": {
+    "text": ["cost", "speed", "elements", "targetType", "target"]
+  },
+  "allOf": [
+    {
+      "if": {
+        "anyOf": [
+          { "required": ["cost"] },
+          { "required": ["speed"] },
+          { "required": ["elements"] },
+          { "required": ["range"] },
+          { "required": ["targetType"] },
+          { "required": ["target"] },
+          { "required": ["text"] }
+        ]
+      },
+      "then": {
+        "required": ["text"],
+        "properties": { "type": { "enum": ["unique", "minor", "major"] } }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "fear"
+          }
+        }
+      },
+      "then": {
+        "required": ["levels"]
+      },
+      "else": {
+        "not": {
+          "required": ["levels"]
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "blight"
+          }
+        }
+      },
+      "then": {
+        "required": ["stillHealthy"]
+      },
+      "else": {
+        "not": {
+          "required": ["stillHealthy"]
+        }
+      }
+    }
+  ]
+}

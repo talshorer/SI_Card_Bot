@@ -1,0 +1,146 @@
+[
+  {
+    "id": "blitz",
+    "name": "Blitz",
+    "difficulty": 0,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "guard-the-isles-heart",
+    "name": "Guard the Isle's Heart",
+    "difficulty": 0,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/guard-the-isles-heart/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/guard-the-isles-heart/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "rituals-of-terror",
+    "name": "Rituals of Terror",
+    "difficulty": 3,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-terror/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-terror/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "dahan-insurrection",
+    "name": "Dahan Insurrection",
+    "difficulty": 4,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/dahan-insurrection/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/dahan-insurrection/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "second-wave",
+    "name": "Second Wave",
+    "difficulty": 1,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/second-wave/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/second-wave/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "powers-long-forgotten",
+    "name": "Powers Long Forgotten",
+    "difficulty": 1,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/powers-long-forgotten/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/powers-long-forgotten/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "ward-the-shores",
+    "name": "Ward the Shores",
+    "difficulty": 2,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/ward-the-shores/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/ward-the-shores/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "rituals-of-the-destroying-flame",
+    "name": "Rituals of the Destroying Flame",
+    "difficulty": 3,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-the-destroying-flame/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-the-destroying-flame/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "elemental-invocation",
+    "name": "Elemental Invocation",
+    "difficulty": 1,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/elemental-invocation/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/elemental-invocation/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "despicable-theft",
+    "name": "Despicable Theft",
+    "difficulty": 2,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/despicable-theft/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/despicable-theft/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "the-great-river",
+    "name": "The Great River",
+    "difficulty": 3,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/the-great-river/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/the-great-river/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "a-diversity-of-spirits",
+    "name": "A Diversity of Spirits",
+    "difficulty": 0,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/a-diversity-of-spirits/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/a-diversity-of-spirits/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "varied-terrains",
+    "name": "Varied Terrains",
+    "difficulty": 2,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/varied-terrains/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/varied-terrains/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "destiny-unfolds",
+    "name": "Destiny Unfolds",
+    "difficulty": -1,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/destiny-unfolds/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/destiny-unfolds/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "surges-of-colonization",
+    "name": "Surges of Colonization",
+    "difficulty": 2,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/surges-of-colonization/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/surges-of-colonization/panel-2.jpg"
+    ]
+  },
+  {
+    "id": "larger-surges",
+    "name": "Larger Surges",
+    "difficulty": 7,
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/larger-surges/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/larger-surges/panel-2.jpg"
+    ]
+  }
+]

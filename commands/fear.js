@@ -52,7 +52,7 @@ module.exports = {
 
 /**
  * Sends a paginated list of every Fear card's title, alphabetically - same
- * style as /spirit's list with no args.
+ * style as /spirits.
  */
 function sendFearCardList(msg) {
   const sorted = [...fearCardText].sort((a, b) => a.name.localeCompare(b.name));

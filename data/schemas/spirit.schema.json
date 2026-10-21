@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "spirit.schema.json",
+  "title": "Spirit",
+  "description": "A spirit, including everything that belongs only to it: its aspects, incarna and healing cards. data/spirits.json is an array of these.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "title",
+    "set",
+    "complexity",
+    "emote",
+    "aliases",
+    "uniques",
+    "panel",
+    "aspects"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "$ref": "common.schema.json#/$defs/text" },
+    "title": {
+      "description": "Single word the spirit is commonly referred to by.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "set": { "$ref": "common.schema.json#/$defs/setCode" },
+    "complexity": {
+      "description": "1 low, 2 moderate, 3 high, 4 very high.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "emote": { "$ref": "common.schema.json#/$defs/emote" },
+    "aliases": { "$ref": "common.schema.json#/$defs/aliases" },
+    "uniques": {
+      "description": "The spirit's unique power cards, by card slug.",
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/sickSlug" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "panel": {
+      "description": "Front and back of the spirit panel.",
+      "$ref": "common.schema.json#/$defs/doubleSidedPanel"
+    },
+    "powerProgression": { "$ref": "common.schema.json#/$defs/url" },
+    "extraPanels": {
+      "description": "Other boards that come with the spirit, e.g. Covets Gleaming Shards of Earth's Gleaming Hoard.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/extraPanel" },
+      "minItems": 1
+    },
+    "incarna": { "$ref": "#/$defs/incarna" },
+    "healingCards": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/healingCard" },
+      "minItems": 1
+    },
+    "aspects": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/aspect" }
+    }
+  },
+  "$defs": {
+    "aspect": {
+      "description": "A variant of the spirit. Its id is '<spirit id>/<aspect slug>'.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "emote", "panel"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/scopedId" },
+        "name": { "$ref": "common.schema.json#/$defs/text" },
+        "emote": { "$ref": "common.schema.json#/$defs/emote" },
+        "panel": { "$ref": "common.schema.json#/$defs/panel" },
+        "incarna": { "$ref": "#/$defs/incarna" }
+      }
+    },
+    "incarna": {
+      "description": "The incarna belonging to the spirit or aspect it is nested in. Its panel is the unempowered side, then the empowered side if it has one.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["aliases", "panel"],
+      "properties": {
+        "aliases": { "$ref": "common.schema.json#/$defs/aliases" },
+        "panel": { "$ref": "common.schema.json#/$defs/panel" }
+      }
+    },
+    "extraPanel": {
+      "description": "A board that comes with the spirit besides its panel.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "panel"],
+      "properties": {
+        "name": { "$ref": "common.schema.json#/$defs/text" },
+        "panel": { "$ref": "common.schema.json#/$defs/panel" }
+      }
+    },
+    "healingCard": {
+      "description": "A healing card (Wounded Waters Bleeding). Its id is '<spirit id>/<card slug>'.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "title", "panel"],
+      "properties": {
+        "id": { "$ref": "common.schema.json#/$defs/scopedId" },
+        "name": { "$ref": "common.schema.json#/$defs/text" },
+        "title": {
+          "description": "Single word the card is looked up by.",
+          "$ref": "common.schema.json#/$defs/text"
+        },
+        "panel": { "$ref": "common.schema.json#/$defs/doubleSidedPanel" }
+      }
+    }
+  }
+}

@@ -116,7 +116,7 @@ describe("formatUsage", () => {
 
   it("gives a subcommand-based command one line per subcommand", () => {
     expect(formatUsage(commands.get("random")).split("\n")).toEqual([
-      "/random spirit [max_complexity]",
+      "/random spirit [max_complexity] [include_apocrypha]",
       "/random adversary [min_difficulty] [max_difficulty]",
       "/random double [min_difficulty] [max_difficulty]",
       "/random scenario",
@@ -201,6 +201,6 @@ describe("argsFromInteraction", () => {
   });
 
   it("returns no args when nothing was filled in", () => {
-    expect(argsFor("spirit", {})).toEqual([]);
+    expect(argsFor("aspects", {})).toEqual([]);
   });
 });

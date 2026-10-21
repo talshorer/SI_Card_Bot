@@ -59,9 +59,9 @@ module.exports = {
     scenario.forEach(function (s) {
       if (s.name == panel) {
         if (side == "front") {
-          msg.channel.send(s.link);
+          msg.channel.send(s.panel[0]);
         } else {
-          msg.channel.send(s.linkBack);
+          msg.channel.send(s.panel[1]);
         }
       }
     });

@@ -48,6 +48,7 @@ const roleAdd = require("../commands/roleAdd.js");
 const scenario = require("../commands/scenario.js");
 const search = require("../commands/search.js");
 const spirit = require("../commands/spirit.js");
+const spirits = require("../commands/spirits.js");
 const take = require("../commands/take.js");
 const unique = require("../commands/unique.js");
 const uniques = require("../commands/uniques.js");
@@ -60,7 +61,9 @@ describe("adversary", () => {
   it("returns the panel for a known adversary", async () => {
     const msg = createMockMessage();
     await adversary.execute(msg, ["prussia"]);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/KdyfP3C");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-brandenburg-prussia/panel.jpg",
+    );
   });
 
   it("lists all adversaries when given no args", async () => {
@@ -104,7 +107,7 @@ describe("aspect", () => {
     const msg = createMockMessage();
     await aspect.execute(msg, ["Regrowth"]);
     expect(msg.channel.send).toHaveBeenCalledWith(
-      "https://i.imgur.com/jQWp7vu.png",
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/regrowth/panel-1.jpg",
     );
   });
 
@@ -151,6 +154,14 @@ describe("board", () => {
     await board.execute(msg, ["a"]);
     expect(msg.channel.send).toHaveBeenCalledWith(
       "https://spiritislandwiki.com/images/e/e2/Piece_core_board_a.png",
+    );
+  });
+
+  it("returns a thematic board by its short alias", async () => {
+    const msg = createMockMessage();
+    await board.execute(msg, ["nw"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://spiritislandwiki.com/images/8/8c/Piece_core_board_north_west.png",
     );
   });
 
@@ -277,6 +288,22 @@ describe("event", () => {
       "https://sick.oberien.de/imgs/events/slave_rebellion.webp",
     );
   });
+
+  it("finds a card by the name of one of its modes", async () => {
+    const msg = createMockMessage();
+    await event.execute(msg, ["small uprising"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://sick.oberien.de/imgs/events/slave_rebellion.webp",
+    );
+  });
+
+  it("lists printed names when an alias matches several cards", async () => {
+    const msg = createMockMessage();
+    await event.execute(msg, ["blight_spreads"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "Your search matched several cards, please specify:\n- Tight-Knit Communities\n- Well-Prepared Explorers",
+    );
+  });
 });
 
 describe("faq", () => {
@@ -360,7 +387,17 @@ describe("healing", () => {
   it("returns the front panel for a healing card by title", async () => {
     const msg = createMockMessage();
     await healing.execute(msg, ["roiling"]);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/sGO0Rur");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/roiling-waters/panel-1.jpg",
+    );
+  });
+
+  it("returns the back panel when asked", async () => {
+    const msg = createMockMessage();
+    await healing.execute(msg, ["ruin", "back"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-taste-of-ruin/panel-2.jpg",
+    );
   });
 });
 
@@ -409,6 +446,18 @@ describe("incarna", () => {
       "https://spiritislandwiki.com/images/f/f2/Towering_Roots_of_the_Jungle_Incarna.png",
     );
   });
+
+  it("returns an aspect's incarna", async () => {
+    const msg = createMockMessage();
+    await incarna.execute(msg, ["Locus", "back"]);
+    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/116luO1");
+  });
+
+  it("falls back to the front of a single-sided incarna", async () => {
+    const msg = createMockMessage();
+    await incarna.execute(msg, ["Warrior", "back"]);
+    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/oVtswAd");
+  });
 });
 
 describe("major", () => {
@@ -456,6 +505,27 @@ describe("random", () => {
     const msg = createMockMessage();
     await random.execute(msg, ["spirit"]);
     expect(msg.channel.send).toHaveBeenCalledTimes(2);
+  });
+
+  it("random spirit only picks Apocrypha spirits when asked", async () => {
+    // The Apocrypha spirits come last, so the top roll lands on one if
+    // they're in the pool.
+    jest.spyOn(Math, "random").mockReturnValue(0.9999);
+    try {
+      const without = createMockMessage();
+      await random.execute(without, ["spirit"]);
+      expect(without.channel.send).toHaveBeenCalledWith(
+        "Wounded Waters Bleeding",
+      );
+
+      const withApocrypha = createMockMessage();
+      await random.execute(withApocrypha, ["spirit", "", "apocrypha"]);
+      expect(withApocrypha.channel.send).toHaveBeenCalledWith(
+        "Spreading Rot Renews the Earth",
+      );
+    } finally {
+      Math.random.mockRestore();
+    }
   });
 
   it("random adversary sends a name/difficulty and emote", async () => {
@@ -520,7 +590,7 @@ describe("scenario", () => {
     const msg = createMockMessage();
     await scenario.execute(msg, ["Blitz"]);
     expect(msg.channel.send).toHaveBeenCalledWith(
-      "https://i.imgur.com/rbm2vox",
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-2.jpg",
     );
   });
 
@@ -555,14 +625,32 @@ describe("spirit", () => {
   it("returns the front panel for an exact spirit match", async () => {
     const msg = createMockMessage();
     await spirit.execute(msg, TEST_SPIRIT_ARGS);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/nlpGjjH");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/panel-1.jpg",
+    );
   });
 
-  it("sends a paginated list when given no args", async () => {
+  it("sends a spirit's extra panel when asked", async () => {
+    const msg = createMockMessage();
+    await spirit.execute(msg, ["covets", "extra"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/extra-panels/the-gleaming-hoard/panel-1.jpg",
+    );
+  });
+
+  it("says so when a spirit has no extra panel", async () => {
+    const msg = createMockMessage();
+    await spirit.execute(msg, ["river", "extra"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      expect.stringContaining("has no extra panels"),
+    );
+  });
+
+  it("asks for a search rather than listing spirits when given no args", async () => {
     const msg = createMockMessage();
     await spirit.execute(msg, []);
     expect(msg.channel.send).toHaveBeenCalledWith(
-      expect.stringMatching(/^__paginated__ pages=\d+$/),
+      expect.stringContaining("at least 3 letters"),
     );
   });
 
@@ -570,6 +658,16 @@ describe("spirit", () => {
     const msg = createMockMessage();
     await spirit.execute(msg, ["zzz_no_such_spirit_zzz"]);
     expect(msg.channel.send).toHaveBeenCalled();
+  });
+});
+
+describe("spirits", () => {
+  it("sends a paginated list of every spirit", async () => {
+    const msg = createMockMessage();
+    await spirits.execute(msg, []);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      expect.stringMatching(/^__paginated__ pages=\d+$/),
+    );
   });
 });
 
@@ -601,6 +699,14 @@ describe("unique", () => {
       "https://sick.oberien.de/imgs/powers/fields_choked_with_growth.webp",
     );
   });
+
+  it("links the card's own image when SICK doesn't have it", async () => {
+    const msg = createMockMessage();
+    await unique.execute(msg, ["infesting_spores"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/cards/infesting-spores.jpg",
+    );
+  });
 });
 
 describe("uniques", () => {
@@ -610,5 +716,18 @@ describe("uniques", () => {
     expect(msg.channel.send).toHaveBeenCalledWith(
       expect.stringContaining("has the following uniques"),
     );
+  });
+
+  it("uses printed card names without altering the spirit's data", async () => {
+    const msg = createMockMessage();
+    await uniques.execute(msg, ["bringer"]);
+    await uniques.execute(msg, ["bringer"]);
+    expect(msg.channel.send).toHaveBeenLastCalledWith(
+      expect.stringContaining("* Call on Midnight's Dream"),
+    );
+    expect(
+      require("../data/spirits.json").find((s) => s.title === "BoDaN")
+        .uniques[0],
+    ).toBe("call_on_midnights_dream");
   });
 });

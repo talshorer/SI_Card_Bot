@@ -128,7 +128,7 @@ site under `docs/`) rather than editing it by hand.
 - `/power <card>`
 - `/progression <spirit>`
 - `/random`
-  - `spirit [max_complexity]`
+  - `spirit [max_complexity] [include_apocrypha]`
   - `adversary [min_difficulty] [max_difficulty]`
   - `double [min_difficulty] [max_difficulty]`
   - `scenario`
@@ -136,7 +136,8 @@ site under `docs/`) rather than editing it by hand.
 - `/reactionrole`
 - `/scenario <scenario> [side]`
 - `/search <query> [spoiler]`
-- `/spirit [spirit] [side]`
+- `/spirit <spirit> [side]`
+- `/spirits`
 - `/take <type>`
 - `/unique <card>`
 - `/uniques <spirit>`

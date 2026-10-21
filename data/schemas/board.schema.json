@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "board.schema.json",
+  "title": "Board",
+  "description": "An island board. data/boards.json is an array of these.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "layout", "aliases", "image"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "$ref": "common.schema.json#/$defs/text" },
+    "layout": {
+      "description": "Standard (lettered, balanced) or thematic (map-region) board.",
+      "enum": ["standard", "thematic"]
+    },
+    "aliases": { "$ref": "common.schema.json#/$defs/aliases" },
+    "image": { "$ref": "common.schema.json#/$defs/url" }
+  }
+}

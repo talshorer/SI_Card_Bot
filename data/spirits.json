@@ -1,0 +1,1150 @@
+[
+  {
+    "id": "a-spread-of-rampant-green",
+    "name": "A Spread of Rampant Green",
+    "title": "Green",
+    "set": "base",
+    "complexity": 2,
+    "emote": "<:SpiritSpreadRampantGreen:852365959149912095>",
+    "aliases": [],
+    "uniques": [
+      "fields_choked_with_growth",
+      "stem_the_flow_of_fresh_water",
+      "gift_of_proliferation",
+      "overgrow_in_a_night"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "a-spread-of-rampant-green/regrowth",
+        "name": "Regrowth",
+        "emote": "<:DestroyedPresence:1386717215302353037>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/regrowth/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "a-spread-of-rampant-green/tangles",
+        "name": "Tangles",
+        "emote": "<:TokenWilds:852366051832102993>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/tangles/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/tangles/panel-2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bringer-of-dreams-and-nightmares",
+    "name": "Bringer of Dreams and Nightmares",
+    "title": "BoDaN",
+    "set": "base",
+    "complexity": 3,
+    "emote": "<:SpiritBodanBringerDreamsNightmar:852365960370454528>",
+    "aliases": ["bodan"],
+    "uniques": [
+      "call_on_midnights_dream",
+      "dreams_of_the_dahan",
+      "predatory_nightmares",
+      "dread_apparitions"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "bringer-of-dreams-and-nightmares/enticing",
+        "name": "Enticing",
+        "emote": "🧲",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/aspects/enticing/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "bringer-of-dreams-and-nightmares/violence",
+        "name": "Violence",
+        "emote": "⚔️",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/aspects/violence/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "downpour-drenches-the-world",
+    "name": "Downpour Drenches the World",
+    "title": "Downpour",
+    "set": "f&f",
+    "complexity": 3,
+    "emote": "<:SpiritDownpourDrenchesWorld:852365957744689153>",
+    "aliases": ["bird"],
+    "uniques": [
+      "unbearable_deluge",
+      "foundations_sink_into_mud",
+      "gift_of_abundance",
+      "dark_skies_loose_a_stinging_rain"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/downpour-drenches-the-world/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/downpour-drenches-the-world/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "finder-of-paths-unseen",
+    "name": "Finder of Paths Unseen",
+    "title": "Finder",
+    "set": "f&f",
+    "complexity": 4,
+    "emote": "<:SpiritFinderPathsUnseen:852365960236236811>",
+    "aliases": ["bird"],
+    "uniques": [
+      "travelers_boon",
+      "paths_tied_by_nature",
+      "a_circuitous_and_wending_journey",
+      "offer_passage_between_worlds",
+      "ways_of_shore_and_heartland",
+      "aid_from_the_spiritspeakers"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/finder-of-paths-unseen/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/finder-of-paths-unseen/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "fractured-days-split-the-sky",
+    "name": "Fractured Days Split the Sky",
+    "title": "Fractured",
+    "set": "je",
+    "complexity": 4,
+    "emote": "<:SpiritFracturedDaysSplitSky:852365961800712252>",
+    "aliases": [],
+    "uniques": [
+      "the_past_returns_again",
+      "absolute_stasis",
+      "pour_time_sideways",
+      "blur_the_arc_of_years"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/fractured-days-split-the-sky/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/fractured-days-split-the-sky/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "grinning-trickster-stirs-up-trouble",
+    "name": "Grinning Trickster Stirs Up Trouble",
+    "title": "Trickster",
+    "set": "je",
+    "complexity": 2,
+    "emote": "<:SpiritGrinningTrickster:1182312575988416583>",
+    "aliases": [],
+    "uniques": [
+      "unexpected_tigers",
+      "impersonate_authority",
+      "incite_the_mob",
+      "overenthusiastic_arson"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/grinning-trickster-stirs-up-trouble/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/grinning-trickster-stirs-up-trouble/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "heart-of-the-wildfire",
+    "name": "Heart of the Wildfire",
+    "title": "Wildfire",
+    "set": "f&f",
+    "complexity": 3,
+    "emote": "<:SpiritHeartWildfire:852365962286989343>",
+    "aliases": [],
+    "uniques": [
+      "flames_fury",
+      "threatening_flames",
+      "flashfires",
+      "asphyxiating_smoke"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/heart-of-the-wildfire/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/heart-of-the-wildfire/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "heart-of-the-wildfire/transforming",
+        "name": "Transforming",
+        "emote": "🏳️‍⚧️",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/heart-of-the-wildfire/aspects/transforming/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "keeper-of-the-forbidden-wilds",
+    "name": "Keeper of the Forbidden Wilds",
+    "title": "Keeper",
+    "set": "b&c",
+    "complexity": 2,
+    "emote": "<:SpiritKeeperForbiddenWilds:852365961420210216>",
+    "aliases": [],
+    "uniques": [
+      "regrow_from_roots",
+      "boon_of_growing_power",
+      "sacrosanct_wilderness",
+      "towering_wrath"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/keeper-of-the-forbidden-wilds/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/keeper-of-the-forbidden-wilds/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "keeper-of-the-forbidden-wilds/spreading-hostility",
+        "name": "Spreading Hostility",
+        "emote": "<:TokenBadlands:852366051454746665>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/keeper-of-the-forbidden-wilds/aspects/spreading-hostility/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lightnings-swift-strike",
+    "name": "Lightning's Swift Strike",
+    "title": "Lightning",
+    "set": "base",
+    "complexity": 1,
+    "emote": "<:SpiritLightningSwiftStrike:852365958839664691>",
+    "aliases": ["bird"],
+    "uniques": [
+      "harbingers_of_the_lightning",
+      "lightnings_boon",
+      "shatter_homesteads",
+      "raging_storm"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/power-progression.jpg",
+    "aspects": [
+      {
+        "id": "lightnings-swift-strike/pandemonium",
+        "name": "Pandemonium",
+        "emote": "🐼",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/pandemonium/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "lightnings-swift-strike/wind",
+        "name": "Wind",
+        "emote": "<:EAir:852604219210727434>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/wind/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "lightnings-swift-strike/immense",
+        "name": "Immense",
+        "emote": "<:Major:1386718312876216451>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/immense/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "lightnings-swift-strike/sparking",
+        "name": "Sparking",
+        "emote": "✨",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/sparking/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/sparking/panel-2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "lure-of-the-deep-wilderness",
+    "name": "Lure of the Deep Wilderness",
+    "title": "Lure",
+    "set": "je",
+    "complexity": 2,
+    "emote": "<:SpiritLureDeepWilderness:852365959237992458>",
+    "aliases": [],
+    "uniques": [
+      "gift_of_the_untamed_wild",
+      "perils_of_the_deepest_island",
+      "swallowed_by_the_wilderness",
+      "softly_beckon_ever_inward"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/lure-of-the-deep-wilderness/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/lure-of-the-deep-wilderness/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "lure-of-the-deep-wilderness/lair",
+        "name": "Lair",
+        "emote": "<:IncarnaLair:1386717472102682784>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lure-of-the-deep-wilderness/aspects/lair/panel-1.jpg"
+        ],
+        "incarna": {
+          "aliases": [],
+          "panel": ["https://imgur.com/VMuYUo4"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "many-minds-move-as-one",
+    "name": "Many Minds Move as One",
+    "title": "ManyMinds",
+    "set": "je",
+    "complexity": 2,
+    "emote": "<:SpiritManyMindsMoveOne:852365959334854666>",
+    "aliases": ["bird"],
+    "uniques": [
+      "pursue_with_scratches_pecks_and_stings",
+      "a_dreadful_tide_of_scurrying_flesh",
+      "boon_of_swarming_bedevilment",
+      "guide_the_way_on_feathered_wings",
+      "evermultiplying_swarm"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/many-minds-move-as-one/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/many-minds-move-as-one/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "oceans-hungry-grasp",
+    "name": "Ocean's Hungry Grasp",
+    "title": "Ocean",
+    "set": "base",
+    "complexity": 3,
+    "emote": "<:SpiritOceanHungryGrasp:852365961617211403>",
+    "aliases": [],
+    "uniques": [
+      "call_of_the_deeps",
+      "swallow_the_landdwellers",
+      "grasping_tide",
+      "tidal_boon"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "oceans-hungry-grasp/deeps",
+        "name": "Deeps",
+        "emote": "<:TokenDeeps1:1136437567244468234>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/aspects/deeps/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/aspects/deeps/panel-2.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "river-surges-in-sunlight",
+    "name": "River Surges in Sunlight",
+    "title": "River",
+    "set": "base",
+    "complexity": 1,
+    "emote": "<:SpiritRiverSurgesSunlight:852365960916762635>",
+    "aliases": [],
+    "uniques": ["boon_of_vigor", "rivers_bounty", "wash_away", "flash_floods"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/power-progression.jpg",
+    "aspects": [
+      {
+        "id": "river-surges-in-sunlight/sunshine",
+        "name": "Sunshine",
+        "emote": "<:ESun:852590484353843200>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/aspects/sunshine/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "river-surges-in-sunlight/travel",
+        "name": "Travel",
+        "emote": "🚕",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/aspects/travel/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "river-surges-in-sunlight/haven",
+        "name": "Haven",
+        "emote": "<:Defend:1386718325694005350>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/aspects/haven/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "serpent-slumbering-beneath-the-island",
+    "name": "Serpent Slumbering Beneath the Island",
+    "title": "Serpent",
+    "set": "f&f",
+    "complexity": 3,
+    "emote": "<:SpiritSnekSerpentSlumbering:852365959989428264>",
+    "aliases": ["snake", "snek"],
+    "uniques": [
+      "gift_of_the_primordial_deeps",
+      "gift_of_flowing_power",
+      "elemental_aegis",
+      "absorb_essence"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "serpent-slumbering-beneath-the-island/locus",
+        "name": "Locus",
+        "emote": "<:IncarnaLocus:1386717477903532113>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/aspects/locus/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/aspects/locus/panel-2.jpg"
+        ],
+        "incarna": {
+          "aliases": [],
+          "panel": ["https://imgur.com/NsTzupl", "https://imgur.com/116luO1"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "shadows-flicker-like-flame",
+    "name": "Shadows Flicker Like Flame",
+    "title": "Shadows",
+    "set": "base",
+    "complexity": 1,
+    "emote": "<:SpiritShadowsFlickerFlame:852365960286568479>",
+    "aliases": [],
+    "uniques": [
+      "concealing_shadows",
+      "favors_called_due",
+      "mantle_of_dread",
+      "crops_wither_and_fade"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/power-progression.jpg",
+    "aspects": [
+      {
+        "id": "shadows-flicker-like-flame/madness",
+        "name": "Madness",
+        "emote": "<:TokenStrife:852366051848093756>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/madness/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "shadows-flicker-like-flame/reach",
+        "name": "Reach",
+        "emote": "🫳",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/reach/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "shadows-flicker-like-flame/foreboding",
+        "name": "Foreboding",
+        "emote": "<:TokenFear:852589106918981663>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/foreboding/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "shadows-flicker-like-flame/amorphous",
+        "name": "Amorphous",
+        "emote": "<:SpiritBlobby:852589110203645954>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/amorphous/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "shadows-flicker-like-flame/dark-fire",
+        "name": "Dark Fire",
+        "emote": "<:EFire:852590485549744180>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/dark-fire/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sharp-fangs-behind-the-leaves",
+    "name": "Sharp Fangs Behind the Leaves",
+    "title": "Fangs",
+    "set": "b&c",
+    "complexity": 2,
+    "emote": "<:SpiritSharpFangsLeaves:852365962292494346>",
+    "aliases": [],
+    "uniques": [
+      "too_near_the_jungle",
+      "prey_on_the_builders",
+      "teeth_gleam_from_darkness",
+      "terrifying_chase"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "sharp-fangs-behind-the-leaves/encircle",
+        "name": "Encircle",
+        "emote": "⭕",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/aspects/encircle/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "sharp-fangs-behind-the-leaves/unconstrained",
+        "name": "Unconstrained",
+        "emote": "🔓",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/aspects/unconstrained/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shifting-memory-of-ages",
+    "name": "Shifting Memory of Ages",
+    "title": "Memory",
+    "set": "je",
+    "complexity": 2,
+    "emote": "<:SpiritShiftingMemoryAges:852365960593932318>",
+    "aliases": [],
+    "uniques": [
+      "elemental_teachings",
+      "share_secrets_of_survival",
+      "study_the_invaders_fears",
+      "boon_of_ancient_memories"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "shifting-memory-of-ages/intensify",
+        "name": "Intensify",
+        "emote": "‼️",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/aspects/intensify/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "shifting-memory-of-ages/mentor",
+        "name": "Mentor",
+        "emote": "🧑‍🏫",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/aspects/mentor/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shroud-of-silent-mist",
+    "name": "Shroud of Silent Mist",
+    "title": "Mist",
+    "set": "je",
+    "complexity": 3,
+    "emote": "<:SpiritShroudSilentMist:852365959183204402>",
+    "aliases": [],
+    "uniques": [
+      "flowing_and_silent_forms_dart_by",
+      "the_fog_closes_in",
+      "unnerving_pall",
+      "dissolving_vapors"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/shroud-of-silent-mist/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/shroud-of-silent-mist/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "shroud-of-silent-mist/stranded",
+        "name": "Stranded",
+        "emote": "<:Isolate:1386718311030587435>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shroud-of-silent-mist/aspects/stranded/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "starlight-seeks-its-form",
+    "name": "Starlight Seeks Its Form",
+    "title": "Starlight",
+    "set": "je",
+    "complexity": 4,
+    "emote": "<:SpiritStarlightSeeksForm:852365959801077782>",
+    "aliases": [],
+    "uniques": [
+      "gather_the_scattered_light_of_stars",
+      "shape_the_self_anew",
+      "boon_of_reimagining",
+      "peace_of_the_nighttime_sky"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/starlight-seeks-its-form/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/starlight-seeks-its-form/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "stones-unyielding-defiance",
+    "name": "Stone's Unyielding Defiance",
+    "title": "Stone",
+    "set": "je",
+    "complexity": 2,
+    "emote": "<:SpiritStoneUnyieldingDefiance:852365962187374632>",
+    "aliases": [],
+    "uniques": [
+      "jagged_shards_push_from_the_earth",
+      "stubborn_solidity",
+      "scarred_and_stony_land",
+      "plows_shatter_on_rocky_ground"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/stones-unyielding-defiance/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/stones-unyielding-defiance/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "thunderspeaker",
+    "name": "Thunderspeaker",
+    "title": "Thunderspeaker",
+    "set": "base",
+    "complexity": 2,
+    "emote": "<:SpiritThunderspeaker:852365958789857342>",
+    "aliases": [],
+    "uniques": [
+      "voice_of_thunder",
+      "words_of_warning",
+      "sudden_ambush",
+      "manifestation_of_power_and_glory"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/thunderspeaker/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/thunderspeaker/panel-2.jpg"
+    ],
+    "aspects": [
+      {
+        "id": "thunderspeaker/tactician",
+        "name": "Tactician",
+        "emote": "🗺️",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/thunderspeaker/aspects/tactician/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "thunderspeaker/warrior",
+        "name": "Warrior",
+        "emote": "<:IncarnaWarrior:1386717491287560365>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/thunderspeaker/aspects/warrior/panel-1.jpg"
+        ],
+        "incarna": {
+          "aliases": ["🍆"],
+          "panel": ["https://imgur.com/oVtswAd"]
+        }
+      }
+    ]
+  },
+  {
+    "id": "vengeance-as-a-burning-plague",
+    "name": "Vengeance as a Burning Plague",
+    "title": "Vengeance",
+    "set": "je",
+    "complexity": 3,
+    "emote": "<:SpiritVengeanceBurningPlague:852365959222263868>",
+    "aliases": [],
+    "uniques": [
+      "fiery_vengeance",
+      "plaguebearers",
+      "fetid_breath_spreads_infection",
+      "strike_low_with_sudden_fevers"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/vengeance-as-a-burning-plague/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/vengeance-as-a-burning-plague/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "vital-strength-of-the-earth",
+    "name": "Vital Strength of the Earth",
+    "title": "Earth",
+    "set": "base",
+    "complexity": 1,
+    "emote": "<:SpiritVitalStrengthEarth:852365958593118269>",
+    "aliases": [],
+    "uniques": [
+      "draw_of_the_fruitful_earth",
+      "guard_the_healing_land",
+      "a_year_of_perfect_stillness",
+      "rituals_of_destruction"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/power-progression.jpg",
+    "aspects": [
+      {
+        "id": "vital-strength-of-the-earth/might",
+        "name": "Might",
+        "emote": "💪",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/aspects/might/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "vital-strength-of-the-earth/resilience",
+        "name": "Resilience",
+        "emote": "🛡️",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/aspects/resilience/panel-1.jpg"
+        ]
+      },
+      {
+        "id": "vital-strength-of-the-earth/nourishing",
+        "name": "Nourishing",
+        "emote": "<:TokenVitality:1136437572822892544>",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/aspects/nourishing/panel-1.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "volcano-looming-high",
+    "name": "Volcano Looming High",
+    "title": "Volcano",
+    "set": "je",
+    "complexity": 2,
+    "emote": "<:SpiritVolcanoLoomingHigh:852365959879983135>",
+    "aliases": [],
+    "uniques": [
+      "lava_flows",
+      "exaltation_of_molten_stone",
+      "rain_of_ash",
+      "pyroclastic_bombardment"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/volcano-looming-high/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/volcano-looming-high/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "fathomless-mud-of-the-swamp",
+    "name": "Fathomless Mud of the Swamp",
+    "title": "Fathomless",
+    "set": "horizons",
+    "complexity": 1,
+    "emote": "<:SpiritOtterFathomlessMud:1037130366345039872>",
+    "aliases": ["otter", "🦦"],
+    "uniques": [
+      "exaltation_of_tangled_growth",
+      "foul_vapors_and_fetid_muck",
+      "intractable_thickets_and_thorns",
+      "open_shifting_waterways"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/fathomless-mud-of-the-swamp/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/fathomless-mud-of-the-swamp/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/fathomless-mud-of-the-swamp/power-progression.jpg",
+    "aspects": []
+  },
+  {
+    "id": "devouring-teeth-lurk-underfoot",
+    "name": "Devouring Teeth Lurk Underfoot",
+    "title": "Devouring",
+    "set": "horizons",
+    "complexity": 1,
+    "emote": "<:SpiritChompDevouringTeeth:1037129924877762601>",
+    "aliases": ["chomp"],
+    "uniques": [
+      "ferocious_rampage",
+      "gift_of_furious_might",
+      "herd_towards_the_lurking_maw",
+      "mark_territory_with_scars_and_teeth"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/devouring-teeth-lurk-underfoot/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/devouring-teeth-lurk-underfoot/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/devouring-teeth-lurk-underfoot/power-progression.jpg",
+    "aspects": []
+  },
+  {
+    "id": "eyes-watch-from-the-trees",
+    "name": "Eyes Watch From The Trees",
+    "title": "Eyes",
+    "set": "horizons",
+    "complexity": 1,
+    "emote": "<:SpiritEyesWatchTrees:1182821769711734834>",
+    "aliases": ["👀"],
+    "uniques": [
+      "boon_of_watchful_guarding",
+      "eerie_noises_and_moving_trees",
+      "mysterious_abductions",
+      "whispered_guidance_through_the_night"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/eyes-watch-from-the-trees/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/eyes-watch-from-the-trees/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/eyes-watch-from-the-trees/power-progression.jpg",
+    "aspects": []
+  },
+  {
+    "id": "rising-heat-of-stone-and-sand",
+    "name": "Rising Heat of Stone and Sand",
+    "title": "Rising",
+    "set": "horizons",
+    "complexity": 1,
+    "emote": "<:SpiritRisingHeatStoneSand:1037455831018516492>",
+    "aliases": ["heat", "stone and sand"],
+    "uniques": [
+      "call_on_herders_for_aid",
+      "gift_of_searing_heat",
+      "stinging_sandstorm",
+      "sweltering_exhaustion"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/rising-heat-of-stone-and-sand/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/rising-heat-of-stone-and-sand/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/rising-heat-of-stone-and-sand/power-progression.jpg",
+    "aspects": []
+  },
+  {
+    "id": "sun-bright-whirlwind",
+    "name": "Sun-Bright Whirlwind",
+    "title": "SunBright",
+    "set": "horizons",
+    "complexity": 1,
+    "emote": "<:SpiritKittySunBrightWhirlwind:1037130011997655050>",
+    "aliases": ["whirlwind", "kitty", "sunkitty"],
+    "uniques": [
+      "gift_of_the_sunlit_air",
+      "gift_of_windsped_steps",
+      "scatter_to_the_winds",
+      "tempest_of_leaves_and_branches"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/sun-bright-whirlwind/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/sun-bright-whirlwind/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/sun-bright-whirlwind/power-progression.jpg",
+    "aspects": []
+  },
+  {
+    "id": "breath-of-darkness-down-your-spine",
+    "name": "Breath of Darkness Down Your Spine",
+    "title": "Breath",
+    "set": "ni",
+    "complexity": 3,
+    "emote": "<:SpiritBreathOfDarknessBoDDYS:1135936717879255040>",
+    "aliases": ["boddys", "spine", "nal"],
+    "uniques": [
+      "emerge_from_the_dread_night_wind",
+      "reach_from_the_infinite_darkness",
+      "swallowed_by_the_endless_dark",
+      "terror_of_the_hunted"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/breath-of-darkness-down-your-spine/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/breath-of-darkness-down-your-spine/panel-2.jpg"
+    ],
+    "incarna": {
+      "aliases": ["boddys", "spine", "nal"],
+      "panel": [
+        "https://spiritislandwiki.com/images/b/b1/Breath_of_Darkness_Down_Your_Spine_Incarna.png",
+        "https://spiritislandwiki.com/images/2/26/Breath_of_Darkness_Down_Your_Spine_Empowered_Incarna.png"
+      ]
+    },
+    "aspects": []
+  },
+  {
+    "id": "dances-up-earthquakes",
+    "name": "Dances Up Earthquakes",
+    "title": "Dances",
+    "set": "ni",
+    "complexity": 4,
+    "emote": "<:SpiritDancesUpEarthquakes:1135936722623004822>",
+    "aliases": ["💃", "🕺"],
+    "uniques": [
+      "exaltation_of_echoed_steps",
+      "gift_of_seismic_energy",
+      "inspire_a_winding_dance",
+      "radiating_tremors",
+      "resounding_footfalls_sow_dismay",
+      "rumblings_portend_a_greater_quake"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/dances-up-earthquakes/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/dances-up-earthquakes/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "ember-eyed-behemoth",
+    "name": "Ember-Eyed Behemoth",
+    "title": "Ember",
+    "set": "ni",
+    "complexity": 2,
+    "emote": "<:SpiritEmberEyedBehemoth:1135936720110637177>",
+    "aliases": ["stomp", "eeb"],
+    "uniques": [
+      "blazing_intimidation",
+      "exaltation_of_grasping_roots",
+      "surging_lahar",
+      "terrifying_rampage"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/ember-eyed-behemoth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/ember-eyed-behemoth/panel-2.jpg"
+    ],
+    "incarna": {
+      "aliases": ["stomp", "eeb"],
+      "panel": [
+        "https://spiritislandwiki.com/images/8/8d/Ember-Eyed_Behemoth_Incarna.png",
+        "https://spiritislandwiki.com/images/a/a7/Ember-Eyed_Behemoth_Empowered_Incarna.png"
+      ]
+    },
+    "aspects": []
+  },
+  {
+    "id": "hearth-vigil",
+    "name": "Hearth-Vigil",
+    "title": "Hearth",
+    "set": "ni",
+    "complexity": 2,
+    "emote": "<:SpiritHearthVigil:1135936715652079678>",
+    "aliases": [],
+    "uniques": [
+      "call_to_vigilance",
+      "coordinated_raid",
+      "favors_of_story_and_season",
+      "surrounded_by_the_dahan"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/hearth-vigil/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/hearth-vigil/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "relentless-gaze-of-the-sun",
+    "name": "Relentless Gaze of the Sun",
+    "title": "Relentless",
+    "set": "ni",
+    "complexity": 3,
+    "emote": "<:SpiritRelentlessGaze:1135936712934183042>",
+    "aliases": ["gaze", "🏳️‍🌈"],
+    "uniques": [
+      "blinding_glare",
+      "focus_the_suns_rays",
+      "unbearable_gaze",
+      "wither_bodies_scar_stones"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/relentless-gaze-of-the-sun/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/relentless-gaze-of-the-sun/panel-2.jpg"
+    ],
+    "aspects": []
+  },
+  {
+    "id": "towering-roots-of-the-jungle",
+    "name": "Towering Roots of the Jungle",
+    "title": "Towering",
+    "set": "ni",
+    "complexity": 2,
+    "emote": "<:SpiritToweringRoots:1136003165528010752>",
+    "aliases": ["the tree stands tall"],
+    "uniques": [
+      "radiant_and_hallowed_grove",
+      "entwine_the_fates_of_all",
+      "boon_of_resilient_power",
+      "blooming_of_the_rocks_and_trees"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/towering-roots-of-the-jungle/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/towering-roots-of-the-jungle/panel-2.jpg"
+    ],
+    "incarna": {
+      "aliases": ["the tree stands tall"],
+      "panel": [
+        "https://spiritislandwiki.com/images/f/f2/Towering_Roots_of_the_Jungle_Incarna.png",
+        "https://spiritislandwiki.com/images/3/34/Towering_Roots_of_the_Jungle_Empowered_Incarna.png"
+      ]
+    },
+    "aspects": []
+  },
+  {
+    "id": "wandering-voice-keens-delirium",
+    "name": "Wandering Voice Keens Delirium",
+    "title": "Voice",
+    "set": "ni",
+    "complexity": 3,
+    "emote": "<:SpiritWanderingVoice:1135936709893300224>",
+    "aliases": [],
+    "uniques": [
+      "twist_perceptions",
+      "turmoils_touch",
+      "frightful_keening",
+      "exhale_confusion_and_delirium"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/wandering-voice-keens-delirium/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/wandering-voice-keens-delirium/panel-2.jpg"
+    ],
+    "incarna": {
+      "aliases": [],
+      "panel": [
+        "https://spiritislandwiki.com/images/f/fa/Wandering_Voice_Keens_Delirium_Incarna.png",
+        "https://spiritislandwiki.com/images/c/cd/Wandering_Voice_Keens_Delirium_Empowered_Incarna.png"
+      ]
+    },
+    "aspects": []
+  },
+  {
+    "id": "wounded-waters-bleeding",
+    "name": "Wounded Waters Bleeding",
+    "title": "Wounded",
+    "set": "ni",
+    "complexity": 3,
+    "emote": "<:SpiritWoundedWatersWWB:1487248733266645002>",
+    "aliases": [
+      "peacewaters",
+      "waters renew",
+      "serene waters",
+      "roiling waters",
+      "waters taste of ruin"
+    ],
+    "uniques": [
+      "blood_water_and_bloodlust",
+      "boon_of_corrupted_blood",
+      "draw_to_the_waters_edge",
+      "wrack_with_pain_and_grief"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/panel-2.jpg"
+    ],
+    "healingCards": [
+      {
+        "id": "wounded-waters-bleeding/roiling-waters",
+        "name": "Roiling Waters",
+        "title": "roiling",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/roiling-waters/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/roiling-waters/panel-2.jpg"
+        ]
+      },
+      {
+        "id": "wounded-waters-bleeding/serene-waters",
+        "name": "Serene Waters",
+        "title": "serene",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/serene-waters/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/serene-waters/panel-2.jpg"
+        ]
+      },
+      {
+        "id": "wounded-waters-bleeding/waters-renew",
+        "name": "Waters Renew",
+        "title": "renew",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-renew/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-renew/panel-2.jpg"
+        ]
+      },
+      {
+        "id": "wounded-waters-bleeding/waters-taste-of-ruin",
+        "name": "Waters Taste of Ruin",
+        "title": "ruin",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-taste-of-ruin/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-taste-of-ruin/panel-2.jpg"
+        ]
+      }
+    ],
+    "aspects": []
+  },
+  {
+    "id": "covets-gleaming-shards-of-earth",
+    "name": "Covets Gleaming Shards of Earth",
+    "title": "Covets",
+    "set": "apocrypha",
+    "complexity": 4,
+    "emote": "<:SpiritCovetsGleaming:1386717516188876950>",
+    "aliases": ["dragon"],
+    "uniques": [
+      "favors_of_steel_and_bone",
+      "melt_earth_to_slag",
+      "petition_for_smoldering_wrath",
+      "unnerving_attention"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/panel-2.jpg"
+    ],
+    "extraPanels": [
+      {
+        "name": "The Gleaming Hoard",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/extra-panels/the-gleaming-hoard/panel-1.jpg"
+        ]
+      }
+    ],
+    "aspects": []
+  },
+  {
+    "id": "spreading-rot-renews-the-earth",
+    "name": "Spreading Rot Renews the Earth",
+    "title": "Rot",
+    "set": "apocrypha",
+    "complexity": 3,
+    "emote": "<:SpiritSpreadingRotRenews:1386717518713851985>",
+    "aliases": [],
+    "uniques": [
+      "land_of_deadfall_and_rot",
+      "infesting_spores",
+      "worms_and_bugs_enrich_the_soil",
+      "exaltation_of_the_re_forming_land"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/spreading-rot-renews-the-earth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/spreading-rot-renews-the-earth/panel-2.jpg"
+    ],
+    "aspects": []
+  }
+]

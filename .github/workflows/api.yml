@@ -1,0 +1,58 @@
+name: API
+
+# Tests the Worker on pull requests, and deploys it to
+# api.callofthedahanways.com whenever main changes the data or the Worker.
+
+on:
+  pull_request:
+    branches: [main]
+    paths: ["data/**", "api/**", ".github/workflows/api.yml"]
+  push:
+    branches: [main]
+    paths: ["data/**", "api/**", ".github/workflows/api.yml"]
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+          cache: "npm"
+          cache-dependency-path: |
+            package-lock.json
+            api/package-lock.json
+
+      # Only the schema check runs from the root package; skipping install
+      # scripts avoids building node-canvas, which it doesn't need.
+      - name: Validate data against schemas
+        run: |
+          npm ci --ignore-scripts
+          npx jest tests/data.test.js
+
+      - name: Install API dependencies
+        working-directory: api
+        run: npm ci
+
+      - name: Typecheck API
+        working-directory: api
+        run: npm run typecheck
+
+      - name: Test API
+        working-directory: api
+        run: npm test
+
+      - name: Deploy to Cloudflare
+        if: github.event_name == 'push'
+        working-directory: api
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >
+          npx wrangler deploy
+          --var GIT_SHA:${{ github.sha }}
+          --var UPDATED_AT:$(git log -1 --format=%cI)

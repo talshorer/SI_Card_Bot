@@ -1,0 +1,11 @@
+name = "si-api"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+
+routes = [{ pattern = "api.callofthedahanways.com", custom_domain = true }]
+
+# Overridden at deploy time (see .github/workflows/api.yml) so responses
+# can say which commit of data/ they were built from.
+[vars]
+GIT_SHA = "dev"
+UPDATED_AT = ""

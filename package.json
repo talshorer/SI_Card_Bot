@@ -11,7 +11,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "docs:generate": "node scripts/generateDocs.cjs && prettier --write README.md docs/",
-    "commands:deploy": "node scripts/deployCommands.cjs"
+    "commands:deploy": "node scripts/deployCommands.cjs",
+    "assets:extract": "node scripts/extractAssets.cjs",
+    "assets:upload": "node scripts/uploadAssets.cjs"
   },
   "engines": {
     "npm": "10.x",
@@ -44,9 +46,11 @@
   },
   "homepage": "https://github.com/thirdratecyberpunk/SI_Card_Bot#readme",
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1155.0",
     "@eslint/js": "^9.34.0",
     "@types/express": "^4.17.18",
     "@types/node": "^20.17.0",
+    "ajv": "^8.20.0",
     "eslint": "^9.34.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
@@ -54,5 +58,11 @@
     "jest": "^29.7.0",
     "prettier": "3.6.2",
     "typescript": "^6.0.2"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/api/"
+    ]
   }
 }

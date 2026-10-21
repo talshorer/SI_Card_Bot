@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adversary.schema.json",
+  "title": "Adversary",
+  "description": "An adversary and its seven levels (0-6). data/adversaries.json is an array of these. How each level reshapes the Invader deck stays in code (commands/AdversaryNames.js), keyed by adversary id; the rule text describing it lives here.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "title",
+    "emote",
+    "aliases",
+    "flagImage",
+    "panel",
+    "escalation",
+    "levels"
+  ],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "$ref": "common.schema.json#/$defs/text" },
+    "title": {
+      "description": "Short token the adversary is looked up by, e.g. 'prussia'.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "emote": { "$ref": "common.schema.json#/$defs/emote" },
+    "aliases": { "$ref": "common.schema.json#/$defs/aliases" },
+    "flagImage": {
+      "description": "Repository-relative path of the flag image used by the rules renderer.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "panel": { "$ref": "common.schema.json#/$defs/url" },
+    "lossCondition": { "$ref": "#/$defs/rule" },
+    "escalation": { "$ref": "#/$defs/rule" },
+    "doublesNotes": {
+      "description": "Extra rules that apply when this adversary is played alongside another.",
+      "$ref": "common.schema.json#/$defs/text"
+    },
+    "levels": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/level" },
+      "minItems": 7,
+      "maxItems": 7
+    }
+  },
+  "$defs": {
+    "level": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "difficulty", "fearCards", "rules"],
+      "properties": {
+        "level": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "difficulty": { "type": "integer", "minimum": 0 },
+        "fearCards": {
+          "description": "Change to the number of fear cards in each terror level [I, II, III].",
+          "type": "array",
+          "items": { "type": "integer" },
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "rules": {
+          "description": "Rules added at this level (none at level 0). A level can add several named rules, or one rule split by phase.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/rule" }
+        }
+      }
+    },
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "effect"],
+      "properties": {
+        "name": { "$ref": "common.schema.json#/$defs/text" },
+        "phases": {
+          "description": "Game phases the rule takes effect in.",
+          "type": "array",
+          "items": {
+            "enum": ["setup", "explore", "build", "ravage", "ongoing"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "replaces": {
+          "description": "Level whose rule this one supersedes.",
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 6
+        },
+        "effect": { "$ref": "common.schema.json#/$defs/text" },
+        "exceptions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/exception" },
+          "minItems": 1
+        }
+      }
+    },
+    "exception": {
+      "description": "A note on how the rule interacts with another adversary in a doubles game.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["with", "note"],
+      "properties": {
+        "with": {
+          "oneOf": [
+            {
+              "description": "Applies alongside any other adversary.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["any"],
+              "properties": { "any": { "const": true } }
+            },
+            {
+              "description": "Applies alongside a specific adversary at or above a level.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["adversary", "minLevel"],
+              "properties": {
+                "adversary": { "$ref": "common.schema.json#/$defs/id" },
+                "minLevel": { "type": "integer", "minimum": 0, "maximum": 6 }
+              }
+            }
+          ]
+        },
+        "note": { "$ref": "common.schema.json#/$defs/text" }
+      }
+    }
+  }
+}

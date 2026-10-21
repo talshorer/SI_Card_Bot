@@ -51,7 +51,6 @@ module.exports = {
     }
   },
   getRandomDraws,
-  capitalizeTheFirstLetterOfEachWord,
   getDaysThatNeverWere,
 };
 
@@ -84,9 +83,7 @@ function getRandomDraws(drawnType, drawAmount = 4) {
   length = 0;
 
   if (drawableCards.includes(drawnType)) {
-    list = capitalizeTheFirstLetterOfEachWord(
-      sampleFromArray(cards[drawnType], drawAmount),
-    );
+    list = sampleFromArray(cards[drawnType], drawAmount).map(cards.cardName);
     console.log(list);
     if (Array.isArray(list)) {
       // if there is more than one card drawn, return the formatted message
@@ -142,23 +139,4 @@ function sampleFromArray(arr, n) {
     taken[x] = --len in taken ? taken[len] : len;
   }
   return result;
-}
-
-/**
- * returns a capitalised version of the input string
- * TODO: move this to a collection of other relevant string manipulation methods
- * TODO: change function to change A string rather than a collection
- * @param {*} list -> list of strings to format
- * @returns
- */
-function capitalizeTheFirstLetterOfEachWord(list) {
-  for (var i = 0; i < list.length; i++) {
-    var separateWord = list[i].toLowerCase().split("_");
-    for (var j = 0; j < separateWord.length; j++) {
-      separateWord[j] =
-        separateWord[j].charAt(0).toUpperCase() + separateWord[j].substring(1);
-    }
-    list[i] = separateWord.join(" ");
-  }
-  return list;
 }

@@ -1,5 +1,5 @@
 const levenshtein = require("js-levenshtein");
-const draw = require("./draw.js");
+const ImageNames = require("./ImageNames.js");
 
 function getCardName(input, availableNames, weightOfSizediff = 0.8) {
   var target = cleanInput(input);
@@ -67,15 +67,15 @@ async function sendCardLink(
         cardName = aliases[cardName];
         // handling cases where event cards share an alias
       } else {
-        const matches = draw.capitalizeTheFirstLetterOfEachWord(
-          aliases[cardName],
-        );
+        const matches = aliases[cardName].map(ImageNames.cardName);
         var message = "Your search matched several cards, please specify:";
         message += matches.map((s) => "\n- " + s).join("");
         return await msg.channel.send(message);
       }
     }
-    return await msg.channel.send(basePath + cardName + ".webp");
+    return await msg.channel.send(
+      ImageNames.cardImage(cardName) ?? basePath + cardName + ".webp",
+    );
   } else {
     return await msg.channel.send("Incorrect name, try using /search");
   }

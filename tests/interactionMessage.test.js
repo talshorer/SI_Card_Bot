@@ -192,7 +192,9 @@ describe("dispatching an interaction to a command", () => {
       options: { scenario: "Blitz", side: "front" },
     });
 
-    expect(interaction.__sent).toEqual(["https://i.imgur.com/l9LsFb7.png"]);
+    expect(interaction.__sent).toEqual([
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-1.jpg",
+    ]);
   });
 
   it("renders the adversary card from named option values", async () => {

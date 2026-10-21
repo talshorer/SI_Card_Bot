@@ -1,0 +1,3297 @@
+[
+  {
+    "id": "fields-choked-with-growth",
+    "name": "Fields Choked with Growth",
+    "type": "unique",
+    "sickSlug": "fields_choked_with_growth"
+  },
+  {
+    "id": "stem-the-flow-of-fresh-water",
+    "name": "Stem the Flow of Fresh Water",
+    "type": "unique",
+    "sickSlug": "stem_the_flow_of_fresh_water"
+  },
+  {
+    "id": "gift-of-proliferation",
+    "name": "Gift of Proliferation",
+    "type": "unique",
+    "sickSlug": "gift_of_proliferation"
+  },
+  {
+    "id": "overgrow-in-a-night",
+    "name": "Overgrow in a Night",
+    "type": "unique",
+    "sickSlug": "overgrow_in_a_night"
+  },
+  {
+    "id": "reach-from-the-infinite-darkness",
+    "name": "Reach from the Infinite Darkness",
+    "type": "unique",
+    "sickSlug": "reach_from_the_infinite_darkness"
+  },
+  {
+    "id": "emerge-from-the-dread-night-wind",
+    "name": "Emerge from the Dread Night Wind",
+    "type": "unique",
+    "sickSlug": "emerge_from_the_dread_night_wind"
+  },
+  {
+    "id": "swallowed-by-the-endless-dark",
+    "name": "Swallowed by the Endless Dark",
+    "type": "unique",
+    "sickSlug": "swallowed_by_the_endless_dark"
+  },
+  {
+    "id": "terror-of-the-hunted",
+    "name": "Terror of the Hunted",
+    "type": "unique",
+    "sickSlug": "terror_of_the_hunted"
+  },
+  {
+    "id": "call-on-midnights-dream",
+    "name": "Call on Midnight's Dream",
+    "type": "unique",
+    "sickSlug": "call_on_midnights_dream"
+  },
+  {
+    "id": "dreams-of-the-dahan",
+    "name": "Dreams of the Dahan",
+    "type": "unique",
+    "sickSlug": "dreams_of_the_dahan"
+  },
+  {
+    "id": "predatory-nightmares",
+    "name": "Predatory Nightmares",
+    "type": "unique",
+    "sickSlug": "predatory_nightmares"
+  },
+  {
+    "id": "dread-apparitions",
+    "name": "Dread Apparitions",
+    "type": "unique",
+    "sickSlug": "dread_apparitions"
+  },
+  {
+    "id": "inspire-a-winding-dance",
+    "name": "Inspire a Winding Dance",
+    "type": "unique",
+    "sickSlug": "inspire_a_winding_dance"
+  },
+  {
+    "id": "exaltation-of-echoed-steps",
+    "name": "Exaltation of Echoed Steps",
+    "type": "unique",
+    "sickSlug": "exaltation_of_echoed_steps"
+  },
+  {
+    "id": "rumblings-portend-a-greater-quake",
+    "name": "Rumblings Portend a Greater Quake",
+    "type": "unique",
+    "sickSlug": "rumblings_portend_a_greater_quake"
+  },
+  {
+    "id": "radiating-tremors",
+    "name": "Radiating Tremors",
+    "type": "unique",
+    "sickSlug": "radiating_tremors"
+  },
+  {
+    "id": "gift-of-seismic-energy",
+    "name": "Gift of Seismic Energy",
+    "type": "unique",
+    "sickSlug": "gift_of_seismic_energy"
+  },
+  {
+    "id": "resounding-footfalls-sow-dismay",
+    "name": "Resounding Footfalls Sow Dismay",
+    "type": "unique",
+    "sickSlug": "resounding_footfalls_sow_dismay"
+  },
+  {
+    "id": "gift-of-furious-might",
+    "name": "Gift of Furious Might",
+    "type": "unique",
+    "sickSlug": "gift_of_furious_might"
+  },
+  {
+    "id": "herd-towards-the-lurking-maw",
+    "name": "Herd Towards the Lurking Maw",
+    "type": "unique",
+    "sickSlug": "herd_towards_the_lurking_maw"
+  },
+  {
+    "id": "ferocious-rampage",
+    "name": "Ferocious Rampage",
+    "type": "unique",
+    "sickSlug": "ferocious_rampage"
+  },
+  {
+    "id": "mark-territory-with-scars-and-teeth",
+    "name": "Mark Territory with Scars and Teeth",
+    "type": "unique",
+    "sickSlug": "mark_territory_with_scars_and_teeth"
+  },
+  {
+    "id": "unbearable-deluge",
+    "name": "Unbearable Deluge",
+    "type": "unique",
+    "sickSlug": "unbearable_deluge"
+  },
+  {
+    "id": "foundations-sink-into-mud",
+    "name": "Foundations Sink into Mud",
+    "type": "unique",
+    "sickSlug": "foundations_sink_into_mud"
+  },
+  {
+    "id": "gift-of-abundance",
+    "name": "Gift of Abundance",
+    "type": "unique",
+    "sickSlug": "gift_of_abundance"
+  },
+  {
+    "id": "dark-skies-loose-a-stinging-rain",
+    "name": "Dark Skies Loose a Stinging Rain",
+    "type": "unique",
+    "sickSlug": "dark_skies_loose_a_stinging_rain"
+  },
+  {
+    "id": "exaltation-of-grasping-roots",
+    "name": "Exaltation of Grasping Roots",
+    "type": "unique",
+    "sickSlug": "exaltation_of_grasping_roots"
+  },
+  {
+    "id": "terrifying-rampage",
+    "name": "Terrifying Rampage",
+    "type": "unique",
+    "sickSlug": "terrifying_rampage"
+  },
+  {
+    "id": "blazing-intimidation",
+    "name": "Blazing Intimidation",
+    "type": "unique",
+    "sickSlug": "blazing_intimidation"
+  },
+  {
+    "id": "surging-lahar",
+    "name": "Surging Lahar",
+    "type": "unique",
+    "sickSlug": "surging_lahar"
+  },
+  {
+    "id": "boon-of-watchful-guarding",
+    "name": "Boon of Watchful Guarding",
+    "type": "unique",
+    "sickSlug": "boon_of_watchful_guarding"
+  },
+  {
+    "id": "whispered-guidance-through-the-night",
+    "name": "Whispered Guidance Through the Night",
+    "type": "unique",
+    "sickSlug": "whispered_guidance_through_the_night"
+  },
+  {
+    "id": "mysterious-abductions",
+    "name": "Mysterious Abductions",
+    "type": "unique",
+    "sickSlug": "mysterious_abductions"
+  },
+  {
+    "id": "eerie-noises-and-moving-trees",
+    "name": "Eerie Noises and Moving Trees",
+    "type": "unique",
+    "sickSlug": "eerie_noises_and_moving_trees"
+  },
+  {
+    "id": "exaltation-of-tangled-growth",
+    "name": "Exaltation of Tangled Growth",
+    "type": "unique",
+    "sickSlug": "exaltation_of_tangled_growth"
+  },
+  {
+    "id": "foul-vapors-and-fetid-muck",
+    "name": "Foul Vapors and Fetid Muck",
+    "type": "unique",
+    "sickSlug": "foul_vapors_and_fetid_muck"
+  },
+  {
+    "id": "open-shifting-waterways",
+    "name": "Open Shifting Waterways",
+    "type": "unique",
+    "sickSlug": "open_shifting_waterways"
+  },
+  {
+    "id": "intractable-thickets-and-thorns",
+    "name": "Intractable Thickets and Thorns",
+    "type": "unique",
+    "sickSlug": "intractable_thickets_and_thorns"
+  },
+  {
+    "id": "travelers-boon",
+    "name": "Traveler's Boon",
+    "type": "unique",
+    "sickSlug": "travelers_boon"
+  },
+  {
+    "id": "paths-tied-by-nature",
+    "name": "Paths Tied by Nature",
+    "type": "unique",
+    "sickSlug": "paths_tied_by_nature"
+  },
+  {
+    "id": "a-circuitous-and-wending-journey",
+    "name": "A Circuitous and Wending Journey",
+    "type": "unique",
+    "sickSlug": "a_circuitous_and_wending_journey"
+  },
+  {
+    "id": "offer-passage-between-worlds",
+    "name": "Offer Passage Between Worlds",
+    "type": "unique",
+    "sickSlug": "offer_passage_between_worlds"
+  },
+  {
+    "id": "ways-of-shore-and-heartland",
+    "name": "Ways of Shore and Heartland",
+    "type": "unique",
+    "sickSlug": "ways_of_shore_and_heartland"
+  },
+  {
+    "id": "aid-from-the-spirit-speakers",
+    "name": "Aid from the Spirit-Speakers",
+    "type": "unique",
+    "sickSlug": "aid_from_the_spiritspeakers"
+  },
+  {
+    "id": "the-past-returns-again",
+    "name": "The Past Returns Again",
+    "type": "unique",
+    "sickSlug": "the_past_returns_again"
+  },
+  {
+    "id": "absolute-stasis",
+    "name": "Absolute Stasis",
+    "type": "unique",
+    "sickSlug": "absolute_stasis"
+  },
+  {
+    "id": "pour-time-sideways",
+    "name": "Pour Time Sideways",
+    "type": "unique",
+    "sickSlug": "pour_time_sideways"
+  },
+  {
+    "id": "blur-the-arc-of-years",
+    "name": "Blur the Arc of Years",
+    "type": "unique",
+    "sickSlug": "blur_the_arc_of_years"
+  },
+  {
+    "id": "unexpected-tigers",
+    "name": "Unexpected Tigers",
+    "type": "unique",
+    "sickSlug": "unexpected_tigers"
+  },
+  {
+    "id": "impersonate-authority",
+    "name": "Impersonate Authority",
+    "type": "unique",
+    "sickSlug": "impersonate_authority"
+  },
+  {
+    "id": "incite-the-mob",
+    "name": "Incite the Mob",
+    "type": "unique",
+    "sickSlug": "incite_the_mob"
+  },
+  {
+    "id": "overenthusiastic-arson",
+    "name": "Overenthusiastic Arson",
+    "type": "unique",
+    "sickSlug": "overenthusiastic_arson"
+  },
+  {
+    "id": "flames-fury",
+    "name": "Flame's Fury",
+    "type": "unique",
+    "sickSlug": "flames_fury"
+  },
+  {
+    "id": "threatening-flames",
+    "name": "Threatening Flames",
+    "type": "unique",
+    "sickSlug": "threatening_flames"
+  },
+  {
+    "id": "flash-fires",
+    "name": "Flash-Fires",
+    "type": "unique",
+    "sickSlug": "flashfires"
+  },
+  {
+    "id": "asphyxiating-smoke",
+    "name": "Asphyxiating Smoke",
+    "type": "unique",
+    "sickSlug": "asphyxiating_smoke"
+  },
+  {
+    "id": "surrounded-by-the-dahan",
+    "name": "Surrounded by the Dahan",
+    "type": "unique",
+    "sickSlug": "surrounded_by_the_dahan"
+  },
+  {
+    "id": "coordinated-raid",
+    "name": "Coordinated Raid",
+    "type": "unique",
+    "sickSlug": "coordinated_raid"
+  },
+  {
+    "id": "favors-of-story-and-season",
+    "name": "Favors of Story and Season",
+    "type": "unique",
+    "sickSlug": "favors_of_story_and_season"
+  },
+  {
+    "id": "call-to-vigilance",
+    "name": "Call to Vigilance",
+    "type": "unique",
+    "sickSlug": "call_to_vigilance"
+  },
+  {
+    "id": "regrow-from-roots",
+    "name": "Regrow from Roots",
+    "type": "unique",
+    "sickSlug": "regrow_from_roots"
+  },
+  {
+    "id": "boon-of-growing-power",
+    "name": "Boon of Growing Power",
+    "type": "unique",
+    "sickSlug": "boon_of_growing_power"
+  },
+  {
+    "id": "sacrosanct-wilderness",
+    "name": "Sacrosanct Wilderness",
+    "type": "unique",
+    "sickSlug": "sacrosanct_wilderness"
+  },
+  {
+    "id": "towering-wrath",
+    "name": "Towering Wrath",
+    "type": "unique",
+    "sickSlug": "towering_wrath"
+  },
+  {
+    "id": "harbingers-of-the-lightning",
+    "name": "Harbingers of the Lightning",
+    "type": "unique",
+    "sickSlug": "harbingers_of_the_lightning"
+  },
+  {
+    "id": "lightnings-boon",
+    "name": "Lightning's Boon",
+    "type": "unique",
+    "sickSlug": "lightnings_boon"
+  },
+  {
+    "id": "shatter-homesteads",
+    "name": "Shatter Homesteads",
+    "type": "unique",
+    "sickSlug": "shatter_homesteads"
+  },
+  {
+    "id": "raging-storm",
+    "name": "Raging Storm",
+    "type": "unique",
+    "sickSlug": "raging_storm"
+  },
+  {
+    "id": "gift-of-the-untamed-wild",
+    "name": "Gift of the Untamed Wild",
+    "type": "unique",
+    "sickSlug": "gift_of_the_untamed_wild"
+  },
+  {
+    "id": "perils-of-the-deepest-island",
+    "name": "Perils of the Deepest Island",
+    "type": "unique",
+    "sickSlug": "perils_of_the_deepest_island"
+  },
+  {
+    "id": "swallowed-by-the-wilderness",
+    "name": "Swallowed by the Wilderness",
+    "type": "unique",
+    "sickSlug": "swallowed_by_the_wilderness"
+  },
+  {
+    "id": "softly-beckon-ever-inward",
+    "name": "Softly Beckon Ever Inward",
+    "type": "unique",
+    "sickSlug": "softly_beckon_ever_inward"
+  },
+  {
+    "id": "pursue-with-scratches-pecks-and-stings",
+    "name": "Pursue with Scratches, Pecks, and Stings",
+    "type": "unique",
+    "sickSlug": "pursue_with_scratches_pecks_and_stings"
+  },
+  {
+    "id": "a-dreadful-tide-of-scurrying-flesh",
+    "name": "A Dreadful Tide of Scurrying Flesh",
+    "type": "unique",
+    "sickSlug": "a_dreadful_tide_of_scurrying_flesh"
+  },
+  {
+    "id": "boon-of-swarming-bedevilment",
+    "name": "Boon of Swarming Bedevilment",
+    "type": "unique",
+    "sickSlug": "boon_of_swarming_bedevilment"
+  },
+  {
+    "id": "guide-the-way-on-feathered-wings",
+    "name": "Guide the Way on Feathered Wings",
+    "type": "unique",
+    "sickSlug": "guide_the_way_on_feathered_wings"
+  },
+  {
+    "id": "ever-multiplying-swarm",
+    "name": "Ever-Multiplying Swarm",
+    "type": "unique",
+    "sickSlug": "evermultiplying_swarm"
+  },
+  {
+    "id": "call-of-the-deeps",
+    "name": "Call of the Deeps",
+    "type": "unique",
+    "sickSlug": "call_of_the_deeps"
+  },
+  {
+    "id": "swallow-the-land-dwellers",
+    "name": "Swallow the Land-Dwellers",
+    "type": "unique",
+    "sickSlug": "swallow_the_landdwellers"
+  },
+  {
+    "id": "grasping-tide",
+    "name": "Grasping Tide",
+    "type": "unique",
+    "sickSlug": "grasping_tide"
+  },
+  {
+    "id": "tidal-boon",
+    "name": "Tidal Boon",
+    "type": "unique",
+    "sickSlug": "tidal_boon"
+  },
+  {
+    "id": "blinding-glare",
+    "name": "Blinding Glare",
+    "type": "unique",
+    "sickSlug": "blinding_glare"
+  },
+  {
+    "id": "focus-the-suns-rays",
+    "name": "Focus the Sun's Rays",
+    "type": "unique",
+    "sickSlug": "focus_the_suns_rays"
+  },
+  {
+    "id": "unbearable-gaze",
+    "name": "Unbearable Gaze",
+    "type": "unique",
+    "sickSlug": "unbearable_gaze"
+  },
+  {
+    "id": "wither-bodies-scar-stones",
+    "name": "Wither Bodies, Scar Stones",
+    "type": "unique",
+    "sickSlug": "wither_bodies_scar_stones"
+  },
+  {
+    "id": "gift-of-searing-heat",
+    "name": "Gift of Searing Heat",
+    "type": "unique",
+    "sickSlug": "gift_of_searing_heat"
+  },
+  {
+    "id": "call-on-herders-for-aid",
+    "name": "Call on Herders for Aid",
+    "type": "unique",
+    "sickSlug": "call_on_herders_for_aid"
+  },
+  {
+    "id": "stinging-sandstorm",
+    "name": "Stinging Sandstorm",
+    "type": "unique",
+    "sickSlug": "stinging_sandstorm"
+  },
+  {
+    "id": "sweltering-exhaustion",
+    "name": "Sweltering Exhaustion",
+    "type": "unique",
+    "sickSlug": "sweltering_exhaustion"
+  },
+  {
+    "id": "boon-of-vigor",
+    "name": "Boon of Vigor",
+    "type": "unique",
+    "sickSlug": "boon_of_vigor"
+  },
+  {
+    "id": "rivers-bounty",
+    "name": "River's Bounty",
+    "type": "unique",
+    "sickSlug": "rivers_bounty"
+  },
+  {
+    "id": "wash-away",
+    "name": "Wash Away",
+    "type": "unique",
+    "sickSlug": "wash_away"
+  },
+  {
+    "id": "flash-floods",
+    "name": "Flash Floods",
+    "type": "unique",
+    "sickSlug": "flash_floods"
+  },
+  {
+    "id": "gift-of-the-primordial-deeps",
+    "name": "Gift of the Primordial Deeps",
+    "type": "unique",
+    "sickSlug": "gift_of_the_primordial_deeps"
+  },
+  {
+    "id": "gift-of-flowing-power",
+    "name": "Gift of Flowing Power",
+    "type": "unique",
+    "sickSlug": "gift_of_flowing_power"
+  },
+  {
+    "id": "elemental-aegis",
+    "name": "Elemental Aegis",
+    "type": "unique",
+    "sickSlug": "elemental_aegis"
+  },
+  {
+    "id": "absorb-essence",
+    "name": "Absorb Essence",
+    "type": "unique",
+    "sickSlug": "absorb_essence"
+  },
+  {
+    "id": "concealing-shadows",
+    "name": "Concealing Shadows",
+    "type": "unique",
+    "sickSlug": "concealing_shadows"
+  },
+  {
+    "id": "favors-called-due",
+    "name": "Favors Called Due",
+    "type": "unique",
+    "sickSlug": "favors_called_due"
+  },
+  {
+    "id": "mantle-of-dread",
+    "name": "Mantle of Dread",
+    "type": "unique",
+    "sickSlug": "mantle_of_dread"
+  },
+  {
+    "id": "crops-wither-and-fade",
+    "name": "Crops Wither and Fade",
+    "type": "unique",
+    "sickSlug": "crops_wither_and_fade"
+  },
+  {
+    "id": "too-near-the-jungle",
+    "name": "Too Near the Jungle",
+    "type": "unique",
+    "sickSlug": "too_near_the_jungle"
+  },
+  {
+    "id": "prey-on-the-builders",
+    "name": "Prey on the Builders",
+    "type": "unique",
+    "sickSlug": "prey_on_the_builders"
+  },
+  {
+    "id": "teeth-gleam-from-darkness",
+    "name": "Teeth Gleam from Darkness",
+    "type": "unique",
+    "sickSlug": "teeth_gleam_from_darkness"
+  },
+  {
+    "id": "terrifying-chase",
+    "name": "Terrifying Chase",
+    "type": "unique",
+    "sickSlug": "terrifying_chase"
+  },
+  {
+    "id": "elemental-teachings",
+    "name": "Elemental Teachings",
+    "type": "unique",
+    "sickSlug": "elemental_teachings"
+  },
+  {
+    "id": "share-secrets-of-survival",
+    "name": "Share Secrets of Survival",
+    "type": "unique",
+    "sickSlug": "share_secrets_of_survival"
+  },
+  {
+    "id": "study-the-invaders-fears",
+    "name": "Study the Invaders' Fears",
+    "type": "unique",
+    "sickSlug": "study_the_invaders_fears"
+  },
+  {
+    "id": "boon-of-ancient-memories",
+    "name": "Boon of Ancient Memories",
+    "type": "unique",
+    "sickSlug": "boon_of_ancient_memories"
+  },
+  {
+    "id": "flowing-and-silent-forms-dart-by",
+    "name": "Flowing and Silent Forms Dart By",
+    "type": "unique",
+    "sickSlug": "flowing_and_silent_forms_dart_by"
+  },
+  {
+    "id": "the-fog-closes-in",
+    "name": "The Fog Closes In",
+    "type": "unique",
+    "sickSlug": "the_fog_closes_in"
+  },
+  {
+    "id": "unnerving-pall",
+    "name": "Unnerving Pall",
+    "type": "unique",
+    "sickSlug": "unnerving_pall"
+  },
+  {
+    "id": "dissolving-vapors",
+    "name": "Dissolving Vapors",
+    "type": "unique",
+    "sickSlug": "dissolving_vapors"
+  },
+  {
+    "id": "gather-the-scattered-light-of-stars",
+    "name": "Gather the Scattered Light of Stars",
+    "type": "unique",
+    "sickSlug": "gather_the_scattered_light_of_stars"
+  },
+  {
+    "id": "shape-the-self-anew",
+    "name": "Shape the Self Anew",
+    "type": "unique",
+    "sickSlug": "shape_the_self_anew"
+  },
+  {
+    "id": "boon-of-reimagining",
+    "name": "Boon of Reimagining",
+    "type": "unique",
+    "sickSlug": "boon_of_reimagining"
+  },
+  {
+    "id": "peace-of-the-nighttime-sky",
+    "name": "Peace of the Nighttime Sky",
+    "type": "unique",
+    "sickSlug": "peace_of_the_nighttime_sky"
+  },
+  {
+    "id": "jagged-shards-push-from-the-earth",
+    "name": "Jagged Shards Push from the Earth",
+    "type": "unique",
+    "sickSlug": "jagged_shards_push_from_the_earth"
+  },
+  {
+    "id": "stubborn-solidity",
+    "name": "Stubborn Solidity",
+    "type": "unique",
+    "sickSlug": "stubborn_solidity"
+  },
+  {
+    "id": "scarred-and-stony-land",
+    "name": "Scarred and Stony Land",
+    "type": "unique",
+    "sickSlug": "scarred_and_stony_land"
+  },
+  {
+    "id": "plows-shatter-on-rocky-ground",
+    "name": "Plows Shatter on Rocky Ground",
+    "type": "unique",
+    "sickSlug": "plows_shatter_on_rocky_ground"
+  },
+  {
+    "id": "gift-of-the-sunlit-air",
+    "name": "Gift of the Sunlit Air",
+    "type": "unique",
+    "sickSlug": "gift_of_the_sunlit_air"
+  },
+  {
+    "id": "gift-of-wind-sped-steps",
+    "name": "Gift of Wind-Sped Steps",
+    "type": "unique",
+    "sickSlug": "gift_of_windsped_steps"
+  },
+  {
+    "id": "scatter-to-the-winds",
+    "name": "Scatter to the Winds",
+    "type": "unique",
+    "sickSlug": "scatter_to_the_winds"
+  },
+  {
+    "id": "tempest-of-leaves-and-branches",
+    "name": "Tempest of Leaves and Branches",
+    "type": "unique",
+    "sickSlug": "tempest_of_leaves_and_branches"
+  },
+  {
+    "id": "voice-of-thunder",
+    "name": "Voice of Thunder",
+    "type": "unique",
+    "sickSlug": "voice_of_thunder"
+  },
+  {
+    "id": "words-of-warning",
+    "name": "Words of Warning",
+    "type": "unique",
+    "sickSlug": "words_of_warning"
+  },
+  {
+    "id": "sudden-ambush",
+    "name": "Sudden Ambush",
+    "type": "unique",
+    "sickSlug": "sudden_ambush"
+  },
+  {
+    "id": "manifestation-of-power-and-glory",
+    "name": "Manifestation of Power and Glory",
+    "type": "unique",
+    "sickSlug": "manifestation_of_power_and_glory"
+  },
+  {
+    "id": "blooming-of-the-rocks-and-trees",
+    "name": "Blooming of the Rocks and Trees",
+    "type": "unique",
+    "sickSlug": "blooming_of_the_rocks_and_trees"
+  },
+  {
+    "id": "boon-of-resilient-power",
+    "name": "Boon of Resilient Power",
+    "type": "unique",
+    "sickSlug": "boon_of_resilient_power"
+  },
+  {
+    "id": "entwine-the-fates-of-all",
+    "name": "Entwine the Fates of All",
+    "type": "unique",
+    "sickSlug": "entwine_the_fates_of_all"
+  },
+  {
+    "id": "radiant-and-hallowed-grove",
+    "name": "Radiant and Hallowed Grove",
+    "type": "unique",
+    "sickSlug": "radiant_and_hallowed_grove"
+  },
+  {
+    "id": "fiery-vengeance",
+    "name": "Fiery Vengeance",
+    "type": "unique",
+    "sickSlug": "fiery_vengeance"
+  },
+  {
+    "id": "plaguebearers",
+    "name": "Plaguebearers",
+    "type": "unique",
+    "sickSlug": "plaguebearers"
+  },
+  {
+    "id": "fetid-breath-spreads-infection",
+    "name": "Fetid Breath Spreads Infection",
+    "type": "unique",
+    "sickSlug": "fetid_breath_spreads_infection"
+  },
+  {
+    "id": "strike-low-with-sudden-fevers",
+    "name": "Strike Low with Sudden Fevers",
+    "type": "unique",
+    "sickSlug": "strike_low_with_sudden_fevers"
+  },
+  {
+    "id": "draw-of-the-fruitful-earth",
+    "name": "Draw of the Fruitful Earth",
+    "type": "unique",
+    "sickSlug": "draw_of_the_fruitful_earth"
+  },
+  {
+    "id": "guard-the-healing-land",
+    "name": "Guard the Healing Land",
+    "type": "unique",
+    "sickSlug": "guard_the_healing_land"
+  },
+  {
+    "id": "a-year-of-perfect-stillness",
+    "name": "A Year of Perfect Stillness",
+    "type": "unique",
+    "sickSlug": "a_year_of_perfect_stillness"
+  },
+  {
+    "id": "rituals-of-destruction",
+    "name": "Rituals of Destruction",
+    "type": "unique",
+    "sickSlug": "rituals_of_destruction"
+  },
+  {
+    "id": "lava-flows",
+    "name": "Lava Flows",
+    "type": "unique",
+    "sickSlug": "lava_flows"
+  },
+  {
+    "id": "exaltation-of-molten-stone",
+    "name": "Exaltation of Molten Stone",
+    "type": "unique",
+    "sickSlug": "exaltation_of_molten_stone"
+  },
+  {
+    "id": "rain-of-ash",
+    "name": "Rain of Ash",
+    "type": "unique",
+    "sickSlug": "rain_of_ash"
+  },
+  {
+    "id": "pyroclastic-bombardment",
+    "name": "Pyroclastic Bombardment",
+    "type": "unique",
+    "sickSlug": "pyroclastic_bombardment"
+  },
+  {
+    "id": "exhale-confusion-and-delirium",
+    "name": "Exhale Confusion and Delirium",
+    "type": "unique",
+    "sickSlug": "exhale_confusion_and_delirium"
+  },
+  {
+    "id": "turmoils-touch",
+    "name": "Turmoil's Touch",
+    "type": "unique",
+    "sickSlug": "turmoils_touch"
+  },
+  {
+    "id": "frightful-keening",
+    "name": "Frightful Keening",
+    "type": "unique",
+    "sickSlug": "frightful_keening"
+  },
+  {
+    "id": "twist-perceptions",
+    "name": "Twist Perceptions",
+    "type": "unique",
+    "sickSlug": "twist_perceptions"
+  },
+  {
+    "id": "blood-water-and-bloodlust",
+    "name": "Blood Water and Bloodlust",
+    "type": "unique",
+    "sickSlug": "blood_water_and_bloodlust"
+  },
+  {
+    "id": "boon-of-corrupted-blood",
+    "name": "Boon of Corrupted Blood",
+    "type": "unique",
+    "sickSlug": "boon_of_corrupted_blood"
+  },
+  {
+    "id": "draw-to-the-waters-edge",
+    "name": "Draw to the Water's Edge",
+    "type": "unique",
+    "sickSlug": "draw_to_the_waters_edge"
+  },
+  {
+    "id": "wrack-with-pain-and-grief",
+    "name": "Wrack with Pain and Grief",
+    "type": "unique",
+    "sickSlug": "wrack_with_pain_and_grief"
+  },
+  {
+    "id": "favors-of-steel-and-bone",
+    "name": "Favors of Steel and Bone",
+    "type": "unique",
+    "sickSlug": "favors_of_steel_and_bone",
+    "image": "https://cdn.callofthedahanways.com/cards/favors-of-steel-and-bone.jpg",
+    "cost": 1,
+    "speed": "fast",
+    "elements": ["sun", "earth", "animal"],
+    "range": "2",
+    "targetType": "land",
+    "target": ":Dahan: + :TokenMetal:",
+    "text": [
+      "All :Dahan: currently in target land have +6 Health.",
+      "2 :TokenFear: if Invaders are present.",
+      "After the Invader Phase, for each dropped :TokenMetal:, Move 1 :Dahan: to :Incarna:. They each bring 1 dropped :TokenMetal:."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "melt-earth-to-slag",
+    "name": "Melt Earth to Slag",
+    "type": "unique",
+    "sickSlug": "melt_earth_to_slag",
+    "image": "https://cdn.callofthedahanways.com/cards/melt-earth-to-slag.jpg",
+    "cost": 1,
+    "speed": "slow",
+    "elements": ["sun", "moon", "fire", "earth"],
+    "range": "1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "1 Damage.",
+      "For each Invader with :TokenMetal:, 1 Damage.",
+      "1 :TokenFear: if this Power destroyed any :InvaderCity:."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "petition-for-smoldering-wrath",
+    "name": "Petition for Smoldering Wrath",
+    "type": "unique",
+    "sickSlug": "petition_for_smoldering_wrath",
+    "image": "https://cdn.callofthedahanways.com/cards/petition-for-smoldering-wrath.jpg",
+    "cost": 2,
+    "speed": "fast",
+    "elements": ["moon", "fire", "air", "earth"],
+    "targetType": "spirit",
+    "target": "Any",
+    "text": [
+      "Target spirit chooses any/all of:",
+      "• Gain a Minor Power Card.",
+      "• Play a Minor Power Card by paying its cost to you.",
+      "• One :SpeedSlow: Minor Power is :SpeedFast:.",
+      "They must first pay you 1 energy for each choice taken.",
+      "If you target yourself, only choose one."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "unnerving-attention",
+    "name": "Unnerving Attention",
+    "type": "unique",
+    "sickSlug": "unnerving_attention",
+    "image": "https://cdn.callofthedahanways.com/cards/unnerving-attention.jpg",
+    "cost": 1,
+    "speed": "slow",
+    "elements": ["air", "earth", "animal"],
+    "range": "2",
+    "targetType": "land",
+    "target": "Invaders",
+    "text": [
+      "1 :TokenFear:. If an Invader has :TokenMetal:, 2 :TokenFear:.",
+      "Push 1 :InvaderExplorer:/:InvaderTown: and up to 2 :Dahan:."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "land-of-deadfall-and-rot",
+    "name": "Land of Deadfall and Rot",
+    "type": "unique",
+    "sickSlug": "land_of_deadfall_and_rot",
+    "image": "https://cdn.callofthedahanways.com/cards/land-of-deadfall-and-rot.jpg",
+    "cost": 1,
+    "speed": "fast",
+    "elements": ["water", "earth", "plant"],
+    "range": ":SacredSite: 1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "Defend 3.",
+      "or",
+      "Gain 2 Rot, +1 per Invader/:Dahan:. (Max of 7 Rot gained.)",
+      "During Time Passes, you may pay 2 Rot to Reclaim this card instead of discarding it."
+    ]
+  },
+  {
+    "id": "infesting-spores",
+    "name": "Infesting Spores",
+    "type": "unique",
+    "sickSlug": "infesting_spores",
+    "image": "https://cdn.callofthedahanways.com/cards/infesting-spores.jpg",
+    "cost": 2,
+    "speed": "slow",
+    "elements": ["fire", "plant", "animal"],
+    "range": "1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "Add 1 :TokenDisease:.",
+      "or",
+      "1 Damage. If :TokenDisease: is present, +1 Damage.",
+      "You may pay 5 Rot to do both and generate 1 :TokenFear:."
+    ]
+  },
+  {
+    "id": "worms-and-bugs-enrich-the-soil",
+    "name": "Worms and Bugs Enrich the Soil",
+    "type": "unique",
+    "sickSlug": "worms_and_bugs_enrich_the_soil",
+    "image": "https://cdn.callofthedahanways.com/cards/worms-and-bugs-enrich-the-soil.jpg",
+    "cost": 1,
+    "speed": "fast",
+    "elements": ["moon", "water", "earth", "animal"],
+    "range": ":SacredSite: 1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "After the next time Invaders are destroyed:",
+      "Add 1 :TokenWilds: or Remove 1 :Blight:. You may pay 3 Rot to do both and generate 1 :TokenFear:."
+    ]
+  },
+  {
+    "id": "exaltation-of-the-re-forming-land",
+    "name": "Exaltation of the Re-Forming Land",
+    "type": "unique",
+    "sickSlug": "exaltation_of_the_re_forming_land",
+    "image": "https://cdn.callofthedahanways.com/cards/exaltation-of-the-re-forming-land.jpg",
+    "cost": 0,
+    "speed": "slow",
+    "elements": ["sun", "moon", "water", "plant"],
+    "targetType": "spirit",
+    "target": "Another",
+    "text": [
+      "Target Spirit gains 1 Energy. You gain 2 Rot.",
+      "Target Spirit may pay 1 Energy to add up to 2 destroyed :Presence: to their :Jungle:/:Wetland:. You may do likewise."
+    ]
+  },
+  {
+    "id": "savage-mawbeasts",
+    "name": "Savage Mawbeasts",
+    "type": "minor",
+    "sickSlug": "savage_mawbeasts"
+  },
+  {
+    "id": "shadows-of-the-burning-forest",
+    "name": "Shadows of the Burning Forest",
+    "type": "minor",
+    "sickSlug": "shadows_of_the_burning_forest"
+  },
+  {
+    "id": "sap-the-strength-of-multitudes",
+    "name": "Sap the Strength of Multitudes",
+    "type": "minor",
+    "sickSlug": "sap_the_strength_of_multitudes"
+  },
+  {
+    "id": "drift-down-into-slumber",
+    "name": "Drift down into Slumber",
+    "type": "minor",
+    "sickSlug": "drift_down_into_slumber"
+  },
+  {
+    "id": "land-of-haunts-and-embers",
+    "name": "Land of Haunts and Embers",
+    "type": "minor",
+    "sickSlug": "land_of_haunts_and_embers"
+  },
+  {
+    "id": "call-to-isolation",
+    "name": "Call to Isolation",
+    "type": "minor",
+    "sickSlug": "call_to_isolation"
+  },
+  {
+    "id": "gift-of-constancy",
+    "name": "Gift of Constancy",
+    "type": "minor",
+    "sickSlug": "gift_of_constancy"
+  },
+  {
+    "id": "enticing-splendor",
+    "name": "Enticing Splendor",
+    "type": "minor",
+    "sickSlug": "enticing_splendor"
+  },
+  {
+    "id": "gift-of-living-energy",
+    "name": "Gift of Living Energy",
+    "type": "minor",
+    "sickSlug": "gift_of_living_energy"
+  },
+  {
+    "id": "gift-of-power",
+    "name": "Gift of Power",
+    "type": "minor",
+    "sickSlug": "gift_of_power"
+  },
+  {
+    "id": "gnawing-rootbiters",
+    "name": "Gnawing Rootbiters",
+    "type": "minor",
+    "sickSlug": "gnawing_rootbiters"
+  },
+  {
+    "id": "lure-of-the-unknown",
+    "name": "Lure of the Unknown",
+    "type": "minor",
+    "sickSlug": "lure_of_the_unknown"
+  },
+  {
+    "id": "rain-of-blood",
+    "name": "Rain of Blood",
+    "type": "minor",
+    "sickSlug": "rain_of_blood"
+  },
+  {
+    "id": "reaching-grasp",
+    "name": "Reaching Grasp",
+    "type": "minor",
+    "sickSlug": "reaching_grasp"
+  },
+  {
+    "id": "golds-allure",
+    "name": "Gold's Allure",
+    "type": "minor",
+    "sickSlug": "golds_allure"
+  },
+  {
+    "id": "here-there-be-monsters",
+    "name": "Here there be Monsters",
+    "type": "minor",
+    "sickSlug": "here_there_be_monsters"
+  },
+  {
+    "id": "portents-of-disaster",
+    "name": "Portents of Disaster",
+    "type": "minor",
+    "sickSlug": "portents_of_disaster"
+  },
+  {
+    "id": "growth-through-sacrifice",
+    "name": "Growth through Sacrifice",
+    "type": "minor",
+    "sickSlug": "growth_through_sacrifice"
+  },
+  {
+    "id": "swarming-wasps",
+    "name": "Swarming Wasps",
+    "type": "minor",
+    "sickSlug": "swarming_wasps"
+  },
+  {
+    "id": "animated-wrackroot",
+    "name": "Animated Wrackroot",
+    "type": "minor",
+    "sickSlug": "animated_wrackroot"
+  },
+  {
+    "id": "promises-of-protection",
+    "name": "Promises of Protection",
+    "type": "minor",
+    "sickSlug": "promises_of_protection"
+  },
+  {
+    "id": "call-to-ferocity",
+    "name": "Call to Ferocity",
+    "type": "minor",
+    "sickSlug": "call_to_ferocity"
+  },
+  {
+    "id": "twilight-fog-brings-madness",
+    "name": "Twilight Fog brings Madness",
+    "type": "minor",
+    "sickSlug": "twilight_fog_brings_madness"
+  },
+  {
+    "id": "hazards-spread-across-the-island",
+    "name": "Hazards Spread Across The Island",
+    "type": "minor",
+    "sickSlug": "hazards_spread_across_the_island"
+  },
+  {
+    "id": "carapaced-land",
+    "name": "Carapaced Land",
+    "type": "minor",
+    "sickSlug": "carapaced_land"
+  },
+  {
+    "id": "call-to-guard",
+    "name": "Call To Guard",
+    "type": "minor",
+    "sickSlug": "call_to_guard"
+  },
+  {
+    "id": "gift-of-natures-connection",
+    "name": "Gift of Nature's Connection",
+    "type": "minor",
+    "sickSlug": "gift_of_natures_connection"
+  },
+  {
+    "id": "mesmerized-tranquility",
+    "name": "Mesmerized Tranquility",
+    "type": "minor",
+    "sickSlug": "mesmerized_tranquility"
+  },
+  {
+    "id": "territorial-strife",
+    "name": "Territorial Strife",
+    "type": "minor",
+    "sickSlug": "territorial_strife"
+  },
+  {
+    "id": "sear-anger-into-the-wild-lands",
+    "name": "Sear Anger Into The Wild Lands",
+    "type": "minor",
+    "sickSlug": "sear_anger_into_the_wild_lands"
+  },
+  {
+    "id": "strong-and-constant-currents",
+    "name": "Strong And Constant Currents",
+    "type": "minor",
+    "sickSlug": "strong_and_constant_currents"
+  },
+  {
+    "id": "sucking-ooze",
+    "name": "Sucking Ooze",
+    "type": "minor",
+    "sickSlug": "sucking_ooze"
+  },
+  {
+    "id": "terror-turns-to-madness",
+    "name": "Terror Turns To Madness",
+    "type": "minor",
+    "sickSlug": "terror_turns_to_madness"
+  },
+  {
+    "id": "treacherous-waterways",
+    "name": "Treacherous Waterways",
+    "type": "minor",
+    "sickSlug": "treacherous_waterways"
+  },
+  {
+    "id": "flow-downriver-blow-downwind",
+    "name": "Flow Downriver, Blow Downwind",
+    "type": "minor",
+    "sickSlug": "flow_downriver_blow_downwind"
+  },
+  {
+    "id": "weep-for-what-is-lost",
+    "name": "Weep For What Is Lost",
+    "type": "minor",
+    "sickSlug": "weep_for_what_is_lost"
+  },
+  {
+    "id": "roiling-bog-and-snagging-thorn",
+    "name": "Roiling Bog and Snagging Thorn",
+    "type": "minor",
+    "sickSlug": "roiling_bog_and_snagging_thorn"
+  },
+  {
+    "id": "voracious-growth",
+    "name": "Voracious Growth",
+    "type": "minor",
+    "sickSlug": "voracious_growth"
+  },
+  {
+    "id": "rouse-the-trees-and-stones",
+    "name": "Rouse the Trees and Stones",
+    "type": "minor",
+    "sickSlug": "rouse_the_trees_and_stones"
+  },
+  {
+    "id": "encompassing-ward",
+    "name": "Encompassing Ward",
+    "type": "minor",
+    "sickSlug": "encompassing_ward"
+  },
+  {
+    "id": "song-of-sanctity",
+    "name": "Song of Sanctity",
+    "type": "minor",
+    "sickSlug": "song_of_sanctity"
+  },
+  {
+    "id": "uncanny-melting",
+    "name": "Uncanny Melting",
+    "type": "minor",
+    "sickSlug": "uncanny_melting"
+  },
+  {
+    "id": "steam-vents",
+    "name": "Steam Vents",
+    "type": "minor",
+    "sickSlug": "steam_vents"
+  },
+  {
+    "id": "veil-the-nights-hunt",
+    "name": "Veil the Night's Hunt",
+    "type": "minor",
+    "sickSlug": "veil_the_nights_hunt"
+  },
+  {
+    "id": "elemental-boon",
+    "name": "Elemental Boon",
+    "type": "minor",
+    "sickSlug": "elemental_boon"
+  },
+  {
+    "id": "devouring-ants",
+    "name": "Devouring Ants",
+    "type": "minor",
+    "sickSlug": "devouring_ants"
+  },
+  {
+    "id": "dark-and-tangled-woods",
+    "name": "Dark and Tangled Woods",
+    "type": "minor",
+    "sickSlug": "dark_and_tangled_woods"
+  },
+  {
+    "id": "natures-resilience",
+    "name": "Nature's Resilience",
+    "type": "minor",
+    "sickSlug": "natures_resilience"
+  },
+  {
+    "id": "visions-of-fiery-doom",
+    "name": "Visions of Fiery Doom",
+    "type": "minor",
+    "sickSlug": "visions_of_fiery_doom"
+  },
+  {
+    "id": "pull-beneath-the-hungry-earth",
+    "name": "Pull Beneath the Hungry Earth",
+    "type": "minor",
+    "sickSlug": "pull_beneath_the_hungry_earth"
+  },
+  {
+    "id": "call-of-the-dahan-ways",
+    "name": "Call of the Dahan Ways",
+    "type": "minor",
+    "sickSlug": "call_of_the_dahan_ways"
+  },
+  {
+    "id": "call-to-bloodshed",
+    "name": "Call to Bloodshed",
+    "type": "minor",
+    "sickSlug": "call_to_bloodshed"
+  },
+  {
+    "id": "call-to-migrate",
+    "name": "Call to Migrate",
+    "type": "minor",
+    "sickSlug": "call_to_migrate"
+  },
+  {
+    "id": "call-to-tend",
+    "name": "Call to Tend",
+    "type": "minor",
+    "sickSlug": "call_to_tend"
+  },
+  {
+    "id": "quicken-the-earths-struggles",
+    "name": "Quicken the Earth's Struggles",
+    "type": "minor",
+    "sickSlug": "quicken_the_earths_struggles"
+  },
+  {
+    "id": "delusions-of-danger",
+    "name": "Delusions of Danger",
+    "type": "minor",
+    "sickSlug": "delusions_of_danger"
+  },
+  {
+    "id": "drought",
+    "name": "Drought",
+    "type": "minor",
+    "sickSlug": "drought"
+  },
+  {
+    "id": "entrancing-apparitions",
+    "name": "Entrancing Apparitions",
+    "type": "minor",
+    "sickSlug": "entrancing_apparitions"
+  },
+  {
+    "id": "purifying-flame",
+    "name": "Purifying Flame",
+    "type": "minor",
+    "sickSlug": "purifying_flame"
+  },
+  {
+    "id": "inflame-the-fires-of-life",
+    "name": "Inflame the Fires of Life",
+    "type": "minor",
+    "sickSlug": "inflame_the_fires_of_life"
+  },
+  {
+    "id": "fire-in-the-sky",
+    "name": "Fire in the Sky",
+    "type": "minor",
+    "sickSlug": "fire_in_the_sky"
+  },
+  {
+    "id": "fleshrot-fever",
+    "name": "Fleshrot Fever",
+    "type": "minor",
+    "sickSlug": "fleshrot_fever"
+  },
+  {
+    "id": "guardian-serpents",
+    "name": "Guardian Serpents",
+    "type": "minor",
+    "sickSlug": "guardian_serpents"
+  },
+  {
+    "id": "infested-aquifers",
+    "name": "Infested Aquifers",
+    "type": "minor",
+    "sickSlug": "infested_aquifers"
+  },
+  {
+    "id": "poisoned-dew",
+    "name": "Poisoned Dew",
+    "type": "minor",
+    "sickSlug": "poisoned_dew"
+  },
+  {
+    "id": "prowling-panthers",
+    "name": "Prowling Panthers",
+    "type": "minor",
+    "sickSlug": "prowling_panthers"
+  },
+  {
+    "id": "renewing-rain",
+    "name": "Renewing Rain",
+    "type": "minor",
+    "sickSlug": "renewing_rain"
+  },
+  {
+    "id": "rites-of-the-lands-rejection",
+    "name": "Rites of the Land's Rejection",
+    "type": "minor",
+    "sickSlug": "rites_of_the_lands_rejection"
+  },
+  {
+    "id": "pact-of-the-joined-hunt",
+    "name": "Pact of the Joined Hunt",
+    "type": "minor",
+    "sickSlug": "pact_of_the_joined_hunt"
+  },
+  {
+    "id": "razor-sharp-undergrowth",
+    "name": "Razor-Sharp Undergrowth",
+    "type": "minor",
+    "sickSlug": "razorsharp_undergrowth"
+  },
+  {
+    "id": "scour-the-land",
+    "name": "Scour the Land",
+    "type": "minor",
+    "sickSlug": "scour_the_land"
+  },
+  {
+    "id": "sky-stretches-to-shore",
+    "name": "Sky Stretches to Shore",
+    "type": "minor",
+    "sickSlug": "sky_stretches_to_shore"
+  },
+  {
+    "id": "absorb-corruption",
+    "name": "Absorb Corruption",
+    "type": "minor",
+    "sickSlug": "absorb_corruption"
+  },
+  {
+    "id": "call-to-trade",
+    "name": "Call to Trade",
+    "type": "minor",
+    "sickSlug": "call_to_trade"
+  },
+  {
+    "id": "confounding-mists",
+    "name": "Confounding Mists",
+    "type": "minor",
+    "sickSlug": "confounding_mists"
+  },
+  {
+    "id": "cycles-of-time-and-tide",
+    "name": "Cycles of Time and Tide",
+    "type": "minor",
+    "sickSlug": "cycles_of_time_and_tide"
+  },
+  {
+    "id": "disorienting-landscape",
+    "name": "Disorienting Landscape",
+    "type": "minor",
+    "sickSlug": "disorienting_landscape"
+  },
+  {
+    "id": "elusive-ambushes",
+    "name": "Elusive Ambushes",
+    "type": "minor",
+    "sickSlug": "elusive_ambushes"
+  },
+  {
+    "id": "tormenting-rotflies",
+    "name": "Tormenting Rotflies",
+    "type": "minor",
+    "sickSlug": "tormenting_rotflies"
+  },
+  {
+    "id": "teeming-rivers",
+    "name": "Teeming Rivers",
+    "type": "minor",
+    "sickSlug": "teeming_rivers"
+  },
+  {
+    "id": "spur-on-with-words-of-fire",
+    "name": "Spur on with Words of Fire",
+    "type": "minor",
+    "sickSlug": "spur_on_with_words_of_fire"
+  },
+  {
+    "id": "bats-scout-for-raids-by-darkness",
+    "name": "Bats Scout For Raids By Darkness",
+    "type": "minor",
+    "sickSlug": "bats_scout_for_raids_by_darkness"
+  },
+  {
+    "id": "birds-cry-warning",
+    "name": "Birds Cry Warning",
+    "type": "minor",
+    "sickSlug": "birds_cry_warning"
+  },
+  {
+    "id": "blood-draws-predators",
+    "name": "Blood Draws Predators",
+    "type": "minor",
+    "sickSlug": "blood_draws_predators"
+  },
+  {
+    "id": "desiccating-winds",
+    "name": "Desiccating Winds",
+    "type": "minor",
+    "sickSlug": "desiccating_winds"
+  },
+  {
+    "id": "dry-wood-explodes-in-smoldering-splinters",
+    "name": "Dry Wood Explodes In Smoldering Splinters",
+    "type": "minor",
+    "sickSlug": "dry_wood_explodes_in_smoldering_splinters"
+  },
+  {
+    "id": "entrap-the-forces-of-corruption",
+    "name": "Entrap The Forces Of Corruption",
+    "type": "minor",
+    "sickSlug": "entrap_the_forces_of_corruption"
+  },
+  {
+    "id": "domesticated-animals-go-berserk",
+    "name": "Domesticated Animals Go Berserk",
+    "type": "minor",
+    "sickSlug": "domesticated_animals_go_berserk"
+  },
+  {
+    "id": "dire-metamorphosis",
+    "name": "Dire Metamorphosis",
+    "type": "minor",
+    "sickSlug": "dire_metamorphosis"
+  },
+  {
+    "id": "skies-herald-the-season-of-return",
+    "name": "Skies Herald The Season Of Return",
+    "type": "minor",
+    "sickSlug": "skies_herald_the_season_of_return"
+  },
+  {
+    "id": "gift-of-twinned-days",
+    "name": "Gift of Twinned Days",
+    "type": "minor",
+    "sickSlug": "gift_of_twinned_days"
+  },
+  {
+    "id": "haunted-by-primal-memories",
+    "name": "Haunted By Primal Memories",
+    "type": "minor",
+    "sickSlug": "haunted_by_primal_memories"
+  },
+  {
+    "id": "like-calls-to-like",
+    "name": "Like Calls to Like",
+    "type": "minor",
+    "sickSlug": "like_calls_to_like"
+  },
+  {
+    "id": "unquenchable-flames",
+    "name": "Unquenchable Flames",
+    "type": "minor",
+    "sickSlug": "unquenchable_flames"
+  },
+  {
+    "id": "renewing-boon",
+    "name": "Renewing Boon",
+    "type": "minor",
+    "sickSlug": "renewing_boon"
+  },
+  {
+    "id": "scream-disease-into-the-wind",
+    "name": "Scream Disease Into The Wind",
+    "type": "minor",
+    "sickSlug": "scream_disease_into_the_wind"
+  },
+  {
+    "id": "set-them-on-an-ever-twisting-trail",
+    "name": "Set Them On An Ever-Twisting Trail",
+    "type": "minor",
+    "sickSlug": "set_them_on_an_evertwisting_trail"
+  },
+  {
+    "id": "sunsets-fire-flows-across-the-land",
+    "name": "Sunset's Fire Flows Across The Land",
+    "type": "minor",
+    "sickSlug": "sunsets_fire_flows_across_the_land"
+  },
+  {
+    "id": "the-shore-seethes-with-hatred",
+    "name": "The Shore Seethes With Hatred",
+    "type": "minor",
+    "sickSlug": "the_shore_seethes_with_hatred"
+  },
+  {
+    "id": "thriving-chokefungus",
+    "name": "Thriving Chokefungus",
+    "type": "minor",
+    "sickSlug": "thriving_chokefungus"
+  },
+  {
+    "id": "favor-of-the-sun-and-star-lit-dark",
+    "name": "Favor Of The Sun And Star-Lit Dark",
+    "type": "minor",
+    "sickSlug": "favor_of_the_sun_and_starlit_dark"
+  },
+  {
+    "id": "the-trees-and-stones-speak-of-war",
+    "name": "The Trees and Stones Speak of War",
+    "type": "major",
+    "sickSlug": "the_trees_and_stones_speak_of_war"
+  },
+  {
+    "id": "entwined-power",
+    "name": "Entwined Power",
+    "type": "major",
+    "sickSlug": "entwined_power"
+  },
+  {
+    "id": "flow-like-water-reach-like-air",
+    "name": "Flow like Water, Reach like Air",
+    "type": "major",
+    "sickSlug": "flow_like_water_reach_like_air"
+  },
+  {
+    "id": "savage-transformation",
+    "name": "Savage Transformation",
+    "type": "major",
+    "sickSlug": "savage_transformation"
+  },
+  {
+    "id": "tigers-hunting",
+    "name": "Tigers Hunting",
+    "type": "major",
+    "sickSlug": "tigers_hunting"
+  },
+  {
+    "id": "unleash-a-torrent-of-the-selfs-own-essence",
+    "name": "Unleash a Torrent of the Self's Own Essence",
+    "type": "major",
+    "sickSlug": "unleash_a_torrent_of_the_selfs_own_essence"
+  },
+  {
+    "id": "bargains-of-power-and-protection",
+    "name": "Bargains of Power and Protection",
+    "type": "major",
+    "sickSlug": "bargains_of_power_and_protection"
+  },
+  {
+    "id": "bargain-of-coursing-paths",
+    "name": "Bargain of Coursing Paths",
+    "type": "major",
+    "sickSlug": "bargain_of_coursing_paths"
+  },
+  {
+    "id": "bombard-with-boulders-and-stinging-seeds",
+    "name": "Bombard with Boulders and Stinging Seeds",
+    "type": "major",
+    "sickSlug": "bombard_with_boulders_and_stinging_seeds"
+  },
+  {
+    "id": "poisoned-land",
+    "name": "Poisoned Land",
+    "type": "major",
+    "sickSlug": "poisoned_land"
+  },
+  {
+    "id": "powerstorm",
+    "name": "Powerstorm",
+    "type": "major",
+    "sickSlug": "powerstorm"
+  },
+  {
+    "id": "the-jungle-hungers",
+    "name": "The Jungle Hungers",
+    "type": "major",
+    "sickSlug": "the_jungle_hungers"
+  },
+  {
+    "id": "vigor-of-the-breaking-dawn",
+    "name": "Vigor of the Breaking Dawn",
+    "type": "major",
+    "sickSlug": "vigor_of_the_breaking_dawn"
+  },
+  {
+    "id": "vengeance-of-the-dead",
+    "name": "Vengeance of the Dead",
+    "type": "major",
+    "sickSlug": "vengeance_of_the_dead"
+  },
+  {
+    "id": "wrap-in-wings-of-sunlight",
+    "name": "Wrap in Wings of Sunlight",
+    "type": "major",
+    "sickSlug": "wrap_in_wings_of_sunlight"
+  },
+  {
+    "id": "winds-of-rust-and-atrophy",
+    "name": "Winds of Rust and Atrophy",
+    "type": "major",
+    "sickSlug": "winds_of_rust_and_atrophy"
+  },
+  {
+    "id": "infinite-vitality",
+    "name": "Infinite Vitality",
+    "type": "major",
+    "sickSlug": "infinite_vitality"
+  },
+  {
+    "id": "pent-up-calamity",
+    "name": "Pent-Up Calamity",
+    "type": "major",
+    "sickSlug": "pentup_calamity"
+  },
+  {
+    "id": "pyroclastic-flow",
+    "name": "Pyroclastic Flow",
+    "type": "major",
+    "sickSlug": "pyroclastic_flow"
+  },
+  {
+    "id": "smothering-infestation",
+    "name": "Smothering Infestation",
+    "type": "major",
+    "sickSlug": "smothering_infestation"
+  },
+  {
+    "id": "angry-bears",
+    "name": "Angry Bears",
+    "type": "major",
+    "sickSlug": "angry_bears"
+  },
+  {
+    "id": "vanish-softly-away-forgotten-by-all",
+    "name": "Vanish Softly Away, Forgotten by All",
+    "type": "major",
+    "sickSlug": "vanish_softly_away_forgotten_by_all"
+  },
+  {
+    "id": "settle-into-hunting-grounds",
+    "name": "Settle Into Hunting-Grounds",
+    "type": "major",
+    "sickSlug": "settle_into_huntinggrounds"
+  },
+  {
+    "id": "voice-of-command",
+    "name": "Voice of Command",
+    "type": "major",
+    "sickSlug": "voice_of_command"
+  },
+  {
+    "id": "storm-swath",
+    "name": "Storm-Swath",
+    "type": "major",
+    "sickSlug": "stormswath"
+  },
+  {
+    "id": "sleep-and-never-waken",
+    "name": "Sleep and Never Waken",
+    "type": "major",
+    "sickSlug": "sleep_and_never_waken"
+  },
+  {
+    "id": "trees-radiate-celestial-brilliance",
+    "name": "Trees Radiate Celestial Brilliance",
+    "type": "major",
+    "sickSlug": "trees_radiate_celestial_brilliance"
+  },
+  {
+    "id": "thickets-erupt-with-every-touch-of-breeze",
+    "name": "Thickets Erupt with Every Touch of Breeze",
+    "type": "major",
+    "sickSlug": "thickets_erupt_with_every_touch_of_breeze"
+  },
+  {
+    "id": "flocking-red-talons",
+    "name": "Flocking Red-Talons",
+    "type": "major",
+    "sickSlug": "flocking_redtalons"
+  },
+  {
+    "id": "ravaged-undergrowth-slithers-back-to-life",
+    "name": "Ravaged Undergrowth Slithers Back to Life",
+    "type": "major",
+    "sickSlug": "ravaged_undergrowth_slithers_back_to_life"
+  },
+  {
+    "id": "transformative-sacrifice",
+    "name": "Transformative Sacrifice",
+    "type": "major",
+    "sickSlug": "transformative_sacrifice"
+  },
+  {
+    "id": "accelerated-rot",
+    "name": "Accelerated Rot",
+    "type": "major",
+    "sickSlug": "accelerated_rot"
+  },
+  {
+    "id": "terrifying-nightmares",
+    "name": "Terrifying Nightmares",
+    "type": "major",
+    "sickSlug": "terrifying_nightmares"
+  },
+  {
+    "id": "paralyzing-fright",
+    "name": "Paralyzing Fright",
+    "type": "major",
+    "sickSlug": "paralyzing_fright"
+  },
+  {
+    "id": "the-land-thrashes-in-furious-pain",
+    "name": "The Land Thrashes in Furious Pain",
+    "type": "major",
+    "sickSlug": "the_land_thrashes_in_furious_pain"
+  },
+  {
+    "id": "indomitable-claim",
+    "name": "Indomitable Claim",
+    "type": "major",
+    "sickSlug": "indomitable_claim"
+  },
+  {
+    "id": "mists-of-oblivion",
+    "name": "Mists of Oblivion",
+    "type": "major",
+    "sickSlug": "mists_of_oblivion"
+  },
+  {
+    "id": "dissolve-the-bonds-of-kinship",
+    "name": "Dissolve the Bonds of Kinship",
+    "type": "major",
+    "sickSlug": "dissolve_the_bonds_of_kinship"
+  },
+  {
+    "id": "strangling-firevine",
+    "name": "Strangling Firevine",
+    "type": "major",
+    "sickSlug": "strangling_firevine"
+  },
+  {
+    "id": "bloodwrack-plague",
+    "name": "Bloodwrack Plague",
+    "type": "major",
+    "sickSlug": "bloodwrack_plague"
+  },
+  {
+    "id": "death-falls-gently-from-open-blossoms",
+    "name": "Death Falls Gently from Open Blossoms",
+    "type": "major",
+    "sickSlug": "death_falls_gently_from_open_blossoms"
+  },
+  {
+    "id": "grant-hatred-a-ravenous-form",
+    "name": "Grant Hatred a Ravenous Form",
+    "type": "major",
+    "sickSlug": "grant_hatred_a_ravenous_form"
+  },
+  {
+    "id": "insatiable-hunger-of-the-swarm",
+    "name": "Insatiable Hunger of the Swarm",
+    "type": "major",
+    "sickSlug": "insatiable_hunger_of_the_swarm"
+  },
+  {
+    "id": "instruments-of-their-own-ruin",
+    "name": "Instruments of their own Ruin",
+    "type": "major",
+    "sickSlug": "instruments_of_their_own_ruin"
+  },
+  {
+    "id": "unrelenting-growth",
+    "name": "Unrelenting Growth",
+    "type": "major",
+    "sickSlug": "unrelenting_growth"
+  },
+  {
+    "id": "sweep-into-the-sea",
+    "name": "Sweep into the Sea",
+    "type": "major",
+    "sickSlug": "sweep_into_the_sea"
+  },
+  {
+    "id": "unlock-the-gates-of-deepest-power",
+    "name": "Unlock the Gates of Deepest Power",
+    "type": "major",
+    "sickSlug": "unlock_the_gates_of_deepest_power"
+  },
+  {
+    "id": "forests-of-living-obsidian",
+    "name": "Forests of Living Obsidian",
+    "type": "major",
+    "sickSlug": "forests_of_living_obsidian"
+  },
+  {
+    "id": "infestation-of-venomous-spiders",
+    "name": "Infestation of Venomous Spiders",
+    "type": "major",
+    "sickSlug": "infestation_of_venomous_spiders"
+  },
+  {
+    "id": "walls-of-rock-and-thorn",
+    "name": "Walls of Rock and Thorn",
+    "type": "major",
+    "sickSlug": "walls_of_rock_and_thorn"
+  },
+  {
+    "id": "the-wounded-wild-turns-on-its-assailants",
+    "name": "The Wounded Wild Turns on its Assailants",
+    "type": "major",
+    "sickSlug": "the_wounded_wild_turns_on_its_assailants"
+  },
+  {
+    "id": "utter-a-curse-of-dread-and-bone",
+    "name": "Utter a Curse of Dread and Bone",
+    "type": "major",
+    "sickSlug": "utter_a_curse_of_dread_and_bone"
+  },
+  {
+    "id": "weave-together-the-fabric-of-place",
+    "name": "Weave Together the Fabric of Place",
+    "type": "major",
+    "sickSlug": "weave_together_the_fabric_of_place"
+  },
+  {
+    "id": "melt-earth-into-quicksand",
+    "name": "Melt Earth into Quicksand",
+    "type": "major",
+    "sickSlug": "melt_earth_into_quicksand"
+  },
+  {
+    "id": "inspire-the-release-of-stolen-lands",
+    "name": "Inspire the Release of Stolen Lands",
+    "type": "major",
+    "sickSlug": "inspire_the_release_of_stolen_lands"
+  },
+  {
+    "id": "plague-ships-sail-to-distant-ports",
+    "name": "Plague Ships Sail to Distant Ports",
+    "type": "major",
+    "sickSlug": "plague_ships_sail_to_distant_ports"
+  },
+  {
+    "id": "solidify-echoes-of-majesty-past",
+    "name": "Solidify Echoes of Majesty Past",
+    "type": "major",
+    "sickSlug": "solidify_echoes_of_majesty_past"
+  },
+  {
+    "id": "cleansing-floods",
+    "name": "Cleansing Floods",
+    "type": "major",
+    "sickSlug": "cleansing_floods"
+  },
+  {
+    "id": "pillar-of-living-flame",
+    "name": "Pillar of Living Flame",
+    "type": "major",
+    "sickSlug": "pillar_of_living_flame"
+  },
+  {
+    "id": "blazing-renewal",
+    "name": "Blazing Renewal",
+    "type": "major",
+    "sickSlug": "blazing_renewal"
+  },
+  {
+    "id": "sea-monsters",
+    "name": "Sea Monsters",
+    "type": "major",
+    "sickSlug": "sea_monsters"
+  },
+  {
+    "id": "twisted-flowers-murmur-ultimatums",
+    "name": "Twisted Flowers Murmur Ultimatums",
+    "type": "major",
+    "sickSlug": "twisted_flowers_murmur_ultimatums"
+  },
+  {
+    "id": "focus-the-lands-anguish",
+    "name": "Focus the Land's Anguish",
+    "type": "major",
+    "sickSlug": "focus_the_lands_anguish"
+  },
+  {
+    "id": "spill-bitterness-into-the-earth",
+    "name": "Spill Bitterness into the Earth",
+    "type": "major",
+    "sickSlug": "spill_bitterness_into_the_earth"
+  },
+  {
+    "id": "unearth-a-beast-of-wrathful-stone",
+    "name": "Unearth a Beast of Wrathful Stone",
+    "type": "major",
+    "sickSlug": "unearth_a_beast_of_wrathful_stone"
+  },
+  {
+    "id": "talons-of-lightning",
+    "name": "Talons of Lightning",
+    "type": "major",
+    "sickSlug": "talons_of_lightning"
+  },
+  {
+    "id": "tsunami",
+    "name": "Tsunami",
+    "type": "major",
+    "sickSlug": "tsunami"
+  },
+  {
+    "id": "manifest-incarnation",
+    "name": "Manifest Incarnation",
+    "type": "major",
+    "sickSlug": "manifest_incarnation"
+  },
+  {
+    "id": "dream-of-the-untouched-land",
+    "name": "Dream of the Untouched Land",
+    "type": "major",
+    "sickSlug": "dream_of_the_untouched_land"
+  },
+  {
+    "id": "transform-to-a-murderous-darkness",
+    "name": "Transform to a Murderous Darkness",
+    "type": "major",
+    "sickSlug": "transform_to_a_murderous_darkness"
+  },
+  {
+    "id": "irresistible-call",
+    "name": "Irresistible Call",
+    "type": "major",
+    "sickSlug": "irresistible_call"
+  },
+  {
+    "id": "rumbling-earthquakes",
+    "name": "Rumbling Earthquakes",
+    "type": "major",
+    "sickSlug": "rumbling_earthquakes"
+  },
+  {
+    "id": "fire-and-flood",
+    "name": "Fire and Flood",
+    "type": "major",
+    "sickSlug": "fire_and_flood"
+  },
+  {
+    "id": "exaltation-of-the-incandescent-sky",
+    "name": "Exaltation of the Incandescent Sky",
+    "type": "major",
+    "sickSlug": "exaltation_of_the_incandescent_sky"
+  },
+  {
+    "id": "fragments-of-yesteryear",
+    "name": "Fragments of Yesteryear",
+    "type": "major",
+    "sickSlug": "fragments_of_yesteryear"
+  },
+  {
+    "id": "volcanic-eruption",
+    "name": "Volcanic Eruption",
+    "type": "major",
+    "sickSlug": "volcanic_eruption"
+  },
+  {
+    "id": "draw-towards-a-consuming-void",
+    "name": "Draw Towards a Consuming Void",
+    "type": "major",
+    "sickSlug": "draw_towards_a_consuming_void"
+  },
+  {
+    "id": "cast-down-into-the-briny-deep",
+    "name": "Cast down into the Briny Deep",
+    "type": "major",
+    "sickSlug": "cast_down_into_the_briny_deep"
+  },
+  {
+    "id": "fear-of-the-unseen",
+    "name": "Fear of the Unseen",
+    "type": "fear",
+    "sickSlug": "fear_of_the_unseen",
+    "levels": [
+      "Each player removes 1 Explorer / Town from a land with SacredSite.",
+      "Each player removes 1 Explorer / Town from a land with Presence.",
+      "Each player removes 1 Explorer / Town from a land with Presence, or 1 City from a land with SacredSite."
+    ]
+  },
+  {
+    "id": "scapegoats",
+    "name": "Scapegoats",
+    "type": "fear",
+    "sickSlug": "scapegoats",
+    "levels": [
+      "Each Town destroys 1 Explorer in its land.",
+      "Each Town destroys 1 Explorer in its land. Each City destroys 2 Explorer in its land.",
+      "Destroy all Explorer in lands with Town / City. Each City destroys 1 Town in its land."
+    ]
+  },
+  {
+    "id": "emigration-accelerates",
+    "name": "Emigration Accelerates",
+    "type": "fear",
+    "sickSlug": "emigration_accelerates",
+    "levels": [
+      "Each player removes 1 Explorer from a Coastal land.",
+      "Each player removes 1 Explorer / Town from a Coastal land.",
+      "Each player removes 1 Explorer / Town from any land."
+    ]
+  },
+  {
+    "id": "dahan-on-their-guard",
+    "name": "Dahan on their Guard",
+    "type": "fear",
+    "sickSlug": "dahan_on_their_guard",
+    "levels": [
+      "In each land, Defend 1 per Dahan.",
+      "In each land with Dahan, Defend 1, plus an additional Defend 1 per Dahan.",
+      "In each land, Defend 2 per Dahan."
+    ]
+  },
+  {
+    "id": "tall-tales-of-savagery",
+    "name": "Tall Tales of Savagery",
+    "type": "fear",
+    "sickSlug": "tall_tales_of_savagery",
+    "levels": [
+      "Each player removes 1 Explorer from a land with Dahan.",
+      "Each player removes 2 Explorer or 1 Town from a land with Dahan.",
+      "Remove 2 Explorer or 1 Town from each land with Dahan. Then, remove 1 City from each land with at least 2 Dahan."
+    ]
+  },
+  {
+    "id": "retreat",
+    "name": "Retreat!",
+    "type": "fear",
+    "sickSlug": "retreat",
+    "levels": [
+      "Each player may Push up to 2 Explorer from an Inland land.",
+      "Each player may Push up to 3 Explorer / Town from an Inland land.",
+      "Each player may Push any number of Explorer / Town from one land."
+    ]
+  },
+  {
+    "id": "dahan-raid",
+    "name": "Dahan Raid",
+    "type": "fear",
+    "sickSlug": "dahan_raid",
+    "levels": [
+      "Each player chooses a different land with Dahan. 1 Damage there.",
+      "Each player chooses a different land with Dahan. 1 Damage per Dahan there.",
+      "Each player chooses a different land with Dahan. 2 Damage per Dahan there."
+    ]
+  },
+  {
+    "id": "dahan-enheartened",
+    "name": "Dahan Enheartened",
+    "type": "fear",
+    "sickSlug": "dahan_enheartened",
+    "levels": [
+      "Each player may Push 1 Dahan from a land with Invaders or Gather 1 Dahan into a land with Invaders.",
+      "Each player chooses a different land. In chosen lands: Gather up to 2 Dahan, then 1 Damage if Dahan are present.",
+      "Each player chooses a different land. In chosen lands: Gather up to 2 Dahan, then 1 Damage per Dahan present."
+    ]
+  },
+  {
+    "id": "avoid-the-dahan",
+    "name": "Avoid the Dahan",
+    "type": "fear",
+    "sickSlug": "avoid_the_dahan",
+    "levels": [
+      "Invaders do not Explore into lands with at least 2 Dahan.",
+      "Invaders do not Build in lands where Dahan outnumber Town / City.",
+      "Invaders do not Build in lands with Dahan."
+    ]
+  },
+  {
+    "id": "seek-safety",
+    "name": "Seek Safety",
+    "type": "fear",
+    "sickSlug": "seek_safety",
+    "levels": [
+      "Each player may Push 1 Explorer into a land with more Town / City than the land it came from.",
+      "Each player may Gather 1 Explorer into a land with Town / City, or Gather 1 Town into a land with City.",
+      "Each player may remove up to 3 Health worth of Invaders from a land without City."
+    ]
+  },
+  {
+    "id": "wary-of-the-interior",
+    "name": "Wary of the Interior",
+    "type": "fear",
+    "sickSlug": "wary_of_the_interior",
+    "levels": [
+      "Each player removes 1 Explorer from an Inland land.",
+      "Each player removes 1 Explorer / Town from an Inland land.",
+      "Each player removes 1 Explorer / Town from any land."
+    ]
+  },
+  {
+    "id": "belief-takes-root",
+    "name": "Belief Takes Root",
+    "type": "fear",
+    "sickSlug": "belief_takes_root",
+    "levels": [
+      "Defend 2 in all lands with Presence.",
+      "Defend 2 in all lands with Presence. Each Spirit gains 1 Energy per SacredSite they have in lands with Invaders.",
+      "Each player chooses a different land and removes up to 2 Health worth of Invaders per Presence there."
+    ]
+  },
+  {
+    "id": "isolation",
+    "name": "Isolation",
+    "type": "fear",
+    "sickSlug": "isolation",
+    "levels": [
+      "Each player removes 1 Explorer / Town from a land where it is the only Invader.",
+      "Each player removes 1 Explorer / Town from a land with 2 or fewer Invaders.",
+      "Each player removes an Invader from a land with 2 or fewer Invaders."
+    ]
+  },
+  {
+    "id": "overseas-trade-seem-safer",
+    "name": "Overseas Trade Seem Safer",
+    "type": "fear",
+    "sickSlug": "overseas_trade_seem_safer",
+    "levels": [
+      "Defend 3 in all Coastal lands.",
+      "Defend 6 in all Coastal lands. Invaders do not Build City in Coastal lands this turn.",
+      "Defend 9 in all Coastal lands. Invaders do not Build in Coastal lands this turn."
+    ]
+  },
+  {
+    "id": "trade-suffers",
+    "name": "Trade Suffers",
+    "type": "fear",
+    "sickSlug": "trade_suffers",
+    "levels": [
+      "Invaders do not Build in lands with City.",
+      "Each player may replace 1 Town with 1 Explorer in a Coastal land.",
+      "Each player may replace 1 City with 1 Town or 1 Town with 1 Explorer in a Coastal land."
+    ]
+  },
+  {
+    "id": "demoralized",
+    "name": "Demoralized",
+    "type": "fear",
+    "sickSlug": "demoralized",
+    "levels": [
+      "Defend 1 in all lands.",
+      "Defend 2 in all lands.",
+      "Defend 3 in all lands."
+    ]
+  },
+  {
+    "id": "plan-for-departure",
+    "name": "Plan for Departure",
+    "type": "fear",
+    "sickSlug": "plan_for_departure",
+    "levels": [
+      "Each player may Gather 1 Town into a Coastal land.",
+      "Each player may Gather 1 Explorer / Town into a Coastal land. Defend 2 in all Coastal lands.",
+      "Each player may Gather up to 2 Explorer / Town into a Coastal land. Defend 4 in all Coastal lands."
+    ]
+  },
+  {
+    "id": "tread-carefully",
+    "name": "Tread Carefully",
+    "type": "fear",
+    "sickSlug": "tread_carefully",
+    "levels": [
+      "Each player may choose a land with Dahan or adjacent to at least 5 Dahan. Invaders do not Ravage there this turn.",
+      "Each player may choose a land with Dahan or adjacent to at least 3 Dahan. Invaders do not Ravage there this turn.",
+      "Each player may choose a land with Dahan or adjacent to Dahan. Invaders do not Ravage there this turn."
+    ]
+  },
+  {
+    "id": "dahan-attack",
+    "name": "Dahan Attack",
+    "type": "fear",
+    "sickSlug": "dahan_attack",
+    "levels": [
+      "Each player removes 1 Explorer from a land with Dahan.",
+      "Each player chooses a different land with Dahan. 1 Damager per Dahan there.",
+      "Each player chooses a different land with Town / City. Gather 1 Dahan into that land. Then, 2 Damage per Dahan there."
+    ]
+  },
+  {
+    "id": "explorers-are-reluctant",
+    "name": "Explorers are Reluctant",
+    "type": "fear",
+    "sickSlug": "explorers_are_reluctant",
+    "levels": [
+      "During the next normal Explore, skip the lowest-numbered land matching the Invader Card on each board.",
+      "Skip the next normal Explore. During the next invader Phase, draw an additional Explore card.",
+      "Skip the next normal Explore, but still reveal a card. (Perform the Escalation if relevant.) Cards shift left as usual."
+    ]
+  },
+  {
+    "id": "immigration-slows",
+    "name": "Immigration Slows",
+    "type": "fear",
+    "sickSlug": "immigration_slows",
+    "levels": [
+      "During the next normal Build, skip the lowest-numbered land matching the Invader Card on each board.",
+      "Skip the next normal Build. The Build Card remains in place instead of shifting left.",
+      "Skip the next normal Build. The Build Card shifts left as usual."
+    ]
+  },
+  {
+    "id": "flee-the-pestilent-land",
+    "name": "Flee the Pestilent Land",
+    "type": "fear",
+    "sickSlug": "flee_the_pestilent_land",
+    "levels": [
+      "Each player removes 1 Explorer / Town from a land with Disease.",
+      "Each player removes up to 3 Health of Invaders from a land with Disease or 1 Explorer from an Inland land.",
+      "Each player removes up to 5 Health of Invaders from a land with Disease, or 1 Explorer / Town from an Inland land."
+    ]
+  },
+  {
+    "id": "quarantine",
+    "name": "Quarantine",
+    "type": "fear",
+    "sickSlug": "quarantine",
+    "levels": [
+      "Explore does not affect Coastal lands.",
+      "Explore does not affect Coastal lands. Lands with Disease are not a source of Invaders when Exploring.",
+      "Explore does not affect Coastal lands. Invaders do not act in lands with Disease."
+    ]
+  },
+  {
+    "id": "too-many-monsters",
+    "name": "Too Many Monsters",
+    "type": "fear",
+    "sickSlug": "too_many_monsters",
+    "levels": [
+      "Each player removes 1 Explorer / Town from a land with Beasts.",
+      "Each player removes 1 Explorer and 1 Town from a land with Beasts, or 1 Explorer from a land adjacent to Beasts.",
+      "Each player removes 2 Explorer and 2 Town from a land with Beasts or 1 Explorer / Town from a land adjacent to Beasts."
+    ]
+  },
+  {
+    "id": "panicked-by-wild-beasts",
+    "name": "Panicked by Wild Beasts",
+    "type": "fear",
+    "sickSlug": "panicked_by_wild_beasts",
+    "levels": [
+      "Each player adds 1 Strife in a land with or adjacent to Beasts.",
+      "Each player adds 1 Strife in a land with or adjacent to Beasts. Invaders skip their normal Explore and Build in lands with Beasts.",
+      "Each player adds 1 Strife in a land with or adjacent to Beasts. Invaders skip all normal Actions in lands with Beasts."
+    ]
+  },
+  {
+    "id": "depart-the-dangerous-land",
+    "name": "Depart the Dangerous Land",
+    "type": "fear",
+    "sickSlug": "depart_the_dangerous_land",
+    "levels": [
+      "Each player removes 1 Explorer from a land with Beasts, Disease, or at least 2 Dahan.",
+      "Each player removes 1 Explorer / town from a land with Beasts, Disease, or at least 2 Dahan.",
+      "Each player removes up to 4 Health worth of Invaders from a land with Beasts, Disease, or at least 2 Dahan."
+    ]
+  },
+  {
+    "id": "unrest",
+    "name": "Unrest",
+    "type": "fear",
+    "sickSlug": "unrest",
+    "levels": [
+      "Each player adds 1 Strife to a Town.",
+      "Each player adds 1 Strife to a Town. For the rest of this turn, Invaders have -1 Health per Strife to a minimum of 1.",
+      "Each player adds 1 Strife to an Invader. For the rest of this turn, Invaders have -1 Health per Strife to a minimum of 1."
+    ]
+  },
+  {
+    "id": "panic",
+    "name": "Panic",
+    "type": "fear",
+    "sickSlug": "panic",
+    "levels": [
+      "Each player adds 1 Strife in a land with Beasts / Disease / Dahan.",
+      "Each player adds 1 Strife in a land with Beasts / Disease / Dahan. For the rest of this turn, Invaders have -1 Health per Strife to a minimum of 1.",
+      "Each player adds 1 Strife to an Invader. For the rest of this turn, Invaders have -1 Health per Strife to a minimum of 1."
+    ]
+  },
+  {
+    "id": "discord",
+    "name": "Discord",
+    "type": "fear",
+    "sickSlug": "discord",
+    "levels": [
+      "Each player adds 1 Strife in a different land with at least 2 Invaders.",
+      "Each player adds 1 Strife in a different land with at least 2 Invaders. Then, each Invader takes 1 Damage per Strife it has.",
+      "Each player adds 1 Strife in a different land with at least 2 Invaders. Then, each Invader with Strife deals Damage to other Invaders in its land."
+    ]
+  },
+  {
+    "id": "dahan-threaten",
+    "name": "Dahan Threaten",
+    "type": "fear",
+    "sickSlug": "dahan_threaten",
+    "levels": [
+      "Each player adds 1 Strife in a land with Dahan.",
+      "Each player adds 1 Strife in a land with Dahan. For the rest of this turn, Invaders have -1 Health per Strife to a minimum of 1.",
+      "Each player adds 1 Strife in a land with Dahan. In every land with Strife, 1 Damage per Dahan."
+    ]
+  },
+  {
+    "id": "sense-of-dread",
+    "name": "Sense of Dread",
+    "type": "fear",
+    "sickSlug": "sense_of_dread",
+    "levels": [
+      "Terror Level 1: On Each Board: Remove 1 Explorer from a land matching a Ravage card.",
+      "Terror Level 2: On Each Board: Remove 1 Explorer / Town from a land matching a Ravage card.",
+      "Terror Level 3: On Each Board: Remove 1 Invader from a land matching a Ravage card."
+    ]
+  },
+  {
+    "id": "flee-from-dangerous-lands",
+    "name": "Flee from Dangerous Lands",
+    "type": "fear",
+    "sickSlug": "flee_from_dangerous_lands",
+    "levels": [
+      "Terror Level 1: On Each Board: Push 1 Explorer / Town from a land with Badlands / Wilds / Dahan.",
+      "Terror Level 2: On Each Board: Remove 1 Explorer / Town from a land with Badlands / Wilds / Dahan.",
+      "Terror Level 3: On Each Board: Remove 1 Explorer / Town from any land, or Remove 1 City from a land with Badlands / Wilds / Dahan."
+    ]
+  },
+  {
+    "id": "dahan-reclaim-fishing-grounds",
+    "name": "Dahan Reclaim Fishing Grounds",
+    "type": "fear",
+    "sickSlug": "dahan_reclaim_fishing_grounds",
+    "levels": [
+      "Terror Level 1: Each player chooses a different Coastal land with Dahan. In each: 1 Damage per Dahan.",
+      "Terror Level 2: Each player chooses a different Coastal land. In each: Gather up to 1 Dahan. 1 Damage per Dahan.",
+      "Terror Level 3: Each player chooses a different Coastal land. In each: Gather up to 1 Dahan. 2 Damage per Dahan."
+    ]
+  },
+  {
+    "id": "beset-by-many-troubles",
+    "name": "Beset by Many Troubles",
+    "type": "fear",
+    "sickSlug": "beset_by_many_troubles",
+    "levels": [
+      "Terror Level 1: In each land with Badlands / Beasts / Disease / Wilds / Strife, Defend 3.",
+      "Terror Level 2: In each land with Badlands / Beasts / Disease / Wilds / Strife, or adjacent to 3 or more such tokens, Defend 5.",
+      "Terror Level 3: Every Badlands / Beasts / Disease / Wilds / Strife grants Defend 3 in its land and adjacent lands."
+    ]
+  },
+  {
+    "id": "nerves-fray",
+    "name": "Nerves Fray",
+    "type": "fear",
+    "sickSlug": "nerves_fray",
+    "levels": [
+      "Terror Level 1: Each player adds 1 Strife in a land not matching a Ravage Card.",
+      "Terror Level 2: Each player adds 2 Strife in a single land not matching a Ravage Card.",
+      "Terror Level 3: Each player adds 2 Strife in a single land not matching a Ravage Card. 1 Fear per player."
+    ]
+  },
+  {
+    "id": "theological-strife",
+    "name": "Theological Strife",
+    "type": "fear",
+    "sickSlug": "theological_strife",
+    "levels": [
+      "Terror Level 1: Each player adds 1 Strife in a land with Presence.",
+      "Terror Level 2: Each player adds 1 Strife in a land with Presence. Each Spirit gains 1 Energy per SacredSite they have in lands with Invaders.",
+      "Terror Level 3: Each player adds 1 Strife in a land with Presence. Then, each Invader with Strife deals Damage to other Invaders in its land."
+    ]
+  },
+  {
+    "id": "angry-mobs",
+    "name": "Angry Mobs",
+    "type": "fear",
+    "sickSlug": "angry_mobs",
+    "levels": [
+      "Terror Level 1: Each player may replace 1 Town with 2 Explorer. 1 Fear per player who does.",
+      "Terror Level 2: In each land with 2 or more Explorer, destroy 1 Explorer / Town per 2 Explorer.",
+      "Terror Level 3: In each land with 2 or more Explorer, destroy 1 Invader per 2 Explorer."
+    ]
+  },
+  {
+    "id": "mimic-the-dahan",
+    "name": "Mimic the Dahan",
+    "type": "fear",
+    "sickSlug": "mimic_the_dahan",
+    "levels": [
+      "Terror Level 1: Each player removes 1 Explorer / Town from a land with 2 or more Dahan.",
+      "Terror Level 2: Each player replaces 1 Explorer / Town with 1 Dahan in a land with 2 or more Dahan.",
+      "Terror Level 3: Each player replaces 1 Explorer / Town with 1 Dahan in a land with Dahan, or adjacent to 3 or more Dahan."
+    ]
+  },
+  {
+    "id": "depopulation",
+    "name": "Depopulation",
+    "type": "fear",
+    "sickSlug": "depopulation",
+    "levels": [
+      "Terror Level 1: On Each Board: Replace 1 Town with 1 Explorer.",
+      "Terror Level 2: On Each Board: Remove 1 Town.",
+      "Terror Level 3: On Each Board: Remove 1 Town, or Replace 1 City with 1 Town."
+    ]
+  },
+  {
+    "id": "communities-in-disarray",
+    "name": "Communities in Disarray",
+    "type": "fear",
+    "sickSlug": "communities_in_disarray",
+    "levels": [
+      "Terror Level 1: City each deal -1 Damage during Ravage. Invaders do not heal Damage at the end of this turn.",
+      "Terror Level 2: Town / City each deal -1 Damage during Ravage. Invaders do not heal Damage at the end of this turn.",
+      "Terror Level 3: Town / City each deal -2 Damage during Ravage. Invaders do not heal Damage at the end of this turn."
+    ]
+  },
+  {
+    "id": "spreading-timidity",
+    "name": "Spreading Timidity",
+    "type": "fear",
+    "sickSlug": "spreading_timidity",
+    "levels": [
+      "Terror Level 1: Each player chooses a land to Isolate.",
+      "Terror Level 2: Each player chooses a different land to Isolate. Also, Defend 2 in those lands.",
+      "Terror Level 3: Each player chooses a different land to Isolate. Also, Defend 4 in those lands."
+    ]
+  },
+  {
+    "id": "civil-unrest",
+    "name": "Civil Unrest",
+    "type": "fear",
+    "sickSlug": "civil_unrest",
+    "levels": [
+      "Terror Level 1: On Each Board: Add 1 Strife to a Town / City in a land not matching a Ravage Card.",
+      "Terror Level 2: On Each Board: Add 1 Strife to a Town / City in a land not matching a Ravage Card. Each Invader takes 1 Damage per Strife it has.",
+      "Terror Level 3: On Each Board: Add 1 Strife. Each Invader takes 1 Damage per Strife it has."
+    ]
+  },
+  {
+    "id": "dahan-gain-the-edge",
+    "name": "Dahan Gain the Edge",
+    "type": "fear",
+    "sickSlug": "dahan_gain_the_edge",
+    "levels": [
+      "Terror Level 1: Each player chooses a different land with Dahan. In Each: Defend 2.",
+      "Terror Level 2: Each player chooses a different land with Dahan. In Each: 1 Damage and Defend 3.",
+      "Terror Level 3: Each player chooses a different land with Dahan. In Each: 2 Damage and Defend 4."
+    ]
+  },
+  {
+    "id": "daunted-by-the-dahan",
+    "name": "Daunted by the Dahan",
+    "type": "fear",
+    "sickSlug": "daunted_by_the_dahan",
+    "levels": [
+      "Terror Level 1: 1 Fear per board with both Invaders and Dahan. Invaders do -6 Damage to Dahan (per land) during Ravage.",
+      "Terror Level 2: 1 Fear per board with both Invaders and Dahan. Lands with Dahan have Defend 3. Invaders do -6 Damage to Dahan (per land) during Ravage.",
+      "Terror Level 3: 1 Fear per board with both Invaders and Dahan. Lands with Dahan have Defend 3. Invaders do -6 Damage to Dahan (per land) during Ravage. Isolate all lands with Dahan."
+    ]
+  },
+  {
+    "id": "distracted-by-local-troubles",
+    "name": "Distracted by Local Troubles",
+    "type": "fear",
+    "sickSlug": "distracted_by_local_troubles",
+    "levels": [
+      "Terror Level 1: On Each Board, in a land matching a Ravage Card: 1 Damage.",
+      "Terror Level 2: Invaders do -1 Damage per Damage they have taken. On Each Board, in a land matching a Ravage Card: 1 Damage each to up to 2 Invaders.",
+      "Terror Level 3: Invaders do -1 Damage per Damage they have taken. On Each Board, in two lands matching a Ravage Card: 2 Damage (per land)."
+    ]
+  },
+  {
+    "id": "restlessness",
+    "name": "Restlessness",
+    "type": "fear",
+    "sickSlug": "restlessness",
+    "levels": [
+      "Terror Level 1: Each player Pushes up to 1 Explorer / Town from a land not matching a Build card.",
+      "Terror Level 2: Each player Pushes up to 3 Explorer / Town from a land not matching a Build card.",
+      "Terror Level 3: Each player Removes up to 3 Explorer / Town from a land not matching a Build card."
+    ]
+  },
+  {
+    "id": "seek-company",
+    "name": "Seek Company",
+    "type": "fear",
+    "sickSlug": "seek_company",
+    "levels": [
+      "Terror Level 1: On Each Board: Gather up to 1 Explorer into a land with 2 or more Invaders.",
+      "Terror Level 2: On Each Board: Gather up to 3 Explorer / Town from a single land into a land with 2 or more Invaders.",
+      "Terror Level 3: On Each Board: Gather up to 4 Explorer / Town (total) into lands with 2 or more Invaders."
+    ]
+  },
+  {
+    "id": "struggles-over-farmland",
+    "name": "Struggles over Farmland",
+    "type": "fear",
+    "sickSlug": "struggles_over_farmland",
+    "levels": [
+      "Terror Level 1: Each player Adds 1 Strife in a land with Blight.",
+      "Terror Level 2: Each player Adds 1 Strife to a Town or Adds 1 Strife in a land with Blight.",
+      "Terror Level 3: Each player Adds 1 Strife. In each land with Blight, 1 Invader with Strife does Damage to other Invaders."
+    ]
+  },
+  {
+    "id": "supply-chains-abandoned",
+    "name": "Supply Chains Abandoned",
+    "type": "fear",
+    "sickSlug": "supply_chains_abandoned",
+    "levels": [
+      "Terror Level 1: On Each Board: Isolate one land.",
+      "Terror Level 2: On Each Board: Isolate one land. If Town / City are present, skip all Build Actions (in that land).",
+      "Terror Level 3: On Each Board: Isolate two lands. In each of those lands, if Town / City are present, skip all Build Actions (in that land)."
+    ]
+  },
+  {
+    "id": "unsettled",
+    "name": "Unsettled",
+    "type": "fear",
+    "sickSlug": "unsettled",
+    "levels": [
+      "Terror Level 1: On Each Board: Choose a land with Beasts / Strife / Dahan. Downgrade 1 Town / City there.",
+      "Terror Level 2: On Each Board: Choose a land with Beasts / Strife / Dahan. Downgrade 1 Town / City there ore skip the next Build Action there (this turn).",
+      "Terror Level 3: On Each Board: Choose a land with Beasts / Strife / Dahan. Remove 1 Invader there or skip the next Build Action there (this turn)."
+    ]
+  },
+  {
+    "id": "slave-rebellion",
+    "name": "Slave Rebellion",
+    "type": "event",
+    "sickSlug": "slave_rebellion",
+    "aliases": ["small_uprising", "rebellion"]
+  },
+  {
+    "id": "years-of-little-rain",
+    "name": "Years of Little Rain",
+    "type": "event",
+    "sickSlug": "years_of_little_rain"
+  },
+  {
+    "id": "farmers-seek-the-dahan-for-aid",
+    "name": "Farmers Seek the Dahan for Aid",
+    "type": "event",
+    "sickSlug": "farmers_seek_the_dahan_for_aid"
+  },
+  {
+    "id": "new-species-spread",
+    "name": "New Species Spread",
+    "type": "event",
+    "sickSlug": "new_species_spread"
+  },
+  {
+    "id": "war-touches-the-islands-shores",
+    "name": "War Touches the Island's Shores",
+    "type": "event",
+    "sickSlug": "war_touches_the_islands_shores"
+  },
+  {
+    "id": "sacred-sites-under-threat",
+    "name": "Sacred Sites under Threat",
+    "type": "event",
+    "sickSlug": "sacred_sites_under_threat"
+  },
+  {
+    "id": "outpaced",
+    "name": "Outpaced",
+    "type": "event",
+    "sickSlug": "outpaced"
+  },
+  {
+    "id": "missionaries-arrive",
+    "name": "Missionaries Arrive",
+    "type": "event",
+    "sickSlug": "missionaries_arrive"
+  },
+  {
+    "id": "a-strange-madness-among-the-beasts",
+    "name": "A Strange Madness among the Beasts",
+    "type": "event",
+    "sickSlug": "a_strange_madness_among_the_beasts"
+  },
+  {
+    "id": "rising-interest-in-the-island",
+    "name": "Rising Interest in the Island",
+    "type": "event",
+    "sickSlug": "rising_interest_in_the_island"
+  },
+  {
+    "id": "lesser-spirits-imperiled",
+    "name": "Lesser Spirits Imperiled",
+    "type": "event",
+    "sickSlug": "lesser_spirits_imperiled"
+  },
+  {
+    "id": "remnants-of-a-spirits-heart",
+    "name": "Remnants of a Spirit's Heart",
+    "type": "event",
+    "sickSlug": "remnants_of_a_spirits_heart"
+  },
+  {
+    "id": "numinous-crisis",
+    "name": "Numinous Crisis",
+    "type": "event",
+    "sickSlug": "numinous_crisis"
+  },
+  {
+    "id": "hard-working-settlers",
+    "name": "Hard-Working Settlers",
+    "type": "event",
+    "sickSlug": "hardworking_settlers"
+  },
+  {
+    "id": "dahan-trade-with-the-invaders",
+    "name": "Dahan Trade with the Invaders",
+    "type": "event",
+    "sickSlug": "dahan_trade_with_the_invaders"
+  },
+  {
+    "id": "lifes-balance-tilts",
+    "name": "Life's Balance Tilts",
+    "type": "event",
+    "sickSlug": "lifes_balance_tilts"
+  },
+  {
+    "id": "ethereal-conjunction",
+    "name": "Ethereal Conjunction",
+    "type": "event",
+    "sickSlug": "ethereal_conjunction"
+  },
+  {
+    "id": "far-off-wars-touch-the-island",
+    "name": "Far-Off Wars Touch the Island",
+    "type": "event",
+    "sickSlug": "faroff_wars_touch_the_island"
+  },
+  {
+    "id": "visions-out-of-time",
+    "name": "Visions Out of Time",
+    "type": "event",
+    "sickSlug": "visions_out_of_time"
+  },
+  {
+    "id": "putting-down-roots",
+    "name": "Putting down Roots",
+    "type": "event",
+    "sickSlug": "putting_down_roots",
+    "aliases": ["the_center_crumbles"]
+  },
+  {
+    "id": "search-for-new-lands",
+    "name": "Search for new Lands",
+    "type": "event",
+    "sickSlug": "search_for_new_lands",
+    "aliases": ["devastated_shores"]
+  },
+  {
+    "id": "invaders-surge-inland",
+    "name": "Invaders Surge Inland",
+    "type": "event",
+    "sickSlug": "invaders_surge_inland",
+    "aliases": ["widening_destruction"]
+  },
+  {
+    "id": "tight-knit-communities",
+    "name": "Tight-Knit Communities",
+    "type": "event",
+    "sickSlug": "tightknit_communities",
+    "aliases": ["blight_spreads"]
+  },
+  {
+    "id": "well-prepared-explorers",
+    "name": "Well-Prepared Explorers",
+    "type": "event",
+    "sickSlug": "wellprepared_explorers",
+    "aliases": ["blight_spreads"]
+  },
+  {
+    "id": "population-rises",
+    "name": "Population Rises",
+    "type": "event",
+    "sickSlug": "population_rises",
+    "aliases": ["power_fades"]
+  },
+  {
+    "id": "urban-development",
+    "name": "Urban Development",
+    "type": "event",
+    "sickSlug": "urban_development",
+    "aliases": ["festering_pits_of_blight"]
+  },
+  {
+    "id": "heavy-farming",
+    "name": "Heavy Farming",
+    "type": "event",
+    "sickSlug": "heavy_farming",
+    "aliases": ["overcrowded_cities"]
+  },
+  {
+    "id": "promising-farmland",
+    "name": "Promising Farmland",
+    "type": "event",
+    "sickSlug": "promising_farmland",
+    "aliases": ["new_cash_crops_take_hold"]
+  },
+  {
+    "id": "the-frontier-calls",
+    "name": "The Frontier Calls",
+    "type": "event",
+    "sickSlug": "the_frontier_calls",
+    "aliases": ["selfsacrifice_buys_time"]
+  },
+  {
+    "id": "seek-new-farmland",
+    "name": "Seek New Farmland",
+    "type": "event",
+    "sickSlug": "seek_new_farmland",
+    "aliases": ["voracious_consumption"]
+  },
+  {
+    "id": "gradual-corruption",
+    "name": "Gradual Corruption",
+    "type": "event",
+    "sickSlug": "gradual_corruption",
+    "aliases": ["ravaged_wilderness"]
+  },
+  {
+    "id": "fortune-seekers",
+    "name": "Fortune-Seekers",
+    "type": "event",
+    "sickSlug": "fortuneseekers",
+    "aliases": ["the_lands_bounty_exhausted"]
+  },
+  {
+    "id": "provincial-seat",
+    "name": "Provincial Seat",
+    "type": "event",
+    "sickSlug": "provincial_seat",
+    "aliases": ["lands_hollow_of_promise"]
+  },
+  {
+    "id": "cities-rise",
+    "name": "Cities Rise",
+    "type": "event",
+    "sickSlug": "cities_rise",
+    "aliases": ["depleted_soil"]
+  },
+  {
+    "id": "thriving-trade",
+    "name": "Thriving Trade",
+    "type": "event",
+    "sickSlug": "thriving_trade",
+    "aliases": ["partitioned_wilderness"]
+  },
+  {
+    "id": "wounded-lands-attract-explorers",
+    "name": "Wounded Lands Attract Explorers",
+    "type": "event",
+    "sickSlug": "wounded_lands_attract_explorers",
+    "aliases": ["the_worlds_vibrance_fades"]
+  },
+  {
+    "id": "coastal-towns-multiply",
+    "name": "Coastal Towns Multiply",
+    "type": "event",
+    "sickSlug": "coastal_towns_multiply",
+    "aliases": ["cooperation_among_towns"]
+  },
+  {
+    "id": "civic-engagement",
+    "name": "Civic Engagement",
+    "type": "event",
+    "sickSlug": "civic_engagement",
+    "aliases": ["lifes_web_torn_asunder"]
+  },
+  {
+    "id": "sprawl-contained-by-the-wilds",
+    "name": "Sprawl Contained by the Wilds",
+    "type": "event",
+    "sickSlug": "sprawl_contained_by_the_wilds",
+    "aliases": ["dissolution_threatens"]
+  },
+  {
+    "id": "the-struggles-of-growth",
+    "name": "The Struggles of Growth",
+    "type": "event",
+    "sickSlug": "the_struggles_of_growth",
+    "aliases": ["blight_deepens"]
+  },
+  {
+    "id": "accumulated-devastation",
+    "name": "Accumulated Devastation",
+    "type": "event",
+    "sickSlug": "accumulated_devastation",
+    "aliases": ["the_worlds_vibrance_fades"]
+  },
+  {
+    "id": "focused-farming",
+    "name": "Focused Farming",
+    "type": "event",
+    "sickSlug": "focused_farming",
+    "aliases": ["essence_disperses"]
+  },
+  {
+    "id": "influx-of-settlers",
+    "name": "Influx of Settlers",
+    "type": "event",
+    "sickSlug": "influx_of_settlers",
+    "aliases": ["lethargy_and_degeneration"]
+  },
+  {
+    "id": "search-for-unclaimed-land",
+    "name": "Search for Unclaimed Land",
+    "type": "event",
+    "sickSlug": "search_for_unclaimed_land",
+    "aliases": ["widespread_hunting"]
+  },
+  {
+    "id": "seeking-the-interior",
+    "name": "Seeking the Interior",
+    "type": "event",
+    "sickSlug": "seeking_the_interior",
+    "aliases": ["local_diaspora"]
+  },
+  {
+    "id": "wave-of-reconnaissance",
+    "name": "Wave of Reconnaissance",
+    "type": "event",
+    "sickSlug": "wave_of_reconnaissance",
+    "aliases": ["urbanization"]
+  },
+  {
+    "id": "interesting-discoveries",
+    "name": "Interesting Discoveries",
+    "type": "event",
+    "sickSlug": "interesting_discoveries",
+    "aliases": ["increasing_aggression"]
+  },
+  {
+    "id": "strange-tales-attract-explorers",
+    "name": "Strange Tales attract Explorers",
+    "type": "event",
+    "sickSlug": "strange_tales_attract_explorers",
+    "aliases": ["fortification"]
+  },
+  {
+    "id": "harvest-bounty-harvest-dust",
+    "name": "Harvest Bounty, Harvest Dust",
+    "type": "event",
+    "sickSlug": "harvest_bounty_harvest_dust",
+    "aliases": ["widespread_clearcutting"]
+  },
+  {
+    "id": "invested-aristocracy",
+    "name": "Invested Aristocracy",
+    "type": "event",
+    "sickSlug": "invested_aristocracy",
+    "aliases": ["foreign_dignitaries_visit"]
+  },
+  {
+    "id": "mapmakers-chart-the-wild",
+    "name": "Mapmakers Chart the Wild",
+    "type": "event",
+    "sickSlug": "mapmakers_chart_the_wild",
+    "aliases": ["increasing_aggression"]
+  },
+  {
+    "id": "no-bravery-without-numbers",
+    "name": "No Bravery without Numbers",
+    "type": "event",
+    "sickSlug": "no_bravery_without_numbers",
+    "aliases": ["courage_of_the_crowd"]
+  },
+  {
+    "id": "smaller-ports-spring-up",
+    "name": "Smaller Ports Spring Up",
+    "type": "event",
+    "sickSlug": "smaller_ports_spring_up",
+    "aliases": ["extensive_building"]
+  },
+  {
+    "id": "cultural-assimilation",
+    "name": "Cultural Assimilation",
+    "type": "event",
+    "sickSlug": "cultural_assimilation",
+    "aliases": ["reprisal_against_the_dahan"]
+  },
+  {
+    "id": "investigation-of-dangers",
+    "name": "Investigation of Dangers",
+    "type": "event",
+    "sickSlug": "investigation_of_dangers",
+    "aliases": ["destroy_the_unnatural"]
+  },
+  {
+    "id": "distant-exploration",
+    "name": "Distant Exploration",
+    "type": "event",
+    "sickSlug": "distant_exploration",
+    "aliases": ["fearful_mobs"]
+  },
+  {
+    "id": "eager-explorers",
+    "name": "Eager Explorers",
+    "type": "event",
+    "sickSlug": "eager_explorers",
+    "aliases": ["xenophobia"]
+  },
+  {
+    "id": "bureaucrats-adjust-funding",
+    "name": "Bureaucrats Adjust Funding",
+    "type": "event",
+    "sickSlug": "bureaucrats_adjust_funding",
+    "aliases": ["ransack_and_run"]
+  },
+  {
+    "id": "resourceful-populace",
+    "name": "Resourceful Populace",
+    "type": "event",
+    "sickSlug": "resourceful_populace",
+    "aliases": ["strip_the_land_bare"]
+  },
+  {
+    "id": "relentless-optimism",
+    "name": "Relentless Optimism",
+    "type": "event",
+    "sickSlug": "relentless_optimism",
+    "aliases": ["cultures_mix_and_clash"]
+  },
+  {
+    "id": "pull-together-in-adversity",
+    "name": "Pull Together in Adversity",
+    "type": "event",
+    "sickSlug": "pull_together_in_adversity",
+    "aliases": ["purge_the_land_with_salt_and_fire"]
+  },
+  {
+    "id": "temporary-truce",
+    "name": "Temporary Truce",
+    "type": "event",
+    "sickSlug": "temporary_truce",
+    "aliases": ["temporary_caution"]
+  },
+  {
+    "id": "overconfidence",
+    "name": "Overconfidence",
+    "type": "event",
+    "sickSlug": "overconfidence",
+    "aliases": ["terror_breeds_aggression"]
+  },
+  {
+    "id": "an-ominous-dawn",
+    "name": "An Ominous Dawn",
+    "type": "event",
+    "sickSlug": "an_ominous_dawn",
+    "aliases": ["wavering_resolve"]
+  },
+  {
+    "id": "terror-spikes-upwards",
+    "name": "Terror Spikes Upwards",
+    "type": "event",
+    "sickSlug": "terror_spikes_upwards",
+    "aliases": ["final_harvest"]
+  },
+  {
+    "id": "downward-spiral",
+    "name": "Downward Spiral",
+    "type": "blight",
+    "sickSlug": "downward_spiral",
+    "stillHealthy": false
+  },
+  {
+    "id": "memory-fades-to-dust",
+    "name": "Memory Fades to Dust",
+    "type": "blight",
+    "sickSlug": "memory_fades_to_dust",
+    "stillHealthy": false
+  },
+  {
+    "id": "back-against-the-wall",
+    "name": "Back Against the Wall",
+    "type": "blight",
+    "sickSlug": "back_against_the_wall",
+    "stillHealthy": false
+  },
+  {
+    "id": "promising-farmlands",
+    "name": "Promising Farmlands",
+    "type": "blight",
+    "sickSlug": "promising_farmlands",
+    "stillHealthy": false
+  },
+  {
+    "id": "disintegrating-ecosystem",
+    "name": "Disintegrating Ecosystem",
+    "type": "blight",
+    "sickSlug": "disintegrating_ecosystem",
+    "stillHealthy": false
+  },
+  {
+    "id": "aid-from-lesser-spirits",
+    "name": "Aid from Lesser Spirits",
+    "type": "blight",
+    "sickSlug": "aid_from_lesser_spirits",
+    "stillHealthy": false
+  },
+  {
+    "id": "tipping-point",
+    "name": "Tipping Point",
+    "type": "blight",
+    "sickSlug": "tipping_point",
+    "stillHealthy": false
+  },
+  {
+    "id": "erosion-of-will",
+    "name": "Erosion of Will",
+    "type": "blight",
+    "sickSlug": "erosion_of_will",
+    "stillHealthy": false
+  },
+  {
+    "id": "a-pall-upon-the-land",
+    "name": "A Pall upon the Land",
+    "type": "blight",
+    "sickSlug": "a_pall_upon_the_land",
+    "stillHealthy": false
+  },
+  {
+    "id": "unnatural-proliferation",
+    "name": "Unnatural Proliferation",
+    "type": "blight",
+    "sickSlug": "unnatural_proliferation",
+    "stillHealthy": false
+  },
+  {
+    "id": "all-things-weaken",
+    "name": "All Things Weaken",
+    "type": "blight",
+    "sickSlug": "all_things_weaken",
+    "stillHealthy": false
+  },
+  {
+    "id": "thriving-communities",
+    "name": "Thriving Communities",
+    "type": "blight",
+    "sickSlug": "thriving_communities",
+    "stillHealthy": false
+  },
+  {
+    "id": "power-corrodes-the-spirit",
+    "name": "Power Corrodes the Spirit",
+    "type": "blight",
+    "sickSlug": "power_corrodes_the_spirit",
+    "stillHealthy": false
+  },
+  {
+    "id": "untended-land-crumbles",
+    "name": "Untended Land Crumbles",
+    "type": "blight",
+    "sickSlug": "untended_land_crumbles",
+    "stillHealthy": false
+  },
+  {
+    "id": "attenuated-essence",
+    "name": "Attenuated Essence",
+    "type": "blight",
+    "sickSlug": "attenuated_essence",
+    "stillHealthy": false
+  },
+  {
+    "id": "blight-corrodes-the-spirit",
+    "name": "Blight Corrodes the Spirit",
+    "type": "blight",
+    "sickSlug": "blight_corrodes_the_spirit",
+    "stillHealthy": false
+  },
+  {
+    "id": "burn-brightest-before-the-end",
+    "name": "Burn Brightest Before the End",
+    "type": "blight",
+    "sickSlug": "burn_brightest_before_the_end",
+    "stillHealthy": false
+  },
+  {
+    "id": "intensifying-exploitation",
+    "name": "Intensifying Exploitation",
+    "type": "blight",
+    "sickSlug": "intensifying_exploitation",
+    "stillHealthy": false
+  },
+  {
+    "id": "shattered-fragments-of-power",
+    "name": "Shattered Fragments of Power",
+    "type": "blight",
+    "sickSlug": "shattered_fragments_of_power",
+    "stillHealthy": false
+  },
+  {
+    "id": "slow-dissolution-of-will",
+    "name": "Slow Dissolution of Will",
+    "type": "blight",
+    "sickSlug": "slow_dissolution_of_will",
+    "stillHealthy": false
+  },
+  {
+    "id": "invaders-find-the-land-to-their-liking",
+    "name": "Invaders find the Land to their Liking",
+    "type": "blight",
+    "sickSlug": "invaders_find_the_land_to_their_liking",
+    "stillHealthy": true
+  },
+  {
+    "id": "strong-earth-shatters-slowly",
+    "name": "Strong Earth Shatters Slowly",
+    "type": "blight",
+    "sickSlug": "strong_earth_shatters_slowly",
+    "stillHealthy": true
+  },
+  {
+    "id": "the-border-of-life-and-death",
+    "name": "The Border of Life and Death",
+    "type": "blight",
+    "sickSlug": "the_border_of_life_and_death",
+    "stillHealthy": true
+  },
+  {
+    "id": "thriving-crops",
+    "name": "Thriving Crops",
+    "type": "blight",
+    "sickSlug": "thriving_crops",
+    "stillHealthy": true
+  }
+]

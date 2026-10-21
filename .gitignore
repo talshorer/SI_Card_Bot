@@ -1,2 +1,5 @@
 .env
 node_modules/
+assets/
+Spirit_Island_low_res/
+.wrangler/

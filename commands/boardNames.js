@@ -1,65 +1,17 @@
-const regularBoards = [
-  {
-    name: "a",
-    link: "https://spiritislandwiki.com/images/e/e2/Piece_core_board_a.png",
-  },
-  {
-    name: "b",
-    link: "https://spiritislandwiki.com/images/7/7a/Piece_core_board_b.png",
-  },
-  {
-    name: "c",
-    link: "https://spiritislandwiki.com/images/8/82/Piece_core_board_c.png",
-  },
-  {
-    name: "d",
-    link: "https://spiritislandwiki.com/images/3/3a/Piece_core_board_d.png",
-  },
-  {
-    name: "e",
-    link: "https://spiritislandwiki.com/images/e/e5/Piece_je_board_e.png",
-  },
-  {
-    name: "f",
-    link: "https://spiritislandwiki.com/images/0/0b/Piece_je_board_f.png",
-  },
-  {
-    name: "g",
-    link: "https://spiritislandwiki.com/images/d/d4/Piece_horizons_board_g.png",
-  },
-  {
-    name: "h",
-    link: "https://spiritislandwiki.com/images/4/4a/Piece_horizons_board_h.png",
-  },
-];
+// Board definitions live in data/boards.json (validated against
+// data/schemas/board.schema.json).
+const boards = require("../data/boards.json");
 
-const thematicBoards = [
-  {
-    name: "northeast",
-    link: "https://spiritislandwiki.com/images/f/f9/Piece_core_board_north_east.png",
-  },
-  {
-    name: "northwest",
-    link: "https://spiritislandwiki.com/images/8/8c/Piece_core_board_north_west.png",
-  },
-  {
-    name: "east",
-    link: "https://spiritislandwiki.com/images/5/58/Piece_core_board_east.png",
-  },
-  {
-    name: "west",
-    link: "https://spiritislandwiki.com/images/2/26/Piece_core_board_west.png",
-  },
-  {
-    name: "southeast",
-    link: "https://spiritislandwiki.com/images/c/cc/Piece_je_board_south_east.png",
-  },
-  {
-    name: "southwest",
-    link: "https://spiritislandwiki.com/images/6/64/Piece_je_board_south_west.png",
-  },
-];
+/**
+ * Returns the board whose id or one of whose aliases matches the given
+ * term (case-insensitive), or undefined.
+ */
+function findBoard(term) {
+  const t = String(term).toLowerCase();
+  return boards.find((board) => board.id === t || board.aliases.includes(t));
+}
 
-exports.regularBoards = regularBoards;
-exports.thematicBoards = thematicBoards;
-exports.allBoards = [...regularBoards, ...thematicBoards];
+exports.regularBoards = boards.filter((board) => board.layout === "standard");
+exports.thematicBoards = boards.filter((board) => board.layout === "thematic");
+exports.allBoards = boards;
+exports.findBoard = findBoard;
