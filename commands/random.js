@@ -274,7 +274,7 @@ function chooseDoubleAdversary(minDifficulty = 1, maxDifficulty = 17) {
  */
 function chooseScenario() {
   let s = Math.floor(Math.random() * scenario.length);
-  return [scenario[s].name, scenario[s].linkBack];
+  return [scenario[s].name, scenario[s].panel[1]];
 }
 
 /**
@@ -309,8 +309,8 @@ function chooseBoard(boardType = "regular") {
   console.log(board.length);
   let s = Math.floor(Math.random() * board.length);
   console.log(s);
-  console.log(board[s].name, board[s].link);
-  return [board[s].name, board[s].link];
+  console.log(board[s].name, board[s].image);
+  return [board[s].name, board[s].image];
 }
 
 /**

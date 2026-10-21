@@ -1,0 +1,98 @@
+[
+  {
+    "id": "blitz",
+    "name": "Blitz",
+    "difficulty": 0,
+    "panel": ["https://i.imgur.com/l9LsFb7.png", "https://i.imgur.com/rbm2vox"]
+  },
+  {
+    "id": "guard-the-isles-heart",
+    "name": "Guard the Isle's Heart",
+    "difficulty": 0,
+    "panel": ["https://i.imgur.com/gaQAMPy", "https://i.imgur.com/sarg4rv"]
+  },
+  {
+    "id": "rituals-of-terror",
+    "name": "Rituals of Terror",
+    "difficulty": 3,
+    "panel": ["https://i.imgur.com/ynAA7aW", "https://i.imgur.com/NIOiZUI"]
+  },
+  {
+    "id": "dahan-insurrection",
+    "name": "Dahan Insurrection",
+    "difficulty": 4,
+    "panel": ["https://i.imgur.com/gSQuYq7", "https://i.imgur.com/9zzKSqe"]
+  },
+  {
+    "id": "second-wave",
+    "name": "Second Wave",
+    "difficulty": 1,
+    "panel": ["https://i.imgur.com/ybHof3q", "https://i.imgur.com/DkJoMTi"]
+  },
+  {
+    "id": "powers-long-forgotten",
+    "name": "Powers Long Forgotten",
+    "difficulty": 1,
+    "panel": ["https://i.imgur.com/XvKFi2N", "https://i.imgur.com/KBTIdfs"]
+  },
+  {
+    "id": "ward-the-shores",
+    "name": "Ward the Shores",
+    "difficulty": 2,
+    "panel": ["https://i.imgur.com/Y8om7Bb", "https://i.imgur.com/5dd2xP0"]
+  },
+  {
+    "id": "rituals-of-the-destroying-flame",
+    "name": "Rituals of the Destroying Flame",
+    "difficulty": 3,
+    "panel": ["https://i.imgur.com/S2oxMkF", "https://i.imgur.com/L4zMjtC"]
+  },
+  {
+    "id": "elemental-invocation",
+    "name": "Elemental Invocation",
+    "difficulty": 1,
+    "panel": ["https://i.imgur.com/haOq62U", "https://i.imgur.com/4wTQqjQ"]
+  },
+  {
+    "id": "despicable-theft",
+    "name": "Despicable Theft",
+    "difficulty": 2,
+    "panel": ["https://i.imgur.com/RTEQFIQ", "https://i.imgur.com/VLyEXFg"]
+  },
+  {
+    "id": "the-great-river",
+    "name": "The Great River",
+    "difficulty": 3,
+    "panel": ["https://i.imgur.com/xEgVnVE", "https://i.imgur.com/R9oOeXL"]
+  },
+  {
+    "id": "a-diversity-of-spirits",
+    "name": "A Diversity of Spirits",
+    "difficulty": 0,
+    "panel": ["https://i.imgur.com/24wwuun", "https://i.imgur.com/iF15h8W"]
+  },
+  {
+    "id": "varied-terrains",
+    "name": "Varied Terrains",
+    "difficulty": 2,
+    "panel": ["https://i.imgur.com/XbGRf3Z", "https://i.imgur.com/rOg2M2t"]
+  },
+  {
+    "id": "destiny-unfolds",
+    "name": "Destiny Unfolds",
+    "difficulty": -1,
+    "panel": ["https://imgur.com/aM7Etk5", "https://imgur.com/kp4Nh2h"]
+  },
+  {
+    "id": "surges-of-colonization",
+    "name": "Surges of Colonization",
+    "difficulty": 2,
+    "panel": ["https://imgur.com/oafk4WP", "https://imgur.com/tnusppS"]
+  },
+  {
+    "id": "larger-surges",
+    "name": "Larger Surges",
+    "difficulty": 7,
+    "panel": ["https://imgur.com/oafk4WP", "https://imgur.com/tnusppS"]
+  }
+]

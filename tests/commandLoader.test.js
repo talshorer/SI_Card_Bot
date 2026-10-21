@@ -105,8 +105,6 @@ describe("command loader (used by index.ts, help.js, and the docs generator)", (
       "fearCardText.js",
       "ImageNames.js",
       "InvaderDeckCard.js",
-      "healingNames.js",
-      "incarnaNames.js",
       "scenarioNames.js",
       "sendCardLink.js",
       "spiritNames.js",

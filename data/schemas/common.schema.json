@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "Shared definitions",
+  "description": "Types shared by every Spirit Island data collection.",
+  "$defs": {
+    "id": {
+      "description": "Stable, url-safe identifier: a lowercase kebab-case slug of the entity's name. Never changes once published.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "scopedId": {
+      "description": "Identifier of an entity owned by another, prefixed with its owner's id, e.g. 'shadows-flicker-like-flame/madness'.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(/[a-z0-9]+(-[a-z0-9]+)*)+$"
+    },
+    "sickSlug": {
+      "description": "Image filename (without extension) of a card on SICK (https://sick.oberien.de), which also serves as the card's lookup key in the bot.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$"
+    },
+    "text": {
+      "description": "Non-empty text with no leading or trailing whitespace.",
+      "type": "string",
+      "pattern": "^\\S(.*\\S)?$"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://\\S+$"
+    },
+    "emote": {
+      "description": "A Discord custom emoji (<:Name:id>) or a unicode emoji.",
+      "$ref": "#/$defs/text"
+    },
+    "aliases": {
+      "description": "Alternative search terms: nicknames, abbreviations, emoji or lore names.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/text" },
+      "uniqueItems": true
+    },
+    "panel": {
+      "description": "Image urls for the faces of a card or panel, front first.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/url" },
+      "minItems": 1,
+      "maxItems": 2
+    },
+    "doubleSidedPanel": {
+      "description": "Image urls for the front and back of a double-sided card or panel.",
+      "type": "array",
+      "$ref": "#/$defs/panel",
+      "minItems": 2
+    },
+    "setCode": {
+      "description": "Product the entity was released in: base game, Branch & Claw, Feather & Flame, Jagged Earth, Horizons of Spirit Island or Nature Incarnate.",
+      "enum": ["base", "b&c", "f&f", "je", "horizons", "ni"]
+    }
+  }
+}

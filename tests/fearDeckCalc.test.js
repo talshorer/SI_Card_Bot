@@ -62,11 +62,11 @@ describe("computeFearDeck()", () => {
     });
 
     it("Habsburg Mining 4", () => {
-      const result = run("habsburgmining", 4);
+      const result = run("habsburg_mining", 4);
       const expected = [
-        3 + ad.get("habsburgmining").fearDeckModification[4][0],
-        3 + ad.get("habsburgmining").fearDeckModification[4][1],
-        3 + ad.get("habsburgmining").fearDeckModification[4][2],
+        3 + ad.get("habsburg_mining").fearDeckModification[4][0],
+        3 + ad.get("habsburg_mining").fearDeckModification[4][1],
+        3 + ad.get("habsburg_mining").fearDeckModification[4][2],
       ];
       expect(result).toEqual(expected);
     });
@@ -109,32 +109,32 @@ describe("computeFearDeck()", () => {
     });
 
     it("Scotland LEADING, HME SUPPORTING", () => {
-      const result = run("scotland", 4, "habsburgmining", 4);
+      const result = run("scotland", 4, "habsburg_mining", 4);
       const expected = [
         3 +
           ad.get("scotland").fearDeckModification[4][0] +
-          ad.get("habsburgmining").fearDeckModification[4][0],
+          ad.get("habsburg_mining").fearDeckModification[4][0],
         3 +
           ad.get("scotland").fearDeckModification[4][1] +
-          ad.get("habsburgmining").fearDeckModification[4][1],
+          ad.get("habsburg_mining").fearDeckModification[4][1],
         3 +
           ad.get("scotland").fearDeckModification[4][2] +
-          ad.get("habsburgmining").fearDeckModification[4][2],
+          ad.get("habsburg_mining").fearDeckModification[4][2],
       ];
       expect(result).toEqual(expected);
     });
 
     it("HLC LEADING, Prussia SUPPORTING", () => {
-      const result = run("habsburg", 5, "prussia", 2);
+      const result = run("habsburg_livestock", 5, "prussia", 2);
       const expected = [
         3 +
-          ad.get("habsburg").fearDeckModification[5][0] +
+          ad.get("habsburg_livestock").fearDeckModification[5][0] +
           ad.get("prussia").fearDeckModification[2][0],
         3 +
-          ad.get("habsburg").fearDeckModification[5][1] +
+          ad.get("habsburg_livestock").fearDeckModification[5][1] +
           ad.get("prussia").fearDeckModification[2][1],
         3 +
-          ad.get("habsburg").fearDeckModification[5][2] +
+          ad.get("habsburg_livestock").fearDeckModification[5][2] +
           ad.get("prussia").fearDeckModification[2][2],
       ];
       expect(result).toEqual(expected);

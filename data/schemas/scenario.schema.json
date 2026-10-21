@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scenario.schema.json",
+  "title": "Scenario",
+  "description": "A scenario. data/scenarios.json is an array of these.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "difficulty", "panel"],
+  "properties": {
+    "id": { "$ref": "common.schema.json#/$defs/id" },
+    "name": { "$ref": "common.schema.json#/$defs/text" },
+    "difficulty": {
+      "description": "Difficulty modifier; can be negative.",
+      "type": "integer"
+    },
+    "panel": { "$ref": "common.schema.json#/$defs/doubleSidedPanel" }
+  }
+}

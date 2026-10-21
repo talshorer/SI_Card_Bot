@@ -2,8 +2,7 @@
  * command to retrieve one of the healing cards for WWB
  */
 
-const heal = require("./healingNames.js");
-const { healingChoices } = heal;
+const { healingCards } = require("./spiritNames.js");
 const s = require("./sendCardLink.js");
 
 function getSide(arg, f) {
@@ -13,7 +12,7 @@ function getSide(arg, f) {
 }
 
 function getPanel(hc, side) {
-  return side == "front" ? hc.front : hc.back;
+  return side == "front" ? hc.panel[0] : hc.panel[1];
 }
 
 module.exports = {
@@ -28,7 +27,10 @@ module.exports = {
       description: "Which healing card to show",
       type: "string",
       required: true,
-      choices: healingChoices,
+      choices: healingCards.map((card) => ({
+        name: card.name,
+        value: card.title,
+      })),
     },
     {
       name: "side",
@@ -57,7 +59,7 @@ module.exports = {
           : undefined) || "front";
       var healingNames = [];
       const searchString = args.join(" ").toLowerCase();
-      for (const hc of heal.healing) {
+      for (const hc of healingCards) {
         healingNames.push(hc.name);
         if (hc.title.toLowerCase().indexOf(searchString) >= 0) {
           // stops when the first exact match is found
@@ -68,7 +70,7 @@ module.exports = {
       }
       if (!found) {
         let name = s.getCardName(searchString, healingNames);
-        for (const hc of heal.healing) {
+        for (const hc of healingCards) {
           if (hc.name == name) {
             panel = getPanel(hc, side);
             break;

@@ -2,7 +2,7 @@
  * Sends a list of all a spirit's uniques as a Discord markdown message
  */
 const spirit = require("./spirit.js");
-const draw = require("./draw.js");
+const { cardName } = require("./ImageNames.js");
 
 module.exports = {
   name: "uniques",
@@ -33,9 +33,7 @@ module.exports = {
       // if levenshtein returns a single spirit, return that
       if (possibleSpirits.length === 1) {
         const spirit = possibleSpirits[0];
-        const spiritUniques = draw.capitalizeTheFirstLetterOfEachWord(
-          spirit.uniques,
-        );
+        const spiritUniques = spirit.uniques.map(cardName);
         message = `${spirit.name} (${spirit.emote}) has the following uniques: \n`;
         for (var s = 0; s < spiritUniques.length; s++) {
           message += `* ${spiritUniques[s]} \n`;

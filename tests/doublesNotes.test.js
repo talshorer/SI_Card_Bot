@@ -38,14 +38,14 @@ function hasNote(notes, source, noteSubstring) {
 describe("getDoublesNotes()", () => {
   describe("solo play", () => {
     it("returns no notes when there is no supporting adversary", () => {
-      expect(notesFor("habsburg", 5, null, null)).toEqual([]);
+      expect(notesFor("habsburg_livestock", 5, null, null)).toEqual([]);
       expect(notesFor("prussia", 6, null, null)).toEqual([]);
     });
   });
 
   describe("specific-partner exceptions", () => {
     it("HM-LC 1 + England 3: Migratory Herders/High Immigration note, and only that note", () => {
-      const notes = notesFor("habsburg", 1, "england", 3);
+      const notes = notesFor("habsburg_livestock", 1, "england", 3);
       expect(notes).toEqual([
         {
           source: "Migratory Herders",
@@ -55,22 +55,22 @@ describe("getDoublesNotes()", () => {
     });
 
     it("is order-independent: same note whichever side is leading", () => {
-      const asLeading = notesFor("habsburg", 1, "england", 3);
-      const asSupporting = notesFor("england", 3, "habsburg", 1);
+      const asLeading = notesFor("habsburg_livestock", 1, "england", 3);
+      const asSupporting = notesFor("england", 3, "habsburg_livestock", 1);
       expect(asSupporting).toEqual(asLeading);
     });
 
     it("does not fire below the partner's required level", () => {
       expect(
         hasNote(
-          notesFor("habsburg", 1, "england", 2),
+          notesFor("habsburg_livestock", 1, "england", 2),
           "Migratory Herders",
           "RAI",
         ),
       ).toBe(false);
       expect(
         hasNote(
-          notesFor("habsburg", 0, "england", 3),
+          notesFor("habsburg_livestock", 0, "england", 3),
           "Migratory Herders",
           "RAI",
         ),
@@ -78,7 +78,7 @@ describe("getDoublesNotes()", () => {
     });
 
     it("HME 1 + England 3: Ceaseless Mining doesn't interact with High Immigration", () => {
-      const notes = notesFor("habsburgmining", 1, "england", 3);
+      const notes = notesFor("habsburg_mining", 1, "england", 3);
       expect(
         hasNote(notes, "Ceaseless Mining", "doesn't interact with England 3"),
       ).toBe(true);
@@ -87,7 +87,7 @@ describe("getDoublesNotes()", () => {
     it("Scotland 5 + HME 1: reassurance note that they don't interact", () => {
       expect(
         hasNote(
-          notesFor("scotland", 5, "habsburgmining", 1),
+          notesFor("scotland", 5, "habsburg_mining", 1),
           "Runoff and Bilgewater",
           "doesn't interact with HME 1",
         ),
@@ -97,14 +97,14 @@ describe("getDoublesNotes()", () => {
     it("Scotland 5 + HM-LC: doesn't interact, at any HM-LC level including 0", () => {
       expect(
         hasNote(
-          notesFor("scotland", 5, "habsburg", 0),
+          notesFor("scotland", 5, "habsburg_livestock", 0),
           "Runoff and Bilgewater",
           "doesn't interact with HM-LC",
         ),
       ).toBe(true);
       expect(
         hasNote(
-          notesFor("scotland", 5, "habsburg", 6),
+          notesFor("scotland", 5, "habsburg_livestock", 6),
           "Runoff and Bilgewater",
           "doesn't interact with HM-LC",
         ),
@@ -114,7 +114,7 @@ describe("getDoublesNotes()", () => {
     it("Sweden 1 + HM-LC: does interact, at any HM-LC level including 0", () => {
       expect(
         hasNote(
-          notesFor("sweden", 1, "habsburg", 0),
+          notesFor("sweden", 1, "habsburg_livestock", 0),
           "Heavy Mining",
           "does interact",
         ),
@@ -161,7 +161,7 @@ describe("getDoublesNotes()", () => {
     it("HM-LC 5 + HME: Wave of Immigration resolves before HME's Escalation, at any HME level", () => {
       expect(
         hasNote(
-          notesFor("habsburg", 5, "habsburgmining", 0),
+          notesFor("habsburg_livestock", 5, "habsburg_mining", 0),
           "Wave of Immigration",
           "before HME's Escalation",
         ),
@@ -171,21 +171,21 @@ describe("getDoublesNotes()", () => {
     it("HM-LC 1 + HME 3/5: Migratory Herders vs. Mining Boom is player choice", () => {
       expect(
         hasNote(
-          notesFor("habsburg", 1, "habsburgmining", 3),
+          notesFor("habsburg_livestock", 1, "habsburg_mining", 3),
           "Migratory Herders",
           "order of player choice",
         ),
       ).toBe(true);
       expect(
         hasNote(
-          notesFor("habsburg", 1, "habsburgmining", 5),
+          notesFor("habsburg_livestock", 1, "habsburg_mining", 5),
           "Migratory Herders",
           "order of player choice",
         ),
       ).toBe(true);
       expect(
         hasNote(
-          notesFor("habsburg", 1, "habsburgmining", 2),
+          notesFor("habsburg_livestock", 1, "habsburg_mining", 2),
           "Migratory Herders",
           "order of player choice",
         ),
@@ -195,7 +195,7 @@ describe("getDoublesNotes()", () => {
     it("HM-LC 1 + HME 4: Salt Deposits gather-target/source timing note", () => {
       expect(
         hasNote(
-          notesFor("habsburg", 1, "habsburgmining", 4),
+          notesFor("habsburg_livestock", 1, "habsburg_mining", 4),
           "Migratory Herders",
           "locked in before any gathering",
         ),
@@ -229,7 +229,7 @@ describe("getDoublesNotes()", () => {
     it("HME 4 + Scotland 2: doesn't stop Coastal Lands placement", () => {
       expect(
         hasNote(
-          notesFor("habsburgmining", 4, "scotland", 2),
+          notesFor("habsburg_mining", 4, "scotland", 2),
           "Untapped Salt Deposits",
           "doesn't stop Scotland 2",
         ),
@@ -239,7 +239,7 @@ describe("getDoublesNotes()", () => {
     it("HME 4 + Scotland 1: player-option note to limit 'S' like 'C'", () => {
       expect(
         hasNote(
-          notesFor("habsburgmining", 4, "scotland", 1),
+          notesFor("habsburg_mining", 4, "scotland", 1),
           "Untapped Salt Deposits",
           "Player option",
         ),
@@ -249,7 +249,7 @@ describe("getDoublesNotes()", () => {
     it("HME 4 + Russia 5: does stop 'C' from being a Fear Bomb", () => {
       expect(
         hasNote(
-          notesFor("habsburgmining", 4, "russia", 5),
+          notesFor("habsburg_mining", 4, "russia", 5),
           "Untapped Salt Deposits",
           "does stop the Coastal Lands",
         ),
@@ -257,7 +257,7 @@ describe("getDoublesNotes()", () => {
       // Below Russia 5, no such note.
       expect(
         hasNote(
-          notesFor("habsburgmining", 4, "russia", 4),
+          notesFor("habsburg_mining", 4, "russia", 4),
           "Untapped Salt Deposits",
           "does stop the Coastal Lands",
         ),
@@ -300,8 +300,8 @@ describe("getDoublesNotes()", () => {
         "russia",
         "scotland",
         "sweden",
-        "habsburg",
-        "habsburgmining",
+        "habsburg_livestock",
+        "habsburg_mining",
       ]) {
         expect(
           hasNote(
@@ -326,7 +326,7 @@ describe("getDoublesNotes()", () => {
     it("Prussia 6's Setup Escalation note fires against any partner", () => {
       expect(
         hasNote(
-          notesFor("prussia", 6, "habsburgmining", 0),
+          notesFor("prussia", 6, "habsburg_mining", 0),
           "Terrifyingly Efficient",
           "during Setup",
         ),
@@ -377,7 +377,7 @@ describe("getDoublesNotes()", () => {
       ).toBe(true);
       expect(
         hasNote(
-          notesFor("scotland", 2, "habsburgmining", 0),
+          notesFor("scotland", 2, "habsburg_mining", 0),
           "Seize Opportunity",
           "adjacent Inland land",
         ),
@@ -437,10 +437,10 @@ describe("getRulesForAdversary() — replaces (superseding rules)", () => {
   });
 
   it("HME: level 3-4 shows Mining Boom (I)", () => {
-    const l3 = getRulesForAdversary(ad.get("habsburgmining"), 3).map(
+    const l3 = getRulesForAdversary(ad.get("habsburg_mining"), 3).map(
       (r) => r.name,
     );
-    const l4 = getRulesForAdversary(ad.get("habsburgmining"), 4).map(
+    const l4 = getRulesForAdversary(ad.get("habsburg_mining"), 4).map(
       (r) => r.name,
     );
     expect(l3).toContain("Mining Boom (I)");
@@ -448,7 +448,7 @@ describe("getRulesForAdversary() — replaces (superseding rules)", () => {
   });
 
   it("HME: level 5+ shows only Mining Boom (II), not (I)", () => {
-    const names = getRulesForAdversary(ad.get("habsburgmining"), 5).map(
+    const names = getRulesForAdversary(ad.get("habsburg_mining"), 5).map(
       (r) => r.name,
     );
     expect(names).toContain("Mining Boom (II)");
@@ -463,16 +463,17 @@ describe("getRulesForAdversary() — replaces (superseding rules)", () => {
       "high immigration (i)",
     );
 
-    const miningBoomII = getRulesForAdversary(ad.get("habsburgmining"), 5).find(
-      (r) => r.name === "Mining Boom (II)",
-    );
+    const miningBoomII = getRulesForAdversary(
+      ad.get("habsburg_mining"),
+      5,
+    ).find((r) => r.name === "Mining Boom (II)");
     expect(miningBoomII.effect).not.toMatch(/instead of/i);
   });
 });
 
 describe("getRulesForAdversary() — array-valued levels (multi-clause rules)", () => {
   it("HME level 1 expands to three distinct entries, not one duplicated block", () => {
-    const rules = getRulesForAdversary(ad.get("habsburgmining"), 1);
+    const rules = getRulesForAdversary(ad.get("habsburg_mining"), 1);
     expect(rules).toHaveLength(3);
 
     const avarice = rules.find((r) => r.name === "Avarice Rewarded");
@@ -494,7 +495,7 @@ describe("getRulesForAdversary() — array-valued levels (multi-clause rules)", 
   });
 
   it("the England-3 exception is attached only to Ceaseless Mining (Build), not Avarice Rewarded", () => {
-    const rules = getRulesForAdversary(ad.get("habsburgmining"), 1);
+    const rules = getRulesForAdversary(ad.get("habsburg_mining"), 1);
     const avarice = rules.find((r) => r.name === "Avarice Rewarded");
     const ceaselessBuild = rules.find(
       (r) => r.name === "Ceaseless Mining" && r.type.includes("build"),
@@ -524,9 +525,10 @@ describe("getRulesForAdversary() — array-valued levels (multi-clause rules)", 
   });
 
   it("HM-LC level 2 splits More Rural Than Urban into Setup and Build entries", () => {
-    const entries = getRulesForAdversary(ad.get("habsburg"), 2).filter(
-      (r) => r.name === "More Rural Than Urban",
-    );
+    const entries = getRulesForAdversary(
+      ad.get("habsburg_livestock"),
+      2,
+    ).filter((r) => r.name === "More Rural Than Urban");
     expect(entries).toHaveLength(2);
     expect(entries.map((r) => r.type[0]).sort()).toEqual(["build", "setup"]);
   });
@@ -551,7 +553,7 @@ describe("getRulesForAdversary() — array-valued levels (multi-clause rules)", 
 
   it("array-valued and plain-object levels can be mixed within the same adversary", () => {
     // HME has both array levels (1) and plain-object levels (2, 4, 6).
-    const rules = getRulesForAdversary(ad.get("habsburgmining"), 2);
+    const rules = getRulesForAdversary(ad.get("habsburg_mining"), 2);
     expect(rules.map((r) => r.name)).toEqual(
       expect.arrayContaining([
         "Avarice Rewarded",

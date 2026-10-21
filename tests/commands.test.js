@@ -154,6 +154,14 @@ describe("board", () => {
     );
   });
 
+  it("returns a thematic board by its short alias", async () => {
+    const msg = createMockMessage();
+    await board.execute(msg, ["nw"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://spiritislandwiki.com/images/8/8c/Piece_core_board_north_west.png",
+    );
+  });
+
   it("shows help text when given no args", async () => {
     const msg = createMockMessage();
     await board.execute(msg, [""]);
@@ -277,6 +285,22 @@ describe("event", () => {
       "https://sick.oberien.de/imgs/events/slave_rebellion.webp",
     );
   });
+
+  it("finds a card by the name of one of its modes", async () => {
+    const msg = createMockMessage();
+    await event.execute(msg, ["small uprising"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://sick.oberien.de/imgs/events/slave_rebellion.webp",
+    );
+  });
+
+  it("lists printed names when an alias matches several cards", async () => {
+    const msg = createMockMessage();
+    await event.execute(msg, ["blight_spreads"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "Your search matched several cards, please specify:\n- Tight-Knit Communities\n- Well-Prepared Explorers",
+    );
+  });
 });
 
 describe("faq", () => {
@@ -362,6 +386,12 @@ describe("healing", () => {
     await healing.execute(msg, ["roiling"]);
     expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/sGO0Rur");
   });
+
+  it("returns the back panel when asked", async () => {
+    const msg = createMockMessage();
+    await healing.execute(msg, ["ruin", "back"]);
+    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/BNMKaNN");
+  });
 });
 
 describe("help", () => {
@@ -408,6 +438,18 @@ describe("incarna", () => {
     expect(msg.channel.send).toHaveBeenCalledWith(
       "https://spiritislandwiki.com/images/f/f2/Towering_Roots_of_the_Jungle_Incarna.png",
     );
+  });
+
+  it("returns an aspect's incarna", async () => {
+    const msg = createMockMessage();
+    await incarna.execute(msg, ["Locus", "back"]);
+    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/116luO1");
+  });
+
+  it("falls back to the front of a single-sided incarna", async () => {
+    const msg = createMockMessage();
+    await incarna.execute(msg, ["Warrior", "back"]);
+    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/oVtswAd");
   });
 });
 
@@ -610,5 +652,18 @@ describe("uniques", () => {
     expect(msg.channel.send).toHaveBeenCalledWith(
       expect.stringContaining("has the following uniques"),
     );
+  });
+
+  it("uses printed card names without altering the spirit's data", async () => {
+    const msg = createMockMessage();
+    await uniques.execute(msg, ["bringer"]);
+    await uniques.execute(msg, ["bringer"]);
+    expect(msg.channel.send).toHaveBeenLastCalledWith(
+      expect.stringContaining("* Call on Midnight's Dream"),
+    );
+    expect(
+      require("../data/spirits.json").find((s) => s.title === "BoDaN")
+        .uniques[0],
+    ).toBe("call_on_midnights_dream");
   });
 });

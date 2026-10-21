@@ -93,7 +93,7 @@ describe("computeInvaderDeck()", () => {
   // ------------------------------------------------------------
   describe("Habsburg Livestock (HLC)", () => {
     it("HLC 3", () => {
-      const cards = run("habsburg", 3);
+      const cards = run("habsburg_livestock", 3);
       const expected = [
         new InvaderDeckCard(1),
         new InvaderDeckCard(1),
@@ -111,7 +111,7 @@ describe("computeInvaderDeck()", () => {
     });
 
     it("HLC 5 (with reminder card)", () => {
-      const cards = run("habsburg", 5);
+      const cards = run("habsburg_livestock", 5);
       const expected = [
         new InvaderDeckCard(1),
         new InvaderDeckCard(1),
@@ -177,7 +177,7 @@ describe("computeInvaderDeck()", () => {
   // ------------------------------------------------------------
   describe("Habsburg Mining (HME)", () => {
     it("HME 4", () => {
-      const cards = run("habsburgmining", 4);
+      const cards = run("habsburg_mining", 4);
       const expected = [
         new InvaderDeckCard(1),
         new InvaderDeckCard(1),
@@ -296,7 +296,7 @@ describe("computeInvaderDeck()", () => {
     });
 
     it("HME LEADING, Prussia SUPPORTING", () => {
-      const cards = run("habsburgmining", 6, "prussia", 6);
+      const cards = run("habsburg_mining", 6, "prussia", 6);
       const expected = [
         new InvaderDeckCard(3),
         new InvaderDeckCard(2),
@@ -311,7 +311,7 @@ describe("computeInvaderDeck()", () => {
     });
 
     it("Prussia LEADING, HME SUPPORTING", () => {
-      const cards = run("prussia", 6, "habsburgmining", 6);
+      const cards = run("prussia", 6, "habsburg_mining", 6);
       const expected = [
         new InvaderDeckCard(3),
         new InvaderDeckCard(2, "S"),
@@ -351,7 +351,7 @@ describe("computeInvaderDeck()", () => {
     });
 
     it("HME formatting", () => {
-      const deck = computeInvaderDeck(ad.get("habsburgmining"), 4);
+      const deck = computeInvaderDeck(ad.get("habsburg_mining"), 4);
       expect(deck.formattedDeck()).toEqual("111-2S22-33333");
     });
   });
