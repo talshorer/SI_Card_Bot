@@ -32,6 +32,7 @@ layout: default
 - [/scenario](commands/scenario.html) - Gets the front or back panel for a given scenario
 - [/search](commands/search.html) - search the SICK library
 - [/spirit](commands/spirit.html) - Spirit Search
+- [/spirits](commands/spirits.html) - Lists every spirit
 - [/take](commands/take.html) - Take a random card and send the SICK link. For more than 1 card, use /draw instead.
 - [/unique](commands/unique.html) - Unique card search
 - [/uniques](commands/uniques.html) - Gets a list of all the uniques for a spirit

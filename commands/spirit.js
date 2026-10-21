@@ -2,22 +2,19 @@
 const { spirits } = require("./spiritNames.js");
 const levenshtein = require("js-levenshtein");
 const globals = require("../globals.cjs");
-const { PaginatedMessage } = require("@sapphire/discord.js-utilities");
-const { paginationTarget } = require("../utils/interactionMessage.cjs");
-
-const SPIRITS_PER_PAGE = 12;
 
 module.exports = {
   name: "spirit",
   description: "Spirit Search",
   details:
-    "Looks up a spirit by name or alias and returns its panel image (front by default, or the back via the `side` option). With no spirit given, sends a paginated alphabetical list of every spirit and its emote.",
+    "Looks up a spirit by name or alias and returns its panel image (front by default, or the back via the `side` option). Spirits with extra boards (e.g. Covets Gleaming Shards of Earth's Gleaming Hoard) send those with `side: Extra panel`. Use `/spirits` to list every spirit.",
   public: true,
   options: [
     {
       name: "spirit",
-      description: "Spirit name or alias (blank lists every spirit)",
+      description: "Spirit name or alias",
       type: "string",
+      required: true,
     },
     {
       name: "side",
@@ -26,19 +23,17 @@ module.exports = {
       choices: [
         { name: "Front", value: "front" },
         { name: "Back", value: "back" },
+        { name: "Extra panel (e.g. Covets' Gleaming Hoard)", value: "extra" },
       ],
     },
   ],
   async execute(msg, args) {
     try {
-      if (args.length < 1) {
-        return sendSpiritList(msg);
-      }
-
       // Handle result-modifying args
       const mods = {
         front: false,
         back: false,
+        extra: false,
         unique: false,
       };
 
@@ -65,25 +60,6 @@ module.exports = {
   },
   searchForSpirit,
 };
-
-/**
- * Sends a paginated list of every spirit's name and emoji.
- */
-function sendSpiritList(msg) {
-  const sorted = [...spirits].sort((a, b) => a.name.localeCompare(b.name));
-  const paginated = new PaginatedMessage();
-
-  for (let i = 0; i < sorted.length; i += SPIRITS_PER_PAGE) {
-    const chunk = sorted.slice(i, i + SPIRITS_PER_PAGE);
-    paginated.addPageEmbed((embed) =>
-      embed
-        .setTitle("Spirits")
-        .setDescription(chunk.map((s) => `${s.name} ${s.emote}`).join("\n")),
-    );
-  }
-
-  return paginated.run(paginationTarget(msg));
-}
 
 /**
  * Returns a spirit object when given a string
@@ -176,6 +152,15 @@ async function sendSpirit(mods, msg, foundSpirit) {
     for (unique of uniques) {
       let basePath = "https://sick.oberien.de/imgs/powers/";
       //msg.channel.send(basePath + unique  + '.webp');
+    }
+  } else if (mods.extra) {
+    if (!foundSpirit.extraPanels) {
+      return await msg.channel.send(
+        `${foundSpirit.name} has no extra panels; try the front or back.`,
+      );
+    }
+    for (const extra of foundSpirit.extraPanels) {
+      await msg.channel.send(extra.panel[0]);
     }
   } else if (mods.back) {
     return await msg.channel.send(foundSpirit.panel[1]);

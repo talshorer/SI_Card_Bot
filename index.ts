@@ -7,6 +7,7 @@ import {
   Client,
   Collection,
   GatewayIntentBits,
+  Partials,
   ActivityType,
   MessageFlags,
 } from "discord.js";
@@ -23,8 +24,14 @@ const require = createRequire(import.meta.url);
 // which is privileged and had to be granted in the developer portal.
 // Guilds alone covers the guild/channel/emoji caches the changelog
 // broadcast and /reactionrole read.
+//
+// DM channels are never cached under those intents, so the Channel partial
+// lets discord.js build one from the interaction instead; without it
+// interaction.channel is null in DMs and paginated replies (/spirits,
+// /aspects, ...) refuse to run.
 const bot = new Client({
   intents: [GatewayIntentBits.Guilds],
+  partials: [Partials.Channel],
 });
 
 let ready = false; // readiness flag

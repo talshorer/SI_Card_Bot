@@ -201,6 +201,6 @@ describe("argsFromInteraction", () => {
   });
 
   it("returns no args when nothing was filled in", () => {
-    expect(argsFor("spirit", {})).toEqual([]);
+    expect(argsFor("aspects", {})).toEqual([]);
   });
 });

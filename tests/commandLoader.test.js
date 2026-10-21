@@ -45,6 +45,7 @@ describe("command loader (used by index.ts, help.js, and the docs generator)", (
       "random",
       "reactionrole",
       "spirit",
+      "spirits",
       "aspect",
       "aspects",
       "healing",

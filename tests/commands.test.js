@@ -48,6 +48,7 @@ const roleAdd = require("../commands/roleAdd.js");
 const scenario = require("../commands/scenario.js");
 const search = require("../commands/search.js");
 const spirit = require("../commands/spirit.js");
+const spirits = require("../commands/spirits.js");
 const take = require("../commands/take.js");
 const unique = require("../commands/unique.js");
 const uniques = require("../commands/uniques.js");
@@ -629,11 +630,27 @@ describe("spirit", () => {
     );
   });
 
-  it("sends a paginated list when given no args", async () => {
+  it("sends a spirit's extra panel when asked", async () => {
+    const msg = createMockMessage();
+    await spirit.execute(msg, ["covets", "extra"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/extra-panels/the-gleaming-hoard/panel-1.jpg",
+    );
+  });
+
+  it("says so when a spirit has no extra panel", async () => {
+    const msg = createMockMessage();
+    await spirit.execute(msg, ["river", "extra"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      expect.stringContaining("has no extra panels"),
+    );
+  });
+
+  it("asks for a search rather than listing spirits when given no args", async () => {
     const msg = createMockMessage();
     await spirit.execute(msg, []);
     expect(msg.channel.send).toHaveBeenCalledWith(
-      expect.stringMatching(/^__paginated__ pages=\d+$/),
+      expect.stringContaining("at least 3 letters"),
     );
   });
 
@@ -641,6 +658,16 @@ describe("spirit", () => {
     const msg = createMockMessage();
     await spirit.execute(msg, ["zzz_no_such_spirit_zzz"]);
     expect(msg.channel.send).toHaveBeenCalled();
+  });
+});
+
+describe("spirits", () => {
+  it("sends a paginated list of every spirit", async () => {
+    const msg = createMockMessage();
+    await spirits.execute(msg, []);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      expect.stringMatching(/^__paginated__ pages=\d+$/),
+    );
   });
 });
 

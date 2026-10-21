@@ -136,7 +136,8 @@ site under `docs/`) rather than editing it by hand.
 - `/reactionrole`
 - `/scenario <scenario> [side]`
 - `/search <query> [spoiler]`
-- `/spirit [spirit] [side]`
+- `/spirit <spirit> [side]`
+- `/spirits`
 - `/take <type>`
 - `/unique <card>`
 - `/uniques <spirit>`
