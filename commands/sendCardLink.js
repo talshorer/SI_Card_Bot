@@ -73,7 +73,9 @@ async function sendCardLink(
         return await msg.channel.send(message);
       }
     }
-    return await msg.channel.send(basePath + cardName + ".webp");
+    return await msg.channel.send(
+      ImageNames.cardImage(cardName) ?? basePath + cardName + ".webp",
+    );
   } else {
     return await msg.channel.send("Incorrect name, try using /search");
   }

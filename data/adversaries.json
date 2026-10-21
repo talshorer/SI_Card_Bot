@@ -6,7 +6,7 @@
     "emote": "<:FlagBrandenburgPrussiaBP:1487249033104855253>",
     "aliases": ["<:FlagBrandenburgPrussiaBP:1487249033104855253>", "bp"],
     "flagImage": "images/flags/Brand-Prussia_Flag.png",
-    "panel": "https://imgur.com/KdyfP3C",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-brandenburg-prussia/panel.jpg",
     "escalation": {
       "name": "Land Rush",
       "effect": "On each board with :InvaderTown:/:InvaderCity:, add 1 :InvaderTown: to a land without :InvaderTown:."
@@ -115,7 +115,7 @@
     "emote": "<:FlagEngland:852366012175482900>",
     "aliases": ["<:FlagEngland:852366012175482900>", "🏴󠁧󠁢󠁥󠁮󠁧󠁿"],
     "flagImage": "images/flags/England_WrinkledFlag.png",
-    "panel": "https://imgur.com/c5KzcIq",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-england/panel.jpg",
     "lossCondition": {
       "name": "Proud & Mighty Capital",
       "effect": "If 7 or more :InvaderTown:/:InvaderCity: are ever in a single land, the Invaders win."
@@ -218,7 +218,7 @@
     "emote": "<:FlagFrance:852366013243981885>",
     "aliases": ["<:FlagFrance:852366013243981885>", "🇫🇷"],
     "flagImage": "images/flags/France_(Plantation_Colony)_WrinkledFlag.png",
-    "panel": "https://imgur.com/S8lL3cA",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-france/panel.jpg",
     "lossCondition": {
       "name": "Sprawling Plantations",
       "effect": "Before Setup, return all but 7 :InvaderTown: per player to the box. Invaders win if you ever cannot place a :InvaderTown:."
@@ -338,7 +338,7 @@
       "habsburger"
     ],
     "flagImage": "images/flags/Habsburg_Monarchy_(Livestock_Colony)_WrinkledFlag.png",
-    "panel": "https://imgur.com/GtptfDJ",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-habsburg-monarchy/panel.jpg",
     "lossCondition": {
       "name": "Irreparable Damage",
       "effect": "Track how many :Blight: come off the :Blight: Card during Ravages that do 8+ Damage to the land. If that number ever exceeds players, the Invaders win."
@@ -472,7 +472,7 @@
     "emote": "<:FlagRussia:852366012639739945>",
     "aliases": ["<:FlagRussia:852366012639739945>", "🇷🇺"],
     "flagImage": "images/flags/Russia_WrinkledFlag.png",
-    "panel": "https://imgur.com/n16FmcP",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-tsardom-of-russia/panel.jpg",
     "lossCondition": {
       "name": "Hunters Swarm the Island",
       "effect": "Put :TokenBeasts: Destroyed by Adversary rules on this panel. If there are ever more :TokenBeasts: on this panel than on the island, the Invaders win."
@@ -603,7 +603,7 @@
     "emote": "<:FlagScotland:852366013621207040>",
     "aliases": ["<:FlagScotland:852366013621207040>", "🏴󠁧󠁢󠁳󠁣󠁴󠁿"],
     "flagImage": "images/flags/Scotland_WrinkledFlag.png",
-    "panel": "https://imgur.com/A5HccZx",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-scotland/panel.jpg",
     "lossCondition": {
       "name": "Trade Hub",
       "effect": "If the number of Coastal lands with :InvaderCity: is ever greater than (2 x # of boards), the Invaders win."
@@ -724,7 +724,7 @@
     "emote": "<:FlagSweden:852366014434770963>",
     "aliases": ["<:FlagSweden:852366014434770963>", "🇸🇪"],
     "flagImage": "images/flags/Sweden_WrinkledFlag.png",
-    "panel": "https://imgur.com/D6ZeLOV",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-sweden/panel.jpg",
     "escalation": {
       "name": "Swayed by the Invaders",
       "effect": "After Invaders Explore into each land this Phase, if that land has at least as many Invaders as :Dahan:, replace 1 :Dahan: with 1 :InvaderTown:. Randomly choose one of the land types shown on the card for Stage III escalations.",
@@ -864,7 +864,7 @@
       "mining"
     ],
     "flagImage": "images/flags/Habsburg_Mining_Expedition_Flag.png",
-    "panel": "https://i.imgur.com/xzXF6vu.png",
+    "panel": "https://cdn.callofthedahanways.com/adversaries/habsburg-mining-expedition/panel.jpg",
     "lossCondition": {
       "name": "Land Stripped Bare",
       "effect": "At the end of the :SpeedFast: Phase, the Invaders win if any land has at least 8 total Invaders/:Blight: (combined)."

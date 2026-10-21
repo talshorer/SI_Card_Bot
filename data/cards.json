@@ -918,6 +918,154 @@
     "sickSlug": "wrack_with_pain_and_grief"
   },
   {
+    "id": "favors-of-steel-and-bone",
+    "name": "Favors of Steel and Bone",
+    "type": "unique",
+    "sickSlug": "favors_of_steel_and_bone",
+    "image": "https://cdn.callofthedahanways.com/cards/favors-of-steel-and-bone.jpg",
+    "cost": 1,
+    "speed": "fast",
+    "elements": ["sun", "earth", "animal"],
+    "range": "2",
+    "targetType": "land",
+    "target": ":Dahan: + :TokenMetal:",
+    "text": [
+      "All :Dahan: currently in target land have +6 Health.",
+      "2 :TokenFear: if Invaders are present.",
+      "After the Invader Phase, for each dropped :TokenMetal:, Move 1 :Dahan: to :Incarna:. They each bring 1 dropped :TokenMetal:."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "melt-earth-to-slag",
+    "name": "Melt Earth to Slag",
+    "type": "unique",
+    "sickSlug": "melt_earth_to_slag",
+    "image": "https://cdn.callofthedahanways.com/cards/melt-earth-to-slag.jpg",
+    "cost": 1,
+    "speed": "slow",
+    "elements": ["sun", "moon", "fire", "earth"],
+    "range": "1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "1 Damage.",
+      "For each Invader with :TokenMetal:, 1 Damage.",
+      "1 :TokenFear: if this Power destroyed any :InvaderCity:."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "petition-for-smoldering-wrath",
+    "name": "Petition for Smoldering Wrath",
+    "type": "unique",
+    "sickSlug": "petition_for_smoldering_wrath",
+    "image": "https://cdn.callofthedahanways.com/cards/petition-for-smoldering-wrath.jpg",
+    "cost": 2,
+    "speed": "fast",
+    "elements": ["moon", "fire", "air", "earth"],
+    "targetType": "spirit",
+    "target": "Any",
+    "text": [
+      "Target spirit chooses any/all of:",
+      "• Gain a Minor Power Card.",
+      "• Play a Minor Power Card by paying its cost to you.",
+      "• One :SpeedSlow: Minor Power is :SpeedFast:.",
+      "They must first pay you 1 energy for each choice taken.",
+      "If you target yourself, only choose one."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "unnerving-attention",
+    "name": "Unnerving Attention",
+    "type": "unique",
+    "sickSlug": "unnerving_attention",
+    "image": "https://cdn.callofthedahanways.com/cards/unnerving-attention.jpg",
+    "cost": 1,
+    "speed": "slow",
+    "elements": ["air", "earth", "animal"],
+    "range": "2",
+    "targetType": "land",
+    "target": "Invaders",
+    "text": [
+      "1 :TokenFear:. If an Invader has :TokenMetal:, 2 :TokenFear:.",
+      "Push 1 :InvaderExplorer:/:InvaderTown: and up to 2 :Dahan:."
+    ],
+    "artist": "Nolan Nasser"
+  },
+  {
+    "id": "land-of-deadfall-and-rot",
+    "name": "Land of Deadfall and Rot",
+    "type": "unique",
+    "sickSlug": "land_of_deadfall_and_rot",
+    "image": "https://cdn.callofthedahanways.com/cards/land-of-deadfall-and-rot.jpg",
+    "cost": 1,
+    "speed": "fast",
+    "elements": ["water", "earth", "plant"],
+    "range": ":SacredSite: 1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "Defend 3.",
+      "or",
+      "Gain 2 Rot, +1 per Invader/:Dahan:. (Max of 7 Rot gained.)",
+      "During Time Passes, you may pay 2 Rot to Reclaim this card instead of discarding it."
+    ]
+  },
+  {
+    "id": "infesting-spores",
+    "name": "Infesting Spores",
+    "type": "unique",
+    "sickSlug": "infesting_spores",
+    "image": "https://cdn.callofthedahanways.com/cards/infesting-spores.jpg",
+    "cost": 2,
+    "speed": "slow",
+    "elements": ["fire", "plant", "animal"],
+    "range": "1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "Add 1 :TokenDisease:.",
+      "or",
+      "1 Damage. If :TokenDisease: is present, +1 Damage.",
+      "You may pay 5 Rot to do both and generate 1 :TokenFear:."
+    ]
+  },
+  {
+    "id": "worms-and-bugs-enrich-the-soil",
+    "name": "Worms and Bugs Enrich the Soil",
+    "type": "unique",
+    "sickSlug": "worms_and_bugs_enrich_the_soil",
+    "image": "https://cdn.callofthedahanways.com/cards/worms-and-bugs-enrich-the-soil.jpg",
+    "cost": 1,
+    "speed": "fast",
+    "elements": ["moon", "water", "earth", "animal"],
+    "range": ":SacredSite: 1",
+    "targetType": "land",
+    "target": "Any",
+    "text": [
+      "After the next time Invaders are destroyed:",
+      "Add 1 :TokenWilds: or Remove 1 :Blight:. You may pay 3 Rot to do both and generate 1 :TokenFear:."
+    ]
+  },
+  {
+    "id": "exaltation-of-the-re-forming-land",
+    "name": "Exaltation of the Re-Forming Land",
+    "type": "unique",
+    "sickSlug": "exaltation_of_the_re_forming_land",
+    "image": "https://cdn.callofthedahanways.com/cards/exaltation-of-the-re-forming-land.jpg",
+    "cost": 0,
+    "speed": "slow",
+    "elements": ["sun", "moon", "water", "plant"],
+    "targetType": "spirit",
+    "target": "Another",
+    "text": [
+      "Target Spirit gains 1 Energy. You gain 2 Rot.",
+      "Target Spirit may pay 1 Energy to add up to 2 destroyed :Presence: to their :Jungle:/:Wetland:. You may do likewise."
+    ]
+  },
+  {
     "id": "savage-mawbeasts",
     "name": "Savage Mawbeasts",
     "type": "minor",

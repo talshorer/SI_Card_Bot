@@ -45,6 +45,12 @@
       "$ref": "common.schema.json#/$defs/doubleSidedPanel"
     },
     "powerProgression": { "$ref": "common.schema.json#/$defs/url" },
+    "extraPanels": {
+      "description": "Other boards that come with the spirit, e.g. Covets Gleaming Shards of Earth's Gleaming Hoard.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/extraPanel" },
+      "minItems": 1
+    },
     "incarna": { "$ref": "#/$defs/incarna" },
     "healingCards": {
       "type": "array",
@@ -77,6 +83,16 @@
       "required": ["aliases", "panel"],
       "properties": {
         "aliases": { "$ref": "common.schema.json#/$defs/aliases" },
+        "panel": { "$ref": "common.schema.json#/$defs/panel" }
+      }
+    },
+    "extraPanel": {
+      "description": "A board that comes with the spirit besides its panel.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "panel"],
+      "properties": {
+        "name": { "$ref": "common.schema.json#/$defs/text" },
         "panel": { "$ref": "common.schema.json#/$defs/panel" }
       }
     },

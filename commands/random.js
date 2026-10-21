@@ -16,7 +16,7 @@ module.exports = {
   description:
     "Get a random spirit, single/double adversary, board or scenario",
   details:
-    "Picks a uniformly random result for the given category: a spirit (optionally capped by max complexity), a single adversary or double-adversary setup (optionally bounded by a difficulty range), a scenario, or a board (regular/thematic/all) - then sends its name plus artwork/panel link.",
+    "Picks a uniformly random result for the given category: a spirit (optionally capped by max complexity; Apocrypha spirits only with `include_apocrypha`), a single adversary or double-adversary setup (optionally bounded by a difficulty range), a scenario, or a board (regular/thematic/all) - then sends its name plus artwork/panel link.",
   public: true,
   subcommands: [
     {
@@ -33,6 +33,12 @@ module.exports = {
             { name: "High", value: "high" },
             { name: "Very High", value: "very_high" },
           ],
+        },
+        {
+          name: "include_apocrypha",
+          description: "Also pick from the non-canon Apocrypha spirits",
+          type: "boolean",
+          flag: "apocrypha",
         },
       ],
     },
@@ -107,7 +113,7 @@ module.exports = {
           let maxComplexity = complexities.has(args[1])
             ? complexities.get(args[1])
             : 4;
-          answer = chooseSpirit(maxComplexity);
+          answer = chooseSpirit(maxComplexity, args.includes("apocrypha"));
           await sendMessage(msg, answer);
           break;
         case "adversary":
@@ -163,11 +169,14 @@ async function sendMessage(msg, answer) {
 }
 
 /**
- * returns a spirit bounded by maximum complexity
+ * returns a spirit bounded by maximum complexity, leaving out Apocrypha
+ * spirits unless asked for
  */
-function chooseSpirit(maxComplexity = 4) {
+function chooseSpirit(maxComplexity = 4, includeApocrypha = false) {
   let validSpirits = spirits.filter(
-    (spirit) => spirit.complexity <= maxComplexity,
+    (spirit) =>
+      spirit.complexity <= maxComplexity &&
+      (includeApocrypha || spirit.set !== "apocrypha"),
   );
   let x = Math.floor(Math.random() * validSpirits.length);
   return [validSpirits[x].name, validSpirits[x].emote];

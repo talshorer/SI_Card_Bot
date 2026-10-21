@@ -3,10 +3,12 @@
  * Extracts the images the data files link to from the print-and-play PDFs
  * in Spirit_Island_low_res/, ready to upload to R2.
  *
- * Every page of those PDFs is a single embedded 300dpi JPEG, so pdfimages
- * (poppler-utils) pulls it out without re-encoding. Aspect cards printed
- * landscape are stored sideways and get rotated upright, which does
- * re-encode them.
+ * Every page of the official PDFs is a single embedded 300dpi JPEG, so
+ * pdfimages (poppler-utils) pulls it out without re-encoding. Aspect cards
+ * printed landscape are stored sideways and get rotated upright, which does
+ * re-encode them. Apocrypha PDFs are layered InDesign files instead, so
+ * their pages are rendered at 300dpi with pdftoppm, and their cards cropped
+ * out of the sheet they're printed on.
  *
  * Output goes to assets/, laid out as the bucket will be:
  *
@@ -15,6 +17,8 @@
  *   spirits/<id>/power-progression.jpg
  *   spirits/<id>/aspects/<aspect>/panel-<n>.jpg
  *   spirits/<id>/healing/<card>/panel-<n>.jpg
+ *   spirits/<id>/extra-panels/<board>/panel-1.jpg
+ *   cards/<id>.jpg                                cards SICK doesn't have
  *   scenarios/<id>/panel-<n>.jpg
  *   adversaries/<id>/panel.jpg
  *
@@ -172,14 +176,57 @@ const ADVERSARIES = {
   "habsburg-mining-expedition": "nature-incarnate/adversary-hme.pdf",
 };
 
+const APOCRYPHA = "branch-claw/apocrypha";
+
+// Apocrypha spirit id -> PDF whose pages 1 and 2 are the play and lore
+// sides, plus any extra boards: slug -> page, in `extraPanels` order.
+const RENDERED_SPIRITS = {
+  "covets-gleaming-shards-of-earth": {
+    pdf: `${APOCRYPHA}/Panel - Covets Gleaming Shards of Earth.pdf`,
+    extraPanels: { "the-gleaming-hoard": 3 },
+  },
+  "spreading-rot-renews-the-earth": {
+    pdf: `${APOCRYPHA}/Spirit Panel - Spreading Rot Renews the Earth.pdf`,
+  },
+};
+
+// Sheets of 2x2 cards (180x252pt each) on page 1, with the grid's top-left
+// corner at `origin` (pt). Card ids run left to right, top to bottom.
+const CARD_W = 180;
+const CARD_H = 252;
+const CARD_SHEETS = [
+  {
+    pdf: `${APOCRYPHA}/Uniques - Covets Gleaming Shards of Earth.pdf`,
+    origin: [36, 18],
+    cards: [
+      "favors-of-steel-and-bone",
+      "melt-earth-to-slag",
+      "petition-for-smoldering-wrath",
+      "unnerving-attention",
+    ],
+  },
+  {
+    pdf: `${APOCRYPHA}/Unique Powers TTS - Spreading Rot Renews the Earth.pdf`,
+    origin: [0, 0],
+    cards: [
+      "land-of-deadfall-and-rot",
+      "infesting-spores",
+      "worms-and-bugs-enrich-the-soil",
+      "exaltation-of-the-re-forming-land",
+    ],
+  },
+];
+
 /**
  * Every image to extract: its bucket key, source page, and the data field
  * whose url it replaces (`file`, entity `id`, `field` path within it).
+ * Jobs with a `render` area ("page", or {x, y, w, h} in points) are
+ * rendered rather than extracted.
  */
 function buildJobs() {
   const jobs = [];
-  const add = (key, pdf, page, file, id, field) =>
-    jobs.push({ key, pdf, page, file, id, field });
+  const add = (key, pdf, page, file, id, field, render) =>
+    jobs.push({ key, pdf, page, file, id, field, render });
 
   for (const [id, pdf] of Object.entries(SPIRITS)) {
     add(`spirits/${id}/panel-1.jpg`, pdf, 1, "spirits", id, "panel[0]");
@@ -228,6 +275,34 @@ function buildJobs() {
   for (const [id, pdf] of Object.entries(ADVERSARIES)) {
     add(`adversaries/${id}/panel.jpg`, pdf, 1, "adversaries", id, "panel");
   }
+  for (const [id, { pdf, extraPanels = {} }] of Object.entries(
+    RENDERED_SPIRITS,
+  )) {
+    const spirit = `spirits/${id}`;
+    add(`${spirit}/panel-1.jpg`, pdf, 1, "spirits", id, "panel[0]", "page");
+    add(`${spirit}/panel-2.jpg`, pdf, 2, "spirits", id, "panel[1]", "page");
+    Object.entries(extraPanels).forEach(([board, page], i) =>
+      add(
+        `${spirit}/extra-panels/${board}/panel-1.jpg`,
+        pdf,
+        page,
+        "spirits",
+        id,
+        `extraPanels[${i}].panel[0]`,
+        "page",
+      ),
+    );
+  }
+  for (const { pdf, origin, cards } of CARD_SHEETS) {
+    cards.forEach((id, i) =>
+      add(`cards/${id}.jpg`, pdf, 1, "cards", id, "image", {
+        x: origin[0] + CARD_W * (i % 2),
+        y: origin[1] + CARD_H * Math.floor(i / 2),
+        w: CARD_W,
+        h: CARD_H,
+      }),
+    );
+  }
   return jobs;
 }
 
@@ -265,10 +340,36 @@ async function extractPage(pdf, page, dest) {
 }
 
 /**
- * Reads the value at a field path like "panel[1]" or "powerProgression"
- * on the entity with `id` (top level or nested aspect/healing card).
+ * Renders one page of a PDF to a JPEG at `dest`: the whole page, or just
+ * the `area` ({x, y, w, h} in points) of it.
  */
-function currentUrl(data, file, id, field) {
+function renderPage(pdf, page, area, dest) {
+  const dpi = 300;
+  const px = (pt) => String(Math.round((pt * dpi) / 72));
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "si-assets-"));
+  try {
+    const n = String(page);
+    const args = ["-jpeg", "-jpegopt", "quality=92", "-r", String(dpi)];
+    args.push("-f", n, "-l", n, "-singlefile");
+    if (area !== "page") {
+      args.push("-x", px(area.x), "-y", px(area.y));
+      args.push("-W", px(area.w), "-H", px(area.h));
+    }
+    execFileSync("pdftoppm", [...args, pdf, `${tmp}/p`]);
+    fs.mkdirSync(path.dirname(dest), { recursive: true });
+    fs.copyFileSync(`${tmp}/p.jpg`, dest);
+  } finally {
+    fs.rmSync(tmp, { recursive: true, force: true });
+  }
+}
+
+/**
+ * Resolves a field path like "panel[1]", "powerProgression" or
+ * "extraPanels[0].panel[0]" on the entity with `id` (top level or nested
+ * aspect/healing card) to the object and key holding it, so callers can
+ * read or replace the value.
+ */
+function locateField(data, file, id, field) {
   const [owner] = id.split("/");
   let entity = data[file].find((e) => e.id === owner);
   if (entity && id !== owner) {
@@ -277,8 +378,22 @@ function currentUrl(data, file, id, field) {
     );
   }
   if (!entity) throw new Error(`${file}: no entity ${id}`);
-  const [, name, index] = field.match(/^(\w+)(?:\[(\d+)\])?$/);
-  return index === undefined ? entity[name] : entity[name]?.[Number(index)];
+  let holder = entity;
+  const steps = field.split(".");
+  for (const [i, step] of steps.entries()) {
+    const [, name, index] = step.match(/^(\w+)(?:\[(\d+)\])?$/);
+    const keys = index === undefined ? [name] : [name, Number(index)];
+    const last = i === steps.length - 1;
+    for (const [j, key] of keys.entries()) {
+      if (last && j === keys.length - 1) return { holder, key };
+      holder = holder?.[key] ?? {};
+    }
+  }
+}
+
+function currentUrl(data, file, id, field) {
+  const { holder, key } = locateField(data, file, id, field);
+  return holder[key];
 }
 
 function arg(name, fallback) {
@@ -290,7 +405,7 @@ async function main() {
   const source = arg("--source", path.join(ROOT, "Spirit_Island_low_res"));
   const out = arg("--out", path.join(ROOT, "assets"));
   const data = Object.fromEntries(
-    ["spirits", "scenarios", "adversaries"].map((f) => [
+    ["spirits", "cards", "scenarios", "adversaries"].map((f) => [
       f,
       JSON.parse(fs.readFileSync(path.join(ROOT, "data", `${f}.json`))),
     ]),
@@ -302,11 +417,10 @@ async function main() {
     if (replaces === undefined) {
       throw new Error(`${job.file}: ${job.id} has no ${job.field}`);
     }
-    await extractPage(
-      path.join(source, job.pdf),
-      job.page,
-      path.join(out, job.key),
-    );
+    const pdf = path.join(source, job.pdf);
+    const dest = path.join(out, job.key);
+    if (job.render) renderPage(pdf, job.page, job.render, dest);
+    else await extractPage(pdf, job.page, dest);
     manifest.push({
       key: job.key,
       source: `${job.pdf}#${Math.abs(job.page)}`,
@@ -324,7 +438,11 @@ async function main() {
   console.log(`Extracted ${manifest.length} images to ${out}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+module.exports = { locateField };
+
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

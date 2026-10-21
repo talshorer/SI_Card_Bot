@@ -11,6 +11,12 @@ const namesBySlug = new Map(cards.map((card) => [card.sickSlug, card.name]));
 // Printed name of the card with the given SICK slug
 const cardName = (slug) => namesBySlug.get(slug);
 
+// Image url for the cards SICK doesn't have (e.g. Apocrypha uniques)
+const imagesBySlug = new Map(
+  cards.filter((card) => card.image).map((card) => [card.sickSlug, card.image]),
+);
+const cardImage = (slug) => imagesBySlug.get(slug);
+
 const slugs = (predicate) =>
   cards.filter(predicate).map((card) => card.sickSlug);
 
@@ -38,6 +44,7 @@ for (const card of cards.filter((c) => c.type === "event" && c.aliases)) {
 }
 
 exports.cardName = cardName;
+exports.cardImage = cardImage;
 exports.unique = unique;
 exports.minor = minor;
 exports.major = major;

@@ -52,8 +52,8 @@
       "minItems": 2
     },
     "setCode": {
-      "description": "Product the entity was released in: base game, Branch & Claw, Feather & Flame, Jagged Earth, Horizons of Spirit Island or Nature Incarnate.",
-      "enum": ["base", "b&c", "f&f", "je", "horizons", "ni"]
+      "description": "Product the entity was released in: base game, Branch & Claw, Feather & Flame, Jagged Earth, Horizons of Spirit Island or Nature Incarnate. 'apocrypha' marks a non-canon Apocrypha Spirit (https://tinyurl.com/SI-Apoc), published for free outside any product.",
+      "enum": ["base", "b&c", "f&f", "je", "horizons", "ni", "apocrypha"]
     }
   }
 }

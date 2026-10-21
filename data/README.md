@@ -79,18 +79,34 @@ Printed names and fear card text come from SICK's source data
 ([`src/db.ts`](https://github.com/oberien/spirit-island-card-katalog/blob/master/src/db.ts),
 dual MIT/Apache licensed). A card's `id` is a slug of its printed name.
 
-## Proposed API (v1)
+## API (v1)
 
-| Endpoint                              | Returns                                            |
-| ------------------------------------- | -------------------------------------------------- |
-| `/v1/spirits`, `/v1/spirits/:id`      | Spirits, with aspects, incarna and healing cards   |
-| `/v1/aspects/:spirit/:aspect`         | One aspect, plus a `spirit` link back to its owner |
-| `/v1/cards`, `/v1/cards/:id`          | Cards; filter with `?type=`                        |
-| `/v1/adversaries/:id`                 | An adversary with all seven levels                 |
-| `/v1/scenarios/:id`, `/v1/boards/:id` | Scenarios, boards                                  |
-| `/v1/search?q=`                       | Search across names and aliases                    |
-| `/v1/bulk/index.json`                 | Bulk files with `schema_version` and `updated_at`  |
-| `/schemas/v1/*.schema.json`           | These schemas, published                           |
+`api/` serves this data at `https://api.callofthedahanways.com` from a
+Cloudflare Worker, deployed by `.github/workflows/api.yml` whenever `main`
+changes `data/` or `api/`. Panel images live in R2 at
+`https://cdn.callofthedahanways.com` (see `scripts/extractAssets.cjs` and
+`scripts/uploadAssets.cjs`); card images link to SICK.
+
+| Endpoint                                 | Returns                                             |
+| ---------------------------------------- | --------------------------------------------------- |
+| `/v1/spirits`, `/v1/spirits/:id`         | Spirits, with aspects, healing cards and uniques    |
+| `/v1/aspects`, `/v1/aspects/:spirit/:id` | Aspects, each with a `spirit` link to its owner     |
+| `/v1/healing-cards/:spirit/:id`          | A healing card, with a `spirit` link                |
+| `/v1/cards`, `/v1/cards/:id`             | Cards; filter with `?type=`. Uniques link `spirit`  |
+| `/v1/adversaries`, `/v1/adversaries/:id` | Adversaries with all seven levels                   |
+| `/v1/scenarios`, `/v1/scenarios/:id`     | Scenarios                                           |
+| `/v1/boards`, `/v1/boards/:id`           | Boards; filter with `?layout=`                      |
+| `/v1/search?q=`                          | Fuzzy search across names and aliases (`?limit=`)   |
+| `/v1/bulk/index.json`                    | Bulk files: the raw data, valid against the schemas |
+| `/schemas/v1/*.schema.json`              | These schemas, published                            |
+
+Every object has an `object` field naming its kind and a `uri`; lists are
+`{ "object": "list", "total", "data" }` and errors
+`{ "object": "error", "status", "code", "details" }`. Discord-only fields
+(`emote`, `flagImage`, custom-emoji aliases) are left out of API objects
+but kept in the bulk files.
+
+Run it locally with `cd api && npm install && npm run dev`.
 
 Additive changes (new fields, new enum values) stay in `v1`. Renaming or
 removing a field, or changing its type, means `v2`.

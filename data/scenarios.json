@@ -3,96 +3,144 @@
     "id": "blitz",
     "name": "Blitz",
     "difficulty": 0,
-    "panel": ["https://i.imgur.com/l9LsFb7.png", "https://i.imgur.com/rbm2vox"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-2.jpg"
+    ]
   },
   {
     "id": "guard-the-isles-heart",
     "name": "Guard the Isle's Heart",
     "difficulty": 0,
-    "panel": ["https://i.imgur.com/gaQAMPy", "https://i.imgur.com/sarg4rv"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/guard-the-isles-heart/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/guard-the-isles-heart/panel-2.jpg"
+    ]
   },
   {
     "id": "rituals-of-terror",
     "name": "Rituals of Terror",
     "difficulty": 3,
-    "panel": ["https://i.imgur.com/ynAA7aW", "https://i.imgur.com/NIOiZUI"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-terror/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-terror/panel-2.jpg"
+    ]
   },
   {
     "id": "dahan-insurrection",
     "name": "Dahan Insurrection",
     "difficulty": 4,
-    "panel": ["https://i.imgur.com/gSQuYq7", "https://i.imgur.com/9zzKSqe"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/dahan-insurrection/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/dahan-insurrection/panel-2.jpg"
+    ]
   },
   {
     "id": "second-wave",
     "name": "Second Wave",
     "difficulty": 1,
-    "panel": ["https://i.imgur.com/ybHof3q", "https://i.imgur.com/DkJoMTi"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/second-wave/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/second-wave/panel-2.jpg"
+    ]
   },
   {
     "id": "powers-long-forgotten",
     "name": "Powers Long Forgotten",
     "difficulty": 1,
-    "panel": ["https://i.imgur.com/XvKFi2N", "https://i.imgur.com/KBTIdfs"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/powers-long-forgotten/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/powers-long-forgotten/panel-2.jpg"
+    ]
   },
   {
     "id": "ward-the-shores",
     "name": "Ward the Shores",
     "difficulty": 2,
-    "panel": ["https://i.imgur.com/Y8om7Bb", "https://i.imgur.com/5dd2xP0"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/ward-the-shores/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/ward-the-shores/panel-2.jpg"
+    ]
   },
   {
     "id": "rituals-of-the-destroying-flame",
     "name": "Rituals of the Destroying Flame",
     "difficulty": 3,
-    "panel": ["https://i.imgur.com/S2oxMkF", "https://i.imgur.com/L4zMjtC"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-the-destroying-flame/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/rituals-of-the-destroying-flame/panel-2.jpg"
+    ]
   },
   {
     "id": "elemental-invocation",
     "name": "Elemental Invocation",
     "difficulty": 1,
-    "panel": ["https://i.imgur.com/haOq62U", "https://i.imgur.com/4wTQqjQ"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/elemental-invocation/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/elemental-invocation/panel-2.jpg"
+    ]
   },
   {
     "id": "despicable-theft",
     "name": "Despicable Theft",
     "difficulty": 2,
-    "panel": ["https://i.imgur.com/RTEQFIQ", "https://i.imgur.com/VLyEXFg"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/despicable-theft/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/despicable-theft/panel-2.jpg"
+    ]
   },
   {
     "id": "the-great-river",
     "name": "The Great River",
     "difficulty": 3,
-    "panel": ["https://i.imgur.com/xEgVnVE", "https://i.imgur.com/R9oOeXL"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/the-great-river/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/the-great-river/panel-2.jpg"
+    ]
   },
   {
     "id": "a-diversity-of-spirits",
     "name": "A Diversity of Spirits",
     "difficulty": 0,
-    "panel": ["https://i.imgur.com/24wwuun", "https://i.imgur.com/iF15h8W"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/a-diversity-of-spirits/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/a-diversity-of-spirits/panel-2.jpg"
+    ]
   },
   {
     "id": "varied-terrains",
     "name": "Varied Terrains",
     "difficulty": 2,
-    "panel": ["https://i.imgur.com/XbGRf3Z", "https://i.imgur.com/rOg2M2t"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/varied-terrains/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/varied-terrains/panel-2.jpg"
+    ]
   },
   {
     "id": "destiny-unfolds",
     "name": "Destiny Unfolds",
     "difficulty": -1,
-    "panel": ["https://imgur.com/aM7Etk5", "https://imgur.com/kp4Nh2h"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/destiny-unfolds/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/destiny-unfolds/panel-2.jpg"
+    ]
   },
   {
     "id": "surges-of-colonization",
     "name": "Surges of Colonization",
     "difficulty": 2,
-    "panel": ["https://imgur.com/oafk4WP", "https://imgur.com/tnusppS"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/surges-of-colonization/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/surges-of-colonization/panel-2.jpg"
+    ]
   },
   {
     "id": "larger-surges",
     "name": "Larger Surges",
     "difficulty": 7,
-    "panel": ["https://imgur.com/oafk4WP", "https://imgur.com/tnusppS"]
+    "panel": [
+      "https://cdn.callofthedahanways.com/scenarios/larger-surges/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/scenarios/larger-surges/panel-2.jpg"
+    ]
   }
 ]

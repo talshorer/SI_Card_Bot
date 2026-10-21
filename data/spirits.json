@@ -13,21 +13,26 @@
       "gift_of_proliferation",
       "overgrow_in_a_night"
     ],
-    "panel": ["https://imgur.com/nlpGjjH", "https://imgur.com/iK9NTsz"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "a-spread-of-rampant-green/regrowth",
         "name": "Regrowth",
         "emote": "<:DestroyedPresence:1386717215302353037>",
-        "panel": ["https://i.imgur.com/jQWp7vu.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/regrowth/panel-1.jpg"
+        ]
       },
       {
         "id": "a-spread-of-rampant-green/tangles",
         "name": "Tangles",
         "emote": "<:TokenWilds:852366051832102993>",
         "panel": [
-          "https://i.imgur.com/mnlOFdh.png",
-          "https://i.imgur.com/ygTTqbq.png"
+          "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/tangles/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/tangles/panel-2.jpg"
         ]
       }
     ]
@@ -46,19 +51,26 @@
       "predatory_nightmares",
       "dread_apparitions"
     ],
-    "panel": ["https://imgur.com/UxZyTv2", "https://imgur.com/VUOjO0v"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "bringer-of-dreams-and-nightmares/enticing",
         "name": "Enticing",
         "emote": "🧲",
-        "panel": ["https://i.imgur.com/EdgkVJ6.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/aspects/enticing/panel-1.jpg"
+        ]
       },
       {
         "id": "bringer-of-dreams-and-nightmares/violence",
         "name": "Violence",
         "emote": "⚔️",
-        "panel": ["https://i.imgur.com/mm85SO0.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/bringer-of-dreams-and-nightmares/aspects/violence/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -76,7 +88,10 @@
       "gift_of_abundance",
       "dark_skies_loose_a_stinging_rain"
     ],
-    "panel": ["https://imgur.com/vZU2mVT", "https://imgur.com/CShexIA"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/downpour-drenches-the-world/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/downpour-drenches-the-world/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -95,7 +110,10 @@
       "ways_of_shore_and_heartland",
       "aid_from_the_spiritspeakers"
     ],
-    "panel": ["https://imgur.com/T9HLW7e", "https://imgur.com/JtdpxCr"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/finder-of-paths-unseen/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/finder-of-paths-unseen/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -112,7 +130,10 @@
       "pour_time_sideways",
       "blur_the_arc_of_years"
     ],
-    "panel": ["https://imgur.com/MDqxo4i", "https://imgur.com/7z7V6Ol"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/fractured-days-split-the-sky/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/fractured-days-split-the-sky/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -129,7 +150,10 @@
       "incite_the_mob",
       "overenthusiastic_arson"
     ],
-    "panel": ["https://imgur.com/D2geoaL", "https://imgur.com/i6YLeWv"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/grinning-trickster-stirs-up-trouble/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/grinning-trickster-stirs-up-trouble/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -147,15 +171,17 @@
       "asphyxiating_smoke"
     ],
     "panel": [
-      "https://i.imgur.com/g6Sqr0k.jpeg",
-      "https://i.imgur.com/eQJuEVY.jpeg"
+      "https://cdn.callofthedahanways.com/spirits/heart-of-the-wildfire/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/heart-of-the-wildfire/panel-2.jpg"
     ],
     "aspects": [
       {
         "id": "heart-of-the-wildfire/transforming",
         "name": "Transforming",
         "emote": "🏳️‍⚧️",
-        "panel": ["https://i.imgur.com/rbmRVHp.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/heart-of-the-wildfire/aspects/transforming/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -173,13 +199,18 @@
       "sacrosanct_wilderness",
       "towering_wrath"
     ],
-    "panel": ["https://imgur.com/PBwq5KE", "https://imgur.com/ZKAblG3"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/keeper-of-the-forbidden-wilds/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/keeper-of-the-forbidden-wilds/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "keeper-of-the-forbidden-wilds/spreading-hostility",
         "name": "Spreading Hostility",
         "emote": "<:TokenBadlands:852366051454746665>",
-        "panel": ["https://i.imgur.com/cBY9Hmb.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/keeper-of-the-forbidden-wilds/aspects/spreading-hostility/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -197,34 +228,43 @@
       "shatter_homesteads",
       "raging_storm"
     ],
-    "panel": ["https://imgur.com/yXE6oHw", "https://imgur.com/WLcU0w9"],
-    "powerProgression": "https://i.imgur.com/KM42Avh.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/power-progression.jpg",
     "aspects": [
       {
         "id": "lightnings-swift-strike/pandemonium",
         "name": "Pandemonium",
         "emote": "🐼",
-        "panel": ["https://i.imgur.com/1774mnW.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/pandemonium/panel-1.jpg"
+        ]
       },
       {
         "id": "lightnings-swift-strike/wind",
         "name": "Wind",
         "emote": "<:EAir:852604219210727434>",
-        "panel": ["https://i.imgur.com/VwchE5U.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/wind/panel-1.jpg"
+        ]
       },
       {
         "id": "lightnings-swift-strike/immense",
         "name": "Immense",
         "emote": "<:Major:1386718312876216451>",
-        "panel": ["https://i.imgur.com/YhXRPZK.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/immense/panel-1.jpg"
+        ]
       },
       {
         "id": "lightnings-swift-strike/sparking",
         "name": "Sparking",
         "emote": "✨",
         "panel": [
-          "https://i.imgur.com/4jyHApi.png",
-          "https://i.imgur.com/SGlXMGB.png"
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/sparking/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/lightnings-swift-strike/aspects/sparking/panel-2.jpg"
         ]
       }
     ]
@@ -243,13 +283,18 @@
       "swallowed_by_the_wilderness",
       "softly_beckon_ever_inward"
     ],
-    "panel": ["https://imgur.com/Zx3UcPD", "https://imgur.com/wGPod8z"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/lure-of-the-deep-wilderness/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/lure-of-the-deep-wilderness/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "lure-of-the-deep-wilderness/lair",
         "name": "Lair",
         "emote": "<:IncarnaLair:1386717472102682784>",
-        "panel": ["https://i.imgur.com/dzPtyxm.png"],
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/lure-of-the-deep-wilderness/aspects/lair/panel-1.jpg"
+        ],
         "incarna": {
           "aliases": [],
           "panel": ["https://imgur.com/VMuYUo4"]
@@ -272,7 +317,10 @@
       "guide_the_way_on_feathered_wings",
       "evermultiplying_swarm"
     ],
-    "panel": ["https://imgur.com/bA3Rmp8", "https://imgur.com/XIG39qe"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/many-minds-move-as-one/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/many-minds-move-as-one/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -289,15 +337,18 @@
       "grasping_tide",
       "tidal_boon"
     ],
-    "panel": ["https://imgur.com/rrLWF5o", "https://imgur.com/UVEIJfA"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "oceans-hungry-grasp/deeps",
         "name": "Deeps",
         "emote": "<:TokenDeeps1:1136437567244468234>",
         "panel": [
-          "https://i.imgur.com/V9qIQ1y.png",
-          "https://imgur.com/tZ0U4rx"
+          "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/aspects/deeps/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/oceans-hungry-grasp/aspects/deeps/panel-2.jpg"
         ]
       }
     ]
@@ -311,26 +362,35 @@
     "emote": "<:SpiritRiverSurgesSunlight:852365960916762635>",
     "aliases": [],
     "uniques": ["boon_of_vigor", "rivers_bounty", "wash_away", "flash_floods"],
-    "panel": ["https://imgur.com/pmdjfxu", "https://imgur.com/uv0mMRV"],
-    "powerProgression": "https://i.imgur.com/AyiPvBZ.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/power-progression.jpg",
     "aspects": [
       {
         "id": "river-surges-in-sunlight/sunshine",
         "name": "Sunshine",
         "emote": "<:ESun:852590484353843200>",
-        "panel": ["https://i.imgur.com/AGZB0Bn.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/aspects/sunshine/panel-1.jpg"
+        ]
       },
       {
         "id": "river-surges-in-sunlight/travel",
         "name": "Travel",
         "emote": "🚕",
-        "panel": ["https://i.imgur.com/lgC4gQ6.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/aspects/travel/panel-1.jpg"
+        ]
       },
       {
         "id": "river-surges-in-sunlight/haven",
         "name": "Haven",
         "emote": "<:Defend:1386718325694005350>",
-        "panel": ["https://i.imgur.com/UlkeNZC.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/river-surges-in-sunlight/aspects/haven/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -348,15 +408,18 @@
       "elemental_aegis",
       "absorb_essence"
     ],
-    "panel": ["https://imgur.com/PgT7Kyj", "https://imgur.com/cE7YZ3L"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "serpent-slumbering-beneath-the-island/locus",
         "name": "Locus",
         "emote": "<:IncarnaLocus:1386717477903532113>",
         "panel": [
-          "https://i.imgur.com/YugqMW5.png",
-          "https://i.imgur.com/RwIk5e4.png"
+          "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/aspects/locus/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/serpent-slumbering-beneath-the-island/aspects/locus/panel-2.jpg"
         ],
         "incarna": {
           "aliases": [],
@@ -379,38 +442,51 @@
       "mantle_of_dread",
       "crops_wither_and_fade"
     ],
-    "panel": ["https://imgur.com/FmVImnv", "https://imgur.com/oyk2ZwH"],
-    "powerProgression": "https://i.imgur.com/jCFu1bS.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/power-progression.jpg",
     "aspects": [
       {
         "id": "shadows-flicker-like-flame/madness",
         "name": "Madness",
         "emote": "<:TokenStrife:852366051848093756>",
-        "panel": ["https://i.imgur.com/sjjNNLB.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/madness/panel-1.jpg"
+        ]
       },
       {
         "id": "shadows-flicker-like-flame/reach",
         "name": "Reach",
         "emote": "🫳",
-        "panel": ["https://i.imgur.com/1oIYl5s.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/reach/panel-1.jpg"
+        ]
       },
       {
         "id": "shadows-flicker-like-flame/foreboding",
         "name": "Foreboding",
         "emote": "<:TokenFear:852589106918981663>",
-        "panel": ["https://i.imgur.com/iUUnawK.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/foreboding/panel-1.jpg"
+        ]
       },
       {
         "id": "shadows-flicker-like-flame/amorphous",
         "name": "Amorphous",
         "emote": "<:SpiritBlobby:852589110203645954>",
-        "panel": ["https://i.imgur.com/VIZa5cI.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/amorphous/panel-1.jpg"
+        ]
       },
       {
         "id": "shadows-flicker-like-flame/dark-fire",
         "name": "Dark Fire",
         "emote": "<:EFire:852590485549744180>",
-        "panel": ["https://imgur.com/0xBcref.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shadows-flicker-like-flame/aspects/dark-fire/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -428,19 +504,26 @@
       "teeth_gleam_from_darkness",
       "terrifying_chase"
     ],
-    "panel": ["https://imgur.com/uxw6S5D", "https://imgur.com/IoL5BHz"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "sharp-fangs-behind-the-leaves/encircle",
         "name": "Encircle",
         "emote": "⭕",
-        "panel": ["https://i.imgur.com/zKbLDmZ.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/aspects/encircle/panel-1.jpg"
+        ]
       },
       {
         "id": "sharp-fangs-behind-the-leaves/unconstrained",
         "name": "Unconstrained",
         "emote": "🔓",
-        "panel": ["https://i.imgur.com/xcWtW6D.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/sharp-fangs-behind-the-leaves/aspects/unconstrained/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -458,19 +541,26 @@
       "study_the_invaders_fears",
       "boon_of_ancient_memories"
     ],
-    "panel": ["https://i.imgur.com/1C7h4gG.jpg", "https://imgur.com/BB48p9Q"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "shifting-memory-of-ages/intensify",
         "name": "Intensify",
         "emote": "‼️",
-        "panel": ["https://i.imgur.com/t4F2GnB.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/aspects/intensify/panel-1.jpg"
+        ]
       },
       {
         "id": "shifting-memory-of-ages/mentor",
         "name": "Mentor",
         "emote": "🧑‍🏫",
-        "panel": ["https://i.imgur.com/KDKA8d7.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shifting-memory-of-ages/aspects/mentor/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -488,13 +578,18 @@
       "unnerving_pall",
       "dissolving_vapors"
     ],
-    "panel": ["https://imgur.com/AgBKUYl", "https://imgur.com/sE5Iasm"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/shroud-of-silent-mist/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/shroud-of-silent-mist/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "shroud-of-silent-mist/stranded",
         "name": "Stranded",
         "emote": "<:Isolate:1386718311030587435>",
-        "panel": ["https://i.imgur.com/bgKkiKH.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/shroud-of-silent-mist/aspects/stranded/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -512,7 +607,10 @@
       "boon_of_reimagining",
       "peace_of_the_nighttime_sky"
     ],
-    "panel": ["https://imgur.com/fkB6Y05", "https://imgur.com/pCuo4XJ"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/starlight-seeks-its-form/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/starlight-seeks-its-form/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -529,7 +627,10 @@
       "scarred_and_stony_land",
       "plows_shatter_on_rocky_ground"
     ],
-    "panel": ["https://imgur.com/FhEIqB6", "https://imgur.com/RqlC8ZP"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/stones-unyielding-defiance/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/stones-unyielding-defiance/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -546,19 +647,26 @@
       "sudden_ambush",
       "manifestation_of_power_and_glory"
     ],
-    "panel": ["https://imgur.com/5xnsvD8", "https://imgur.com/PztVF5L"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/thunderspeaker/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/thunderspeaker/panel-2.jpg"
+    ],
     "aspects": [
       {
         "id": "thunderspeaker/tactician",
         "name": "Tactician",
         "emote": "🗺️",
-        "panel": ["https://i.imgur.com/RTDZICL.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/thunderspeaker/aspects/tactician/panel-1.jpg"
+        ]
       },
       {
         "id": "thunderspeaker/warrior",
         "name": "Warrior",
         "emote": "<:IncarnaWarrior:1386717491287560365>",
-        "panel": ["https://i.imgur.com/oG4ybBt.png"],
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/thunderspeaker/aspects/warrior/panel-1.jpg"
+        ],
         "incarna": {
           "aliases": ["🍆"],
           "panel": ["https://imgur.com/oVtswAd"]
@@ -580,7 +688,10 @@
       "fetid_breath_spreads_infection",
       "strike_low_with_sudden_fevers"
     ],
-    "panel": ["https://imgur.com/EgzpSLC", "https://imgur.com/4hnimN9"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/vengeance-as-a-burning-plague/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/vengeance-as-a-burning-plague/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -597,26 +708,35 @@
       "a_year_of_perfect_stillness",
       "rituals_of_destruction"
     ],
-    "panel": ["https://imgur.com/wgs13CF", "https://imgur.com/5iTl68l"],
-    "powerProgression": "https://i.imgur.com/UgskKqW.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/power-progression.jpg",
     "aspects": [
       {
         "id": "vital-strength-of-the-earth/might",
         "name": "Might",
         "emote": "💪",
-        "panel": ["https://i.imgur.com/dBOc7YI.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/aspects/might/panel-1.jpg"
+        ]
       },
       {
         "id": "vital-strength-of-the-earth/resilience",
         "name": "Resilience",
         "emote": "🛡️",
-        "panel": ["https://i.imgur.com/jSgVfcH.jpg"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/aspects/resilience/panel-1.jpg"
+        ]
       },
       {
         "id": "vital-strength-of-the-earth/nourishing",
         "name": "Nourishing",
         "emote": "<:TokenVitality:1136437572822892544>",
-        "panel": ["https://i.imgur.com/zaflknz.png"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/vital-strength-of-the-earth/aspects/nourishing/panel-1.jpg"
+        ]
       }
     ]
   },
@@ -634,7 +754,10 @@
       "rain_of_ash",
       "pyroclastic_bombardment"
     ],
-    "panel": ["https://imgur.com/sSs3uqa", "https://imgur.com/XOC05vn"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/volcano-looming-high/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/volcano-looming-high/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -651,8 +774,11 @@
       "intractable_thickets_and_thorns",
       "open_shifting_waterways"
     ],
-    "panel": ["https://imgur.com/n0PVQ2V", "https://imgur.com/UQkHym4"],
-    "powerProgression": "https://i.imgur.com/1NCasyt.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/fathomless-mud-of-the-swamp/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/fathomless-mud-of-the-swamp/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/fathomless-mud-of-the-swamp/power-progression.jpg",
     "aspects": []
   },
   {
@@ -669,8 +795,11 @@
       "herd_towards_the_lurking_maw",
       "mark_territory_with_scars_and_teeth"
     ],
-    "panel": ["https://imgur.com/wHjhdPI", "https://imgur.com/eTvswqd"],
-    "powerProgression": "https://i.imgur.com/SjT63fz.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/devouring-teeth-lurk-underfoot/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/devouring-teeth-lurk-underfoot/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/devouring-teeth-lurk-underfoot/power-progression.jpg",
     "aspects": []
   },
   {
@@ -687,8 +816,11 @@
       "mysterious_abductions",
       "whispered_guidance_through_the_night"
     ],
-    "panel": ["https://imgur.com/zLFBZYe", "https://imgur.com/BCI4u81"],
-    "powerProgression": "https://i.imgur.com/PQsUHkb.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/eyes-watch-from-the-trees/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/eyes-watch-from-the-trees/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/eyes-watch-from-the-trees/power-progression.jpg",
     "aspects": []
   },
   {
@@ -705,8 +837,11 @@
       "stinging_sandstorm",
       "sweltering_exhaustion"
     ],
-    "panel": ["https://imgur.com/z1JoESZ", "https://imgur.com/O5MYo40"],
-    "powerProgression": "https://i.imgur.com/BV2Ydw9.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/rising-heat-of-stone-and-sand/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/rising-heat-of-stone-and-sand/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/rising-heat-of-stone-and-sand/power-progression.jpg",
     "aspects": []
   },
   {
@@ -723,8 +858,11 @@
       "scatter_to_the_winds",
       "tempest_of_leaves_and_branches"
     ],
-    "panel": ["https://imgur.com/bTNvNzt", "https://imgur.com/MP7zaBA"],
-    "powerProgression": "https://i.imgur.com/DdeEGtf.png",
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/sun-bright-whirlwind/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/sun-bright-whirlwind/panel-2.jpg"
+    ],
+    "powerProgression": "https://cdn.callofthedahanways.com/spirits/sun-bright-whirlwind/power-progression.jpg",
     "aspects": []
   },
   {
@@ -741,7 +879,10 @@
       "swallowed_by_the_endless_dark",
       "terror_of_the_hunted"
     ],
-    "panel": ["https://imgur.com/dnCA76w", "https://imgur.com/FklO8qt"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/breath-of-darkness-down-your-spine/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/breath-of-darkness-down-your-spine/panel-2.jpg"
+    ],
     "incarna": {
       "aliases": ["boddys", "spine", "nal"],
       "panel": [
@@ -767,7 +908,10 @@
       "resounding_footfalls_sow_dismay",
       "rumblings_portend_a_greater_quake"
     ],
-    "panel": ["https://imgur.com/ELBbtJF", "https://imgur.com/8hR01wO"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/dances-up-earthquakes/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/dances-up-earthquakes/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -784,7 +928,10 @@
       "surging_lahar",
       "terrifying_rampage"
     ],
-    "panel": ["https://imgur.com/phk0d4t", "https://imgur.com/8431mg2"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/ember-eyed-behemoth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/ember-eyed-behemoth/panel-2.jpg"
+    ],
     "incarna": {
       "aliases": ["stomp", "eeb"],
       "panel": [
@@ -808,7 +955,10 @@
       "favors_of_story_and_season",
       "surrounded_by_the_dahan"
     ],
-    "panel": ["https://imgur.com/ctBCS2U", "https://imgur.com/26T68Am"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/hearth-vigil/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/hearth-vigil/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -825,7 +975,10 @@
       "unbearable_gaze",
       "wither_bodies_scar_stones"
     ],
-    "panel": ["https://imgur.com/vb7nHtJ", "https://imgur.com/N7WIyDi"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/relentless-gaze-of-the-sun/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/relentless-gaze-of-the-sun/panel-2.jpg"
+    ],
     "aspects": []
   },
   {
@@ -842,7 +995,10 @@
       "boon_of_resilient_power",
       "blooming_of_the_rocks_and_trees"
     ],
-    "panel": ["https://imgur.com/Au4IaEs", "https://imgur.com/FtU2Ts2"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/towering-roots-of-the-jungle/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/towering-roots-of-the-jungle/panel-2.jpg"
+    ],
     "incarna": {
       "aliases": ["the tree stands tall"],
       "panel": [
@@ -866,7 +1022,10 @@
       "frightful_keening",
       "exhale_confusion_and_delirium"
     ],
-    "panel": ["https://imgur.com/dKMG0wN", "https://imgur.com/FzrFUYO"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/wandering-voice-keens-delirium/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/wandering-voice-keens-delirium/panel-2.jpg"
+    ],
     "incarna": {
       "aliases": [],
       "panel": [
@@ -896,32 +1055,95 @@
       "draw_to_the_waters_edge",
       "wrack_with_pain_and_grief"
     ],
-    "panel": ["https://imgur.com/hWH0aXs", "https://imgur.com/cx2dLde"],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/panel-2.jpg"
+    ],
     "healingCards": [
       {
         "id": "wounded-waters-bleeding/roiling-waters",
         "name": "Roiling Waters",
         "title": "roiling",
-        "panel": ["https://imgur.com/sGO0Rur", "https://imgur.com/PhtNruf"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/roiling-waters/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/roiling-waters/panel-2.jpg"
+        ]
       },
       {
         "id": "wounded-waters-bleeding/serene-waters",
         "name": "Serene Waters",
         "title": "serene",
-        "panel": ["https://imgur.com/DE0gvVc", "https://imgur.com/xetX8sL"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/serene-waters/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/serene-waters/panel-2.jpg"
+        ]
       },
       {
         "id": "wounded-waters-bleeding/waters-renew",
         "name": "Waters Renew",
         "title": "renew",
-        "panel": ["https://imgur.com/8yL1NjC", "https://imgur.com/23SITwd"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-renew/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-renew/panel-2.jpg"
+        ]
       },
       {
         "id": "wounded-waters-bleeding/waters-taste-of-ruin",
         "name": "Waters Taste of Ruin",
         "title": "ruin",
-        "panel": ["https://imgur.com/NXB6v6u", "https://imgur.com/BNMKaNN"]
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-taste-of-ruin/panel-1.jpg",
+          "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-taste-of-ruin/panel-2.jpg"
+        ]
       }
+    ],
+    "aspects": []
+  },
+  {
+    "id": "covets-gleaming-shards-of-earth",
+    "name": "Covets Gleaming Shards of Earth",
+    "title": "Covets",
+    "set": "apocrypha",
+    "complexity": 4,
+    "emote": "<:SpiritCovetsGleaming:1386717516188876950>",
+    "aliases": ["dragon"],
+    "uniques": [
+      "favors_of_steel_and_bone",
+      "melt_earth_to_slag",
+      "petition_for_smoldering_wrath",
+      "unnerving_attention"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/panel-2.jpg"
+    ],
+    "extraPanels": [
+      {
+        "name": "The Gleaming Hoard",
+        "panel": [
+          "https://cdn.callofthedahanways.com/spirits/covets-gleaming-shards-of-earth/extra-panels/the-gleaming-hoard/panel-1.jpg"
+        ]
+      }
+    ],
+    "aspects": []
+  },
+  {
+    "id": "spreading-rot-renews-the-earth",
+    "name": "Spreading Rot Renews the Earth",
+    "title": "Rot",
+    "set": "apocrypha",
+    "complexity": 3,
+    "emote": "<:SpiritSpreadingRotRenews:1386717518713851985>",
+    "aliases": [],
+    "uniques": [
+      "land_of_deadfall_and_rot",
+      "infesting_spores",
+      "worms_and_bugs_enrich_the_soil",
+      "exaltation_of_the_re_forming_land"
+    ],
+    "panel": [
+      "https://cdn.callofthedahanways.com/spirits/spreading-rot-renews-the-earth/panel-1.jpg",
+      "https://cdn.callofthedahanways.com/spirits/spreading-rot-renews-the-earth/panel-2.jpg"
     ],
     "aspects": []
   }

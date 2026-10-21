@@ -60,7 +60,9 @@ describe("adversary", () => {
   it("returns the panel for a known adversary", async () => {
     const msg = createMockMessage();
     await adversary.execute(msg, ["prussia"]);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/KdyfP3C");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/adversaries/the-kingdom-of-brandenburg-prussia/panel.jpg",
+    );
   });
 
   it("lists all adversaries when given no args", async () => {
@@ -104,7 +106,7 @@ describe("aspect", () => {
     const msg = createMockMessage();
     await aspect.execute(msg, ["Regrowth"]);
     expect(msg.channel.send).toHaveBeenCalledWith(
-      "https://i.imgur.com/jQWp7vu.png",
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/aspects/regrowth/panel-1.jpg",
     );
   });
 
@@ -384,13 +386,17 @@ describe("healing", () => {
   it("returns the front panel for a healing card by title", async () => {
     const msg = createMockMessage();
     await healing.execute(msg, ["roiling"]);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/sGO0Rur");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/roiling-waters/panel-1.jpg",
+    );
   });
 
   it("returns the back panel when asked", async () => {
     const msg = createMockMessage();
     await healing.execute(msg, ["ruin", "back"]);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/BNMKaNN");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/wounded-waters-bleeding/healing/waters-taste-of-ruin/panel-2.jpg",
+    );
   });
 });
 
@@ -500,6 +506,27 @@ describe("random", () => {
     expect(msg.channel.send).toHaveBeenCalledTimes(2);
   });
 
+  it("random spirit only picks Apocrypha spirits when asked", async () => {
+    // The Apocrypha spirits come last, so the top roll lands on one if
+    // they're in the pool.
+    jest.spyOn(Math, "random").mockReturnValue(0.9999);
+    try {
+      const without = createMockMessage();
+      await random.execute(without, ["spirit"]);
+      expect(without.channel.send).toHaveBeenCalledWith(
+        "Wounded Waters Bleeding",
+      );
+
+      const withApocrypha = createMockMessage();
+      await random.execute(withApocrypha, ["spirit", "", "apocrypha"]);
+      expect(withApocrypha.channel.send).toHaveBeenCalledWith(
+        "Spreading Rot Renews the Earth",
+      );
+    } finally {
+      Math.random.mockRestore();
+    }
+  });
+
   it("random adversary sends a name/difficulty and emote", async () => {
     const msg = createMockMessage();
     await random.execute(msg, ["adversary"]);
@@ -562,7 +589,7 @@ describe("scenario", () => {
     const msg = createMockMessage();
     await scenario.execute(msg, ["Blitz"]);
     expect(msg.channel.send).toHaveBeenCalledWith(
-      "https://i.imgur.com/rbm2vox",
+      "https://cdn.callofthedahanways.com/scenarios/blitz/panel-2.jpg",
     );
   });
 
@@ -597,7 +624,9 @@ describe("spirit", () => {
   it("returns the front panel for an exact spirit match", async () => {
     const msg = createMockMessage();
     await spirit.execute(msg, TEST_SPIRIT_ARGS);
-    expect(msg.channel.send).toHaveBeenCalledWith("https://imgur.com/nlpGjjH");
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/spirits/a-spread-of-rampant-green/panel-1.jpg",
+    );
   });
 
   it("sends a paginated list when given no args", async () => {
@@ -641,6 +670,14 @@ describe("unique", () => {
     await unique.execute(msg, ["fields_choked_with_growth"]);
     expect(msg.channel.send).toHaveBeenCalledWith(
       "https://sick.oberien.de/imgs/powers/fields_choked_with_growth.webp",
+    );
+  });
+
+  it("links the card's own image when SICK doesn't have it", async () => {
+    const msg = createMockMessage();
+    await unique.execute(msg, ["infesting_spores"]);
+    expect(msg.channel.send).toHaveBeenCalledWith(
+      "https://cdn.callofthedahanways.com/cards/infesting-spores.jpg",
     );
   });
 });
