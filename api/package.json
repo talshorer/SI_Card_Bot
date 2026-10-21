@@ -17,5 +17,8 @@
     "tsx": "^4.21.0",
     "typescript": "^6.0.2",
     "wrangler": "^4.149.0"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
